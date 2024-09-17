@@ -35,19 +35,19 @@ O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa 
 
 Descrição do cenário onde o sistema deverá funcionar:
 
-1. Narcar animais RFID.
-2. Uma clínica veterinária atende apenas os animais: gatos e cachorros.
-3. Os clientes devem fazer um cadastro de si e dos animais.
-4. Os clientes devem informar as condições nas quais os animais chegam.
-5. Os clientes devem informar o tipo de ração que o animal come.
+1. Uma clínica veterinária atende apenas os animais: gatos e cachorros.
+2. Marcar os animais RFID, a pedido do cliente.
+3. Os clientes devem fazer um cadastro de si, contendo informações pessoais e de contato, e dos animais, como nome e descrições.
+4. Os clientes devem informar as condições nas quais os animais chegam, para atendimentos com o veterinário, informar se o atendimento é de rotina ou de emergência.
+5. Os clientes devem informar o tipo de ração que o animal come e se existe alguma condição médica que possa afetar o atendimento.
 6. O cliente deve informar hábitos do animal.
-7. Para cada animal é possível que mais de um veterinário o atenda.
+7. Para cada animal é possível que mais de um veterinário o atenda, e um veterinário pode atender mais de um animal.
 8. Os animais podem chegar e serem atendidos de acordo com uma agenda do dia.
-9. Cada animal atendido receberá uma ficha e um prontuário.
-10. Outros dono podem querer marcar horários de atendimento futuro.
-11. O atendimento gera uma receita para o animal.
-12. Quando um cliente chega na clínica veterinária ele é atendido por um atendente.
-13. O atendente deve verificar se existe agenda disponível com um veterinário.
+9. Os clientes podem marcar um horário com antecedência, podendo escolher o veterinário e não enfrentar filas de atendimento.
+10. Cada animal atendido receberá uma ficha, contendo as informações de cadastro e outras adicionais, e um prontuário, com registros de consultas, procedimentos e condições médicas.
+11. Quando necessário o atendimento gera uma receita para o animal, com informações sobre medicamentos, dosagens e horários, além de outras orientações.
+12. Quando um cliente chega na clínica veterinária ele é atendido por um atendente, que irá efetuar o cadastro do cliente e do animal, caso não esteja no sistema.
+13. O atendente deve verificar se existe agenda disponível com um veterinário e preencher o horário, se disponível.
 14. O atendente deve colocar o cliente e seu animal na fila de espera, se for o caso.
 15. O atendente deve levar o cliente e o animal até o veterinário.
 16. O veterinário deve realizar uma entrevista com o dono do animal.
@@ -55,13 +55,17 @@ Descrição do cenário onde o sistema deverá funcionar:
 18. O veterinário deverá examinar o animal e anotar em prontuário(ficha) suas observações.
 19. Dependendo da situação do animal este receberá uma receita.
 20. A clínica faz atendimentos médicos de emergência, como cirurgias e curativos para machucados.
-21. O veterinário pode aplicar vacinas de acordo com o pedido do dono ou da situação.
-22. Os atendimentos e as vacinas são agendadas, a não ser em caso de emergência grave.
-23. A clínica oferece serviços de hospedagem, em casos de viagem, e internação, em casos de saúde ou procedimentos médicos.
-24. A clínica conta com uma equipe especializada em cuidados animais, fornecendo banho e tosa.
-25. Além da hospedagem e internação, o petshop conta com ambientes de creche, nos quais os animais podem passar o dia sendo supervisionados por funcionarios treinados e se divertindo muito.
-26. O petshop tem um grande estoque de produtos de higiene, brinquedos e rações das melhores marcas a venda para os clientes.
-27. O petshop tem parceria com farmacias e oferece descontos para clientes.
+21. A clínica possui alguns veterinários de plantão durante a madrugada, ficando aberta 24 horas.
+22. O veterinário pode aplicar vacinas de acordo com o pedido do cliente ou da situação.
+23. Os atendimentos e as vacinas são agendadas, a não ser em caso de emergência grave, onde um médico de plantão irá atender o animal.
+24. A clínica oferece serviços de hospedagem, em casos de que o cliente viaje e queira deixar o animal aos cuidados da clínica.
+25. Para usufruir da hospedagem o cliente tem que agendar a data com pelo menos uma semana de antecedência e informar a data de retorno.
+26. Durante o período de hospedagem, os animais receberam alimentação e cuidados, além de brincadeiras e caminhadas, tudo supervisionado por funcionários treinados.
+27. A clínica também oferece a internação, em casos de saúde ou procedimentos cirúrgicos e médicos.
+28. A clínica conta com uma equipe especializada em cuidados animais, fornecendo banho e tosa, sob agendamento.
+29. A clínica conta com ambientes de creche, nos quais os animais podem passar o dia sendo supervisionados por funcionarios treinados, são disponibilizados planos mensais/diários para a creche.
+30. O petshop tem um grande estoque de produtos de higiene, brinquedos e rações das melhores marcas a venda para os clientes.
+31. O petshop tem parceria com farmácias e oferece descontos para clientes que possuem cadastro.
 
 # 3. Visão geral do psistema
 
