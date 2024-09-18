@@ -1,8 +1,5 @@
 
-<img src="https://chooser-beta.creativecommons.org/img/cc-logo.f0ab4ebe.svg" height = "20px" width = "20px"><img src="https://chooser-beta.creativecommons.org/img/cc-by.21b728bb.svg" height = "20px" width = "20px"><img src="https://chooser-beta.creativecommons.org/img/cc-nc.218f18fc.svg" height = "20px" width = "20px"><img src="https://chooser-beta.creativecommons.org/img/cc-nd.de89fdeb.svg" height = "20px" width = "20px">
-
-
-CC BY-NC-ND 4.0
+<img src="https://chooser-beta.creativecommons.org/img/cc-logo.f0ab4ebe.svg" height = "20px" width = "20px"> <img src="https://chooser-beta.creativecommons.org/img/cc-by.21b728bb.svg" height = "20px" width = "20px"> <img src="https://chooser-beta.creativecommons.org/img/cc-nc.218f18fc.svg" height = "20px" width = "20px"> <img src="https://chooser-beta.creativecommons.org/img/cc-nd.de89fdeb.svg" height = "20px" width = "20px"> CC BY-NC-ND 4.0
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 This license requires that reusers give credit to the creator. It allows reusers to copy and distribute the material in any medium or format in unadapted form and for noncommercial purposes only.
 
