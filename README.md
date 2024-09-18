@@ -9,7 +9,7 @@ Docente: Emiliano Soares Monteiro
 
 - [Camila Weber - Engenharia de Software](#camila-weber---engenharia-de-software)
 - [1. Introdução](#1-introdução)
-- [2. Problemas e descrição do negócio](#2-problemas-e-descrição-do-negócio)
+- [2. Descrição do negócio](#2-descrição-do-negócio)
 - [3. Visão geral do psistema](#3-visão-geral-do-psistema)
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
@@ -25,13 +25,15 @@ Docente: Emiliano Soares Monteiro
 - [14. Manutenção e instalação](#14-manutenção-e-instalação)
 - [15. Glossário](#15-glossário)
 - [16. Script SQL](#16-script-sql)
+  - [16.1. Comandos CREATE table](#161-comandos-create-table)
+  - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
 
 
 # 1. Introdução
 
 O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços excluvivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada a seguir:
 
-# 2. Problemas e descrição do negócio
+# 2. Descrição do negócio
 
 Descrição do cenário onde o sistema deverá funcionar:
 
@@ -66,14 +68,208 @@ Descrição do cenário onde o sistema deverá funcionar:
 29. A clínica conta com ambientes de creche, nos quais os animais podem passar o dia sendo supervisionados por funcionarios treinados, são disponibilizados planos mensais/diários para a creche.
 30. O petshop tem um grande estoque de produtos de higiene, brinquedos e rações das melhores marcas a venda para os clientes.
 31. O petshop tem parceria com farmácias e oferece descontos para clientes que possuem cadastro.
+32. O pagamento das da conta pode ser feito em dinheiro, pix e cartões.
 
 # 3. Visão geral do psistema
 
-Descrição do sistema e suas relações
+Descrição do sistema e suas relações.
 
 # 4. Diagrama ER
 
+```mermaid
+erDiagram
+    CLIENTE {
+        string id_cliente PK
+        string nome
+        string cpf
+        string telefone
+        string email
+    }
+
+    ANIMAL {
+        string id_animal PK
+        string nome
+        string tipo 
+        string descricao
+        string condicao_medica
+        string tipo_racao
+        string habitos
+        string rfid
+    }
+    
+    VETERINARIO {
+        string id_veterinario PK
+        string nome
+        string especializacao
+        string plantao
+    }
+    
+    ATENDIMENTO {
+        string id_atendimento PK
+        string id_cliente FK
+        string id_animal FK
+        string id_veterinario FK
+        string data_hora
+        string tipo_atendimento 
+        string formulario
+        string prontuario
+        string receita
+    }
+    
+    HOSPEDAGEM {
+        string id_hospedagem PK
+        string id_cliente FK
+        string id_animal FK
+        date data_inicio
+        date data_fim
+        string cuidados
+    }
+    
+    INTERNACAO {
+        string id_internacao PK
+        string id_cliente FK
+        string id_animal FK
+        string motivo
+        date data_inicio
+        date data_fim
+    }
+    
+    CRECHE {
+        string id_creche PK
+        string id_animal FK
+        date data
+        string plano
+    }
+    
+    PRODUTO {
+        string id_produto PK
+        string nome
+        string categoria
+        float preco
+        string descricao
+    }
+    
+    PAGAMENTO {
+        string id_pagamento PK
+        string id_cliente FK
+        float valor
+        string metodo_pagamento 
+        date data_pagamento
+    }
+
+    CLIENTE ||--o{ ANIMAL : possui
+    CLIENTE ||--o{ ATENDIMENTO : realiza
+    CLIENTE ||--o{ HOSPEDAGEM : agenda
+    CLIENTE ||--o{ INTERNACAO : solicita
+    CLIENTE ||--o{ PAGAMENTO : efetua
+    ANIMAL ||--o{ ATENDIMENTO : participa
+    ANIMAL ||--o{ HOSPEDAGEM : se_hospeda
+    ANIMAL ||--o{ INTERNACAO : se_interna
+    ANIMAL ||--o{ CRECHE : frequenta
+    VETERINARIO ||--o{ ATENDIMENTO : atende
+    ATENDIMENTO ||--o{ PRODUTO : inclui
+```
+
 # 5. Diagrama de classe
+
+<!-- adicionar os métodos -->
+```mermaid
+classDiagram
+    class Cliente {
+        +int id_cliente
+        +String nome
+        +String cpf
+        +String telefone
+        +String email
+        +List<Animal> animais
+        +cadastrar()
+    }
+
+    class Animal {
+        +int id_animal
+        +String nome
+        +String tipo
+        +String descricao
+        +String condicao_medica
+        +String tipo_racao
+        +String habitos
+        +String rfid
+        +List<Veterinario> veterinarios
+        +atender()
+    }
+
+    class Veterinario {
+        +int id_veterinario
+        +String nome
+        +String especializacao
+        +boolean plantao
+        +List<Animal> atendimentos
+        +atenderAnimal()
+        +aplicarVacina()
+    }
+
+    class Atendimento {
+        +int id_atendimento
+        +Date data_hora
+        +String tipo_atendimento
+        +String formulario
+        +String prontuario
+        +String receita
+        +Cliente cliente
+        +Animal animal
+        +Veterinario veterinario
+        +registrar()
+    }
+
+    class Hospedagem {
+        +int id_hospedagem
+        +Date data_inicio
+        +Date data_fim
+        +String cuidados
+        +Animal animal
+    }
+
+    class Internacao {
+        +int id_internacao
+        +String motivo
+        +Date data_inicio
+        +Date data_fim
+        +Animal animal
+    }
+
+    class Creche {
+        +int id_creche
+        +Date data
+        +String plano
+        +Animal animal
+    }
+
+    class Produto {
+        +int id_produto
+        +String nome
+        +String categoria
+        +double preco
+        +String descricao
+    }
+
+    class Pagamento {
+        +int id_pagamento
+        +double valor
+        +String metodo_pagamento
+        +Cliente cliente
+    }
+
+    Cliente "1" -- "0..*" Animal : possui
+    Veterinario "1" -- "0..*" Atendimento : atende
+    Animal "0..*" -- "0..*" Veterinario : é atendido por
+    Atendimento "1" -- "1" Cliente : registra
+    Atendimento "1" -- "1" Animal : inclui
+    Atendimento "1" -- "1" Veterinario : gerado por
+    Animal "0..*" -- "0..*" Hospedagem : se hospeda
+    Animal "0..*" -- "0..*" Internacao : se interna
+    Animal "0..*" -- "0..*" Creche : frequenta
+    Cliente "1" -- "0..*" Pagamento : realiza
+```
 
 # 6. Casos de uso
 
@@ -98,3 +294,158 @@ Descrição do sistema e suas relações
 # 15. Glossário
 
 # 16. Script SQL
+
+## 16.1. Comandos CREATE table
+
+```SQL
+-- Tabela de Clientes
+CREATE TABLE Cliente (
+    id_cliente INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(11) UNIQUE NOT NULL,
+    telefone VARCHAR(15),
+    email VARCHAR(100),
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabela de Animais
+CREATE TABLE Animal (
+    id_animal INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    nome VARCHAR(100) NOT NULL,
+    tipo ENUM('gato', 'cachorro') NOT NULL,
+    descricao TEXT,
+    condicao_medica TEXT,
+    tipo_racao VARCHAR(100),
+    habitos TEXT,
+    rfid VARCHAR(100) UNIQUE,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente) ON DELETE CASCADE
+);
+
+-- Tabela de Veterinários
+CREATE TABLE Veterinario (
+    id_veterinario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    especializacao VARCHAR(100),
+    plantao BOOLEAN DEFAULT FALSE
+);
+
+-- Tabela de Atendimentos
+CREATE TABLE Atendimento (
+    id_atendimento INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    id_animal INT,
+    id_veterinario INT,
+    data_hora DATETIME NOT NULL,
+    tipo_atendimento ENUM('rotina', 'emergencia') NOT NULL,
+    formulario TEXT,
+    prontuario TEXT,
+    receita TEXT,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente) ON DELETE CASCADE,
+    FOREIGN KEY (id_animal) REFERENCES Animal(id_animal) ON DELETE CASCADE,
+    FOREIGN KEY (id_veterinario) REFERENCES Veterinario(id_veterinario) ON DELETE SET NULL
+);
+
+-- Tabela de Hospedagem
+CREATE TABLE Hospedagem (
+    id_hospedagem INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    id_animal INT,
+    data_inicio DATE NOT NULL,
+    data_fim DATE NOT NULL,
+    cuidados TEXT,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente) ON DELETE CASCADE,
+    FOREIGN KEY (id_animal) REFERENCES Animal(id_animal) ON DELETE CASCADE
+);
+
+-- Tabela de Internações
+CREATE TABLE Internacao (
+    id_internacao INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    id_animal INT,
+    motivo TEXT,
+    data_inicio DATE NOT NULL,
+    data_fim DATE NOT NULL,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente) ON DELETE CASCADE,
+    FOREIGN KEY (id_animal) REFERENCES Animal(id_animal) ON DELETE CASCADE
+);
+
+-- Tabela de Creche
+CREATE TABLE Creche (
+    id_creche INT AUTO_INCREMENT PRIMARY KEY,
+    id_animal INT,
+    data DATE NOT NULL,
+    plano VARCHAR(100),
+    FOREIGN KEY (id_animal) REFERENCES Animal(id_animal) ON DELETE CASCADE
+);
+
+-- Tabela de Produtos
+CREATE TABLE Produto (
+    id_produto INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    categoria VARCHAR(100),
+    preco DECIMAL(10, 2) NOT NULL,
+    descricao TEXT
+);
+
+-- Tabela de Pagamentos
+CREATE TABLE Pagamento (
+    id_pagamento INT AUTO_INCREMENT PRIMARY KEY,
+    id_cliente INT,
+    valor DECIMAL(10, 2) NOT NULL,
+    metodo_pagamento ENUM('dinheiro', 'pix', 'cartão') NOT NULL,
+    data_pagamento TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente) ON DELETE CASCADE
+);
+```
+
+## 16.2. Comandos INSERT gerando dados fictícios
+
+```SQL
+-- Inserindo clientes
+INSERT INTO Cliente (nome, cpf, telefone, email) VALUES
+('Ana Silva', '12345678901', '11987654321', 'ana.silva@email.com'),
+('Carlos Souza', '10987654321', '11876543210', 'carlos.souza@email.com'),
+('Mariana Lima', '98765432100', '11765432109', 'mariana.lima@email.com');
+
+-- Inserindo animais
+INSERT INTO Animal (id_cliente, nome, tipo, descricao, condicao_medica, tipo_racao, habitos, rfid) VALUES
+(1, 'Rex', 'cachorro', 'Cachorro de grande porte, muito ativo.', NULL, 'Ração A', 'Brincar, correr', 'RFID123456'),
+(1, 'Miau', 'gato', 'Gato persa, muito calmo.', 'Alergia a poeira', 'Ração B', 'Dormir, brincar', 'RFID654321'),
+(2, 'Bolinha', 'cachorro', 'Cachorrinho pequeno, adora companhia.', NULL, 'Ração A', 'Brincar, passear', 'RFID987654');
+
+-- Inserindo veterinários
+INSERT INTO Veterinario (nome, especializacao, plantao) VALUES
+('Dr. Pedro Almeida', 'Clínico Geral', TRUE),
+('Dra. Luiza Fernandes', 'Cirurgião', FALSE),
+('Dr. Ricardo Costa', 'Dermatologia', TRUE);
+
+-- Inserindo atendimentos
+INSERT INTO Atendimento (id_cliente, id_animal, id_veterinario, data_hora, tipo_atendimento, formulario, prontuario, receita) VALUES
+(1, 1, 1, '2024-09-20 10:00:00', 'rotina', 'Exame de rotina realizado.', 'Sem anormalidades.', 'Receita de ração e vermífugo.'),
+(2, 3, 3, '2024-09-21 11:00:00', 'emergencia', 'Emergência - cachorro machucado.', 'Fraturas leves.', 'Receita de antibióticos.');
+
+-- Inserindo hospedagens
+INSERT INTO Hospedagem (id_cliente, id_animal, data_inicio, data_fim, cuidados) VALUES
+(1, 1, '2024-09-25', '2024-09-30', 'Alimentação e passeios diários.');
+
+-- Inserindo internações
+INSERT INTO Internacao (id_cliente, id_animal, motivo, data_inicio, data_fim) VALUES
+(2, 3, 'Cirurgia para remoção de tumor', '2024-09-22', '2024-09-24');
+
+-- Inserindo creches
+INSERT INTO Creche (id_animal, data, plano) VALUES
+(1, '2024-09-26', 'Plano Mensal'),
+(3, '2024-09-26', 'Plano Diário');
+
+-- Inserindo produtos
+INSERT INTO Produto (nome, categoria, preco, descricao) VALUES
+('Ração A', 'Alimentação', 50.00, 'Ração premium para cães.'),
+('Ração B', 'Alimentação', 45.00, 'Ração especial para gatos.'),
+('Brinquedo para cães', 'Brinquedos', 20.00, 'Brinquedo resistente e durável.');
+
+-- Inserindo pagamentos
+INSERT INTO Pagamento (id_cliente, valor, metodo_pagamento) VALUES
+(1, 100.00, 'cartão'),
+(2, 200.00, 'dinheiro');
+```
