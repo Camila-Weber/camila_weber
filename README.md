@@ -14,7 +14,8 @@ Docente: Emiliano Soares Monteiro
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
-  - [6.1. Histórias de usuários](#61-histórias-de-usuários)
+  - [6.1. Casos de uso](#61-casos-de-uso)
+  - [6.2. Histórias de usuários](#62-histórias-de-usuários)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de Implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -75,6 +76,10 @@ Descrição do cenário onde o sistema deverá funcionar:
 Descrição do sistema e suas relações.
 
 # 4. Diagrama ER
+
+```
+Adicionar as decrições das entidades e dos relacionamentos
+```
 
 ```mermaid
 erDiagram
@@ -171,8 +176,9 @@ erDiagram
 ```
 
 # 5. Diagrama de classe
-
-<!-- adicionar os métodos -->
+```
+Adicionar as decrições das entidades e dos relacionamentos
+```
 ```mermaid
 classDiagram
     class Cliente {
@@ -273,7 +279,11 @@ classDiagram
 
 # 6. Casos de uso
 
-## 6.1. Histórias de usuários
+## 6.1. Casos de uso
+
+
+
+## 6.2. Histórias de usuários
 
 # 7. Diagrama de componentes
 
