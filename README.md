@@ -10,12 +10,23 @@ Docente: Emiliano Soares Monteiro
 - [Camila Weber - Engenharia de Software](#camila-weber---engenharia-de-software)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio](#2-descrição-do-negócio)
-- [3. Visão geral do psistema](#3-visão-geral-do-psistema)
+- [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1. Casos de uso](#61-casos-de-uso)
   - [6.2. Histórias de usuários](#62-histórias-de-usuários)
+    - [6.2.1. Cadastro de Cliente e Animal](#621-cadastro-de-cliente-e-animal)
+    - [6.2.2. Marcação de Atendimento](#622-marcação-de-atendimento)
+    - [6.2.3. Registro de Condições](#623-registro-de-condições)
+    - [6.2.4. Atendimento de Emergência](#624-atendimento-de-emergência)
+    - [6.2.5. Receitas e Orientações](#625-receitas-e-orientações)
+    - [6.2.6. Ficha e Prontuário do Animal](#626-ficha-e-prontuário-do-animal)
+    - [6.2.7. Agendamento de Hospedagem](#627-agendamento-de-hospedagem)
+    - [6.2.8. Serviços de Banho e Tosa](#628-serviços-de-banho-e-tosa)
+    - [6.2.9. Creche para Animais](#629-creche-para-animais)
+    - [6.2.10. Compras no Petshop](#6210-compras-no-petshop)
+    - [6.2.11. Pagamento das Contas](#6211-pagamento-das-contas)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de Implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -71,7 +82,7 @@ Descrição do cenário onde o sistema deverá funcionar:
 31. O petshop tem parceria com farmácias e oferece descontos para clientes que possuem cadastro.
 32. O pagamento das da conta pode ser feito em dinheiro, pix e cartões.
 
-# 3. Visão geral do psistema
+# 3. Visão geral do sistema
 
 Descrição do sistema e suas relações.
 
@@ -281,12 +292,96 @@ classDiagram
 
 ## 6.1. Casos de uso
 
-![Figura 1 - Casos de uso](https://raw.githubusercontent.com/Camila-Weber/camila_weber/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACWCVGCN2YI5K7M2EUWAB3DOZXTKLLQ)
+![Figura 1 - Casos de uso](https://raw.githubusercontent.com/Camila-Weber/camila_weber/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACWCVGCNO6VPBGQ7L7IMHC4WZXTME4A)
 
 ## 6.2. Histórias de usuários
 
+### 6.2.1. Cadastro de Cliente e Animal
+
 ```
-colocar as historias de usuarios
+Como um cliente,
+quero cadastrar minhas informações e as do meu animal,
+para que eu possa agendar atendimentos e receber cuidados adequados.
+```
+
+### 6.2.2. Marcação de Atendimento
+
+```
+Como um cliente,
+quero marcar um horário com antecedência,
+para que eu possa escolher o veterinário e evitar filas.
+```
+
+### 6.2.3. Registro de Condições
+
+```
+Como um cliente,
+quero informar as condições de saúde do meu animal e seus hábitos,
+para que o veterinário possa oferecer um atendimento adequado.
+```
+
+### 6.2.4. Atendimento de Emergência
+
+```
+Como um cliente,
+quero saber que posso levar meu animal para atendimento de emergência a qualquer hora,
+para que ele receba os cuidados necessários rapidamente.
+```
+
+### 6.2.5. Receitas e Orientações
+
+```
+Como um veterinário,
+quero gerar receitas com informações detalhadas após o atendimento,
+para que os clientes possam seguir corretamente as orientações de cuidado.
+```
+
+### 6.2.6. Ficha e Prontuário do Animal
+
+```
+Como um veterinário,
+quero registrar todas as informações e observações em uma ficha,
+para que haja um histórico completo do atendimento do animal.
+```
+
+### 6.2.7. Agendamento de Hospedagem
+
+```
+Como um cliente,
+quero agendar a hospedagem do meu animal com uma semana de antecedência,
+para que eu possa viajar tranquilo, sabendo que ele está bem cuidado.
+```
+
+### 6.2.8. Serviços de Banho e Tosa
+
+```
+Como um cliente,
+quero agendar serviços de banho e tosa,
+para que meu animal possa ficar limpo e bem cuidado.
+```
+
+### 6.2.9. Creche para Animais
+
+```
+Como um cliente,
+quero inscrever meu animal na creche,
+para que ele tenha companhia e cuidados durante o dia.
+```
+
+### 6.2.10. Compras no Petshop
+
+```
+Como um cliente,
+quero comprar produtos de higiene e ração no petshop da clínica,
+para que eu possa encontrar tudo o que preciso em um só lugar.
+```
+
+### 6.2.11. Pagamento das Contas
+
+```
+Como um cliente,
+quero ter opções de pagamento como dinheiro, pix e cartões,
+para que eu possa escolher a forma que for mais conveniente para mim.
 ```
 
 # 7. Diagrama de componentes
