@@ -299,7 +299,9 @@ classDiagram
 ### 6.2.1. Cadastro de Cliente e Animal
 
 ```
-Como um **cliente**, quero cadastrar minhas informações e as do meu animal, para que eu possa agendar atendimentos e receber cuidados adequados.
+Como um cliente, 
+quero cadastrar minhas informações e as do meu animal, 
+para que eu possa agendar atendimentos e receber cuidados adequados.
 ```
 
 ### 6.2.2. Marcação de Atendimento
