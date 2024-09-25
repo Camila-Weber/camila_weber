@@ -281,9 +281,13 @@ classDiagram
 
 ## 6.1. Casos de uso
 
-
+![Figura 1 - Casos de uso](https://raw.githubusercontent.com/Camila-Weber/camila_weber/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACWCVGCN2YI5K7M2EUWAB3DOZXTKLLQ)
 
 ## 6.2. Histórias de usuários
+
+```
+colocar as historias de usuarios
+```
 
 # 7. Diagrama de componentes
 
