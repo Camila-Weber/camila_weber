@@ -12,7 +12,9 @@ Docente: Emiliano Soares Monteiro
 - [2. Descrição do negócio](#2-descrição-do-negócio)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
 - [4. Diagrama ER](#4-diagrama-er)
+  - [4.1. Descrição das Entidades](#41-descrição-das-entidades)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
+  - [5.1. Descrição das Classes](#51-descrição-das-classes)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1. Casos de uso](#61-casos-de-uso)
   - [6.2. Histórias de usuários](#62-histórias-de-usuários)
@@ -49,48 +51,44 @@ O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa 
 
 Descrição do cenário onde o sistema deverá funcionar:
 
-1. Uma clínica veterinária atende apenas os animais: gatos e cachorros.
-2. Marcar os animais RFID, a pedido do cliente.
-3. Os clientes devem fazer um cadastro de si, contendo informações pessoais e de contato, e dos animais, como nome e descrições.
-4. Os clientes devem informar as condições nas quais os animais chegam, para atendimentos com o veterinário, informar se o atendimento é de rotina ou de emergência.
-5. Os clientes devem informar o tipo de ração que o animal come e se existe alguma condição médica que possa afetar o atendimento.
-6. O cliente deve informar hábitos do animal.
-7. Para cada animal é possível que mais de um veterinário o atenda, e um veterinário pode atender mais de um animal.
-8. Os animais podem chegar e serem atendidos de acordo com uma agenda do dia.
-9. Os clientes podem marcar um horário com antecedência, podendo escolher o veterinário e não enfrentar filas de atendimento.
-10. Cada animal atendido receberá uma ficha, contendo as informações de cadastro e outras adicionais, e um prontuário, com registros de consultas, procedimentos e condições médicas.
-11. Quando necessário o atendimento gera uma receita para o animal, com informações sobre medicamentos, dosagens e horários, além de outras orientações.
-12. Quando um cliente chega na clínica veterinária ele é atendido por um atendente, que irá efetuar o cadastro do cliente e do animal, caso não esteja no sistema.
-13. O atendente deve verificar se existe agenda disponível com um veterinário e preencher o horário, se disponível.
-14. O atendente deve colocar o cliente e seu animal na fila de espera, se for o caso.
-15. O atendente deve levar o cliente e o animal até o veterinário.
-16. O veterinário deve realizar uma entrevista com o dono do animal.
-17. O resultado da entrevista deve ir para um formulário.
-18. O veterinário deverá examinar o animal e anotar em prontuário(ficha) suas observações.
-19. Dependendo da situação do animal este receberá uma receita.
-20. A clínica faz atendimentos médicos de emergência, como cirurgias e curativos para machucados.
-21. A clínica possui alguns veterinários de plantão durante a madrugada, ficando aberta 24 horas.
-22. O veterinário pode aplicar vacinas de acordo com o pedido do cliente ou da situação.
-23. Os atendimentos e as vacinas são agendadas, a não ser em caso de emergência grave, onde um médico de plantão irá atender o animal.
-24. A clínica oferece serviços de hospedagem, em casos de que o cliente viaje e queira deixar o animal aos cuidados da clínica.
-25. Para usufruir da hospedagem o cliente tem que agendar a data com pelo menos uma semana de antecedência e informar a data de retorno.
-26. Durante o período de hospedagem, os animais receberam alimentação e cuidados, além de brincadeiras e caminhadas, tudo supervisionado por funcionários treinados.
-27. A clínica também oferece a internação, em casos de saúde ou procedimentos cirúrgicos e médicos.
-28. A clínica conta com uma equipe especializada em cuidados animais, fornecendo banho e tosa, sob agendamento.
-29. A clínica conta com ambientes de creche, nos quais os animais podem passar o dia sendo supervisionados por funcionarios treinados, são disponibilizados planos mensais/diários para a creche.
-30. O petshop tem um grande estoque de produtos de higiene, brinquedos e rações das melhores marcas a venda para os clientes.
-31. O petshop tem parceria com farmácias e oferece descontos para clientes que possuem cadastro.
-32. O pagamento das da conta pode ser feito em dinheiro, pix e cartões.
+**1.** Uma clínica veterinária atende apenas os animais: gatos e cachorros.
+**2.** Marcar os animais RFID, a pedido do cliente.
+**3.** Os clientes devem fazer um cadastro de si, contendo informações pessoais e de contato, e dos animais, como nome e descrições.
+**4.** Os clientes devem informar as condições nas quais os animais chegam, para atendimentos com o veterinário, informar se o atendimento é de rotina ou de emergência.
+**5.** Os clientes devem informar o tipo de ração que o animal come e se existe alguma condição médica que possa afetar o atendimento.
+**6.** O cliente deve informar hábitos do animal.
+**7.** Para cada animal é possível que mais de um veterinário o atenda, e um veterinário pode atender mais de um animal.
+**8.** Os animais podem chegar e serem atendidos de acordo com uma agenda do dia.
+**9.** Os clientes podem marcar um horário com antecedência, podendo escolher o veterinário e não enfrentar filas de atendimento.
+**10.** Cada animal atendido receberá uma ficha, contendo as informações de cadastro e outras adicionais, e um prontuário, com registros de consultas, procedimentos e condições médicas.
+**11.** Quando necessário o atendimento gera uma receita para o animal, com informações sobre medicamentos, dosagens e horários, além de outras orientações.
+**12.** Quando um cliente chega na clínica veterinária ele é atendido por um atendente, que irá efetuar o cadastro do cliente e do animal, caso não esteja no sistema.
+**13.** O atendente deve verificar se existe agenda disponível com um veterinário e preencher o horário, se disponível.
+**14.** O atendente deve colocar o cliente e seu animal na fila de espera, se for o caso.
+**15.** O atendente deve levar o cliente e o animal até o veterinário.
+**16.** O veterinário deve realizar uma entrevista com o dono do animal.
+**17.** O resultado da entrevista deve ir para um formulário.
+**18.** O veterinário deverá examinar o animal e anotar em prontuário(ficha) suas observações.
+**19.** Dependendo da situação do animal este receberá uma receita.
+**20.** A clínica faz atendimentos médicos de emergência, como cirurgias e curativos para machucados.
+**21.** A clínica possui alguns veterinários de plantão durante a madrugada, ficando aberta 24 horas.
+**22.** O veterinário pode aplicar vacinas de acordo com o pedido do cliente ou da situação.
+**23.** Os atendimentos e as vacinas são agendadas, a não ser em caso de emergência grave, onde um médico de plantão irá atender o animal.
+**24.** A clínica oferece serviços de hospedagem, em casos de que o cliente viaje e queira deixar o animal aos cuidados da clínica.
+**25.** Para usufruir da hospedagem o cliente tem que agendar a data com pelo menos uma semana de antecedência e informar a data de retorno.
+**26.** Durante o período de hospedagem, os animais receberam alimentação e cuidados, além de brincadeiras e caminhadas, tudo supervisionado por funcionários treinados.
+**27.** A clínica também oferece a internação, em casos de saúde ou procedimentos cirúrgicos e médicos.
+**28.** A clínica conta com uma equipe especializada em cuidados animais, fornecendo banho e tosa, sob agendamento.
+**29.** A clínica conta com ambientes de creche, nos quais os animais podem passar o dia sendo supervisionados por funcionarios treinados, são disponibilizados planos mensais/diários para a creche.
+**30.** O petshop tem um grande estoque de produtos de higiene, brinquedos e rações das melhores marcas a venda para os clientes.
+**31.** O petshop tem parceria com farmácias e oferece descontos para clientes que possuem cadastro.
+**32.** O pagamento das da conta pode ser feito em dinheiro, pix e cartões.
 
 # 3. Visão geral do sistema
 
 Descrição do sistema e suas relações.
 
 # 4. Diagrama ER
-
-```
-Adicionar as decrições das entidades e dos relacionamentos
-```
 
 ```mermaid
 erDiagram
@@ -185,11 +183,29 @@ erDiagram
     VETERINARIO ||--o{ ATENDIMENTO : atende
     ATENDIMENTO ||--o{ PRODUTO : inclui
 ```
+## 4.1. Descrição das Entidades
+
+**CLIENTE**: Representa os clientes da clínica, incluindo informações pessoais e de contato.
+
+**ANIMAL**: Registra os animais cadastrados, com detalhes sobre nome, tipo, condições médicas e hábitos.
+
+**VETERINARIO**: Contém informações sobre os veterinários, incluindo especializações e horários de plantão.
+
+**ATENDIMENTO**: Relaciona os atendimentos realizados, incluindo informações sobre o cliente, animal, veterinário, tipo de atendimento e documentação gerada (prontuário, receita).
+
+**HOSPEDAGEM**: Informações sobre os períodos em que os animais ficam hospedados na clínica.
+
+**INTERNAÇÃO**: Registra informações sobre internações de animais, incluindo motivos e períodos.
+
+**CRECHE**: Detalha as atividades e planos para animais que frequentam a creche da clínica.
+
+**PRODUTO**: Representa os produtos disponíveis para venda na clínica.
+
+**PAGAMENTO**: Contém informações sobre os pagamentos realizados pelos clientes.
+
 
 # 5. Diagrama de classe
-```
-Adicionar as decrições das entidades e dos relacionamentos
-```
+
 ```mermaid
 classDiagram
     class Cliente {
@@ -287,6 +303,25 @@ classDiagram
     Animal "0..*" -- "0..*" Creche : frequenta
     Cliente "1" -- "0..*" Pagamento : realiza
 ```
+## 5.1. Descrição das Classes
+
+**Cliente**: Representa os clientes da clínica, com métodos para cadastrar clientes e gerenciar seus animais.
+
+**Animal**: Contém informações sobre os animais, como tipo e descrição, e métodos para gerenciar atendimentos.
+
+**Veterinario**: Armazena dados sobre os veterinários e seus métodos de atendimento e aplicação de vacinas.
+
+**Atendimento**: Registra informações sobre os atendimentos realizados, incluindo clientes, animais e veterinários.
+
+**Hospedagem**: Representa serviços de hospedagem para animais.
+
+**Internacao**: Armazena informações sobre internações de animais.
+
+**Creche**: Detalha atividades dos animais na creche.
+
+**Produto**: Representa os produtos disponíveis para venda na clínica.
+
+**Pagamento**: Armazena informações sobre os pagamentos realizados pelos clientes.
 
 # 6. Casos de uso
 
@@ -298,91 +333,70 @@ classDiagram
 
 ### 6.2.1. Cadastro de Cliente e Animal
 
-```
-Como um cliente, 
-quero cadastrar minhas informações e as do meu animal, 
-para que eu possa agendar atendimentos e receber cuidados adequados.
-```
+> **Como** um cliente,  
+> **quero** cadastrar minhas informações e as do meu animal,  
+> **para** que eu possa agendar atendimentos e receber cuidados adequados.
+
 
 ### 6.2.2. Marcação de Atendimento
 
-```
-Como um cliente,
-quero marcar um horário com antecedência,
-para que eu possa escolher o veterinário e evitar filas.
-```
+> **Como** um cliente,
+> **quero** marcar um horário com antecedência,
+> **para** que eu possa escolher o veterinário e evitar filas.
 
 ### 6.2.3. Registro de Condições
 
-```
-Como um cliente,
-quero informar as condições de saúde do meu animal e seus hábitos,
-para que o veterinário possa oferecer um atendimento adequado.
-```
+> **Como** um cliente,
+> **quero** informar as condições de saúde do meu animal e seus hábitos,
+> **para** que o veterinário possa oferecer um atendimento adequado.
 
 ### 6.2.4. Atendimento de Emergência
 
-```
-Como um cliente,
-quero saber que posso levar meu animal para atendimento de emergência a qualquer hora,
-para que ele receba os cuidados necessários rapidamente.
-```
+> **Como** um cliente,
+> **quero** saber que posso levar meu animal para atendimento de emergência a qualquer hora,
+> **para** que ele receba os cuidados necessários rapidamente.
 
 ### 6.2.5. Receitas e Orientações
 
-```
-Como um veterinário,
-quero gerar receitas com informações detalhadas após o atendimento,
-para que os clientes possam seguir corretamente as orientações de cuidado.
-```
+> **Como** um veterinário,
+> **quero** gerar receitas com informações detalhadas após o atendimento,
+> **para** que os clientes possam seguir corretamente as orientações de cuidado.
 
 ### 6.2.6. Ficha e Prontuário do Animal
 
-```
-Como um veterinário,
-quero registrar todas as informações e observações em uma ficha,
-para que haja um histórico completo do atendimento do animal.
-```
+> **Como** um veterinário,
+> **quero** registrar todas as informações e observações em uma ficha,
+> **para** que haja um histórico completo do atendimento do animal.
 
 ### 6.2.7. Agendamento de Hospedagem
 
-```
-Como um cliente,
-quero agendar a hospedagem do meu animal com uma semana de antecedência,
-para que eu possa viajar tranquilo, sabendo que ele está bem cuidado.
-```
+> **Como** um cliente,
+> **quero** agendar a hospedagem do meu animal com uma semana de antecedência,
+> **para** que eu possa viajar tranquilo, sabendo que ele está bem cuidado.
 
 ### 6.2.8. Serviços de Banho e Tosa
 
-```
-Como um cliente,
-quero agendar serviços de banho e tosa,
-para que meu animal possa ficar limpo e bem cuidado.
-```
+> **Como** um cliente,
+> **quero** agendar serviços de banho e tosa,
+> **para** que meu animal possa ficar limpo e bem cuidado.
 
 ### 6.2.9. Creche para Animais
 
-```
-Como um cliente,
-quero inscrever meu animal na creche,
-para que ele tenha companhia e cuidados durante o dia.
-```
+> **Como** um cliente,
+> **quero** inscrever meu animal na creche,
+> **para** que ele tenha companhia e cuidados durante o dia.
 
 ### 6.2.10. Compras no Petshop
 
-```
-Como um cliente,
-quero comprar produtos de higiene e ração no petshop da clínica,
-para que eu possa encontrar tudo o que preciso em um só lugar.
-```
+> **Como** um cliente,
+> **quero** comprar produtos de higiene e ração no petshop da clínica,
+> **para** que eu possa encontrar tudo o que preciso em um só lugar.
 
 ### 6.2.11. Pagamento das Contas
 
-```
-Como um cliente,
-quero ter opções de pagamento como dinheiro, pix e cartões,
-para que eu possa escolher a forma que for mais conveniente para mim.
-```
+> **Como** um cliente,
+> **quero** ter opções de pagamento como dinheiro, pix e cartões,
+> **para** que eu possa escolher a forma que for mais conveniente para mim.
 
 # 7. Diagrama de componentes
 
