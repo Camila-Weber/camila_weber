@@ -218,14 +218,22 @@ erDiagram
 ## 4.1. Descrição das Entidades
 
 > **CLIENTE**: Representa os clientes da clínica, incluindo informações pessoais e de contato.
-**ANIMAL**: Registra os animais cadastrados, com detalhes sobre nome, tipo, condições médicas e hábitos.
-**VETERINARIO**: Contém informações sobre os veterinários, incluindo especializações e horários de plantão.
-**ATENDIMENTO**: Relaciona os atendimentos realizados, incluindo informações sobre o cliente, animal, veterinário, tipo de atendimento e documentação gerada (prontuário, receita).
-**HOSPEDAGEM**: Informações sobre os períodos em que os animais ficam hospedados na clínica.
-**INTERNAÇÃO**: Registra informações sobre internações de animais, incluindo motivos e períodos.
-**CRECHE**: Detalha as atividades e planos para animais que frequentam a creche da clínica.
-**PRODUTO**: Representa os produtos disponíveis para venda na clínica.
-**PAGAMENTO**: Contém informações sobre os pagamentos realizados pelos clientes.
+> 
+> **ANIMAL**: Registra os animais cadastrados, com detalhes sobre nome, tipo, condições médicas e hábitos.
+> 
+> **VETERINARIO**: Contém informações sobre os veterinários, incluindo especializações e horários de plantão.
+> 
+> **ATENDIMENTO**: Relaciona os atendimentos realizados, incluindo informações sobre o cliente, animal, veterinário, tipo de atendimento e documentação gerada (prontuário, receita).
+> 
+> **HOSPEDAGEM**: Informações sobre os períodos em que os animais ficam hospedados na clínica.
+> 
+> **INTERNAÇÃO**: Registra informações sobre internações de animais, incluindo motivos e períodos.
+> 
+> **CRECHE**: Detalha as atividades e planos para animais que frequentam a creche da clínica.
+> 
+> **PRODUTO**: Representa os produtos disponíveis para venda na clínica.
+> 
+> **PAGAMENTO**: Contém informações sobre os pagamentos realizados pelos clientes.
 
 
 # 5. Diagrama de classe
@@ -330,14 +338,22 @@ classDiagram
 ## 5.1. Descrição das Classes
 
 > **Cliente**: Representa os clientes da clínica, com métodos para cadastrar clientes e gerenciar seus animais.
-**Animal**: Contém informações sobre os animais, como tipo e descrição, e métodos para gerenciar atendimentos.
-**Veterinario**: Armazena dados sobre os veterinários e seus métodos de atendimento e aplicação de vacinas.
-**Atendimento**: Registra informações sobre os atendimentos realizados, incluindo clientes, animais e veterinários.
-**Hospedagem**: Representa serviços de hospedagem para animais.
-**Internacao**: Armazena informações sobre internações de animais.
-**Creche**: Detalha atividades dos animais na creche.
-**Produto**: Representa os produtos disponíveis para venda na clínica.
-**Pagamento**: Armazena informações sobre os pagamentos realizados pelos clientes.
+> 
+> **Animal**: Contém informações sobre os animais, como tipo e descrição, e métodos para gerenciar atendimentos.
+> 
+> **Veterinario**: Armazena dados sobre os veterinários e seus métodos de atendimento e aplicação de vacinas.
+> 
+> **Atendimento**: Registra informações sobre os atendimentos realizados, incluindo clientes, animais e veterinários.
+> 
+> **Hospedagem**: Representa serviços de hospedagem para animais.
+> 
+> **Internacao**: Armazena informações sobre internações de animais.
+> 
+> **Creche**: Detalha atividades dos animais na creche.
+> 
+> **Produto**: Representa os produtos disponíveis para venda na clínica.
+> 
+> **Pagamento**: Armazena informações sobre os pagamentos realizados pelos clientes.
 
 # 6. Casos de uso
 
