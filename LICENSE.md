@@ -6,6 +6,6 @@ This license requires that reusers give credit to the creator. It allows reusers
 <img src="https://chooser-beta.creativecommons.org/img/cc-by.21b728bb.svg" height = "13px" width = "12px"> <b>BY:</b> Credit must be given to you, the creator.
 
 <img src="https://chooser-beta.creativecommons.org/img/cc-nc.218f18fc.svg" height = "13px" width = "12px"> <b>NC:</b> Only noncommercial use of your work is permitted.
-<b style = "font-size: 12px; margin-left: 50px"> Noncommercial means not primarily intended for or directed towards commercial advantage or monetary compensation.</b>
+<p><b style = "font-size: 12px; margin-left: 50px"> Noncommercial means not primarily intended for or directed towards commercial advantage or monetary compensation.</b></p>
 
 <img src="https://chooser-beta.creativecommons.org/img/cc-nd.de89fdeb.svg" height = "13px" width = "12px"> <b>ND:</b> No derivatives or adaptations of your work are permitted.
