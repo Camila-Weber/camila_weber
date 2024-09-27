@@ -372,62 +372,62 @@ classDiagram
 
 ### 6.2.2. Marcação de Atendimento
 
-> **Como** um cliente,
-> **quero** marcar um horário com antecedência,
+> **Como** um cliente,  
+> **quero** marcar um horário com antecedência,  
 > **para** que eu possa escolher o veterinário e evitar filas.
 
 ### 6.2.3. Registro de Condições
 
-> **Como** um cliente,
-> **quero** informar as condições de saúde do meu animal e seus hábitos,
+> **Como** um cliente,  
+> **quero** informar as condições de saúde do meu animal e seus hábitos,  
 > **para** que o veterinário possa oferecer um atendimento adequado.
 
 ### 6.2.4. Atendimento de Emergência
 
-> **Como** um cliente,
-> **quero** saber que posso levar meu animal para atendimento de emergência a qualquer hora,
+> **Como** um cliente,  
+> **quero** saber que posso levar meu animal para atendimento de emergência a qualquer hora,  
 > **para** que ele receba os cuidados necessários rapidamente.
 
 ### 6.2.5. Receitas e Orientações
 
-> **Como** um veterinário,
-> **quero** gerar receitas com informações detalhadas após o atendimento,
+> **Como** um veterinário,  
+> **quero** gerar receitas com informações detalhadas após o atendimento,  
 > **para** que os clientes possam seguir corretamente as orientações de cuidado.
 
 ### 6.2.6. Ficha e Prontuário do Animal
 
-> **Como** um veterinário,
-> **quero** registrar todas as informações e observações em uma ficha,
+> **Como** um veterinário,  
+> **quero** registrar todas as informações e observações em uma ficha,  
 > **para** que haja um histórico completo do atendimento do animal.
 
 ### 6.2.7. Agendamento de Hospedagem
 
-> **Como** um cliente,
-> **quero** agendar a hospedagem do meu animal com uma semana de antecedência,
+> **Como** um cliente,  
+> **quero** agendar a hospedagem do meu animal com uma semana de antecedência,  
 > **para** que eu possa viajar tranquilo, sabendo que ele está bem cuidado.
 
 ### 6.2.8. Serviços de Banho e Tosa
 
-> **Como** um cliente,
-> **quero** agendar serviços de banho e tosa,
+> **Como** um cliente,  
+> **quero** agendar serviços de banho e tosa,  
 > **para** que meu animal possa ficar limpo e bem cuidado.
 
 ### 6.2.9. Creche para Animais
 
-> **Como** um cliente,
-> **quero** inscrever meu animal na creche,
+> **Como** um cliente,  
+> **quero** inscrever meu animal na creche,  
 > **para** que ele tenha companhia e cuidados durante o dia.
 
 ### 6.2.10. Compras no Petshop
 
-> **Como** um cliente,
-> **quero** comprar produtos de higiene e ração no petshop da clínica,
+> **Como** um cliente,  
+> **quero** comprar produtos de higiene e ração no petshop da clínica,  
 > **para** que eu possa encontrar tudo o que preciso em um só lugar.
 
 ### 6.2.11. Pagamento das Contas
 
-> **Como** um cliente,
-> **quero** ter opções de pagamento como dinheiro, pix e cartões,
+> **Como** um cliente,  
+> **quero** ter opções de pagamento como dinheiro, pix e cartões,  
 > **para** que eu possa escolher a forma que for mais conveniente para mim.
 
 # 7. Diagrama de componentes
