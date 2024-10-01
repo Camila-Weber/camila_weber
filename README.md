@@ -359,7 +359,7 @@ classDiagram
 
 ## 6.1. Casos de uso
 
-![Figura 1 - Casos de uso](https://raw.githubusercontent.com/Camila-Weber/camila_weber/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACWCVGCNNSRTZADQDVO3EBB6ZXWT5SQ)
+![Figura 1 - Casos de uso](https://raw.githubusercontent.com/Camila-Weber/camila_weber/refs/heads/main/casos_de_uso.png?token=GHSAT0AAAAAACWCVGCNSY4I3PDFYE2LNUICZX4QIZQ)
 
 ## 6.2. Histórias de usuários
 
