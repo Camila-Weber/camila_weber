@@ -33,23 +33,23 @@ Docente: Emiliano Soares Monteiro
 - [8. Diagrama de Implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
   - [9.1. Tela de Login](#91-tela-de-login)
-  - [9.2.](#92)
-  - [9.3.](#93)
-  - [9.4.](#94)
-  - [9.5.](#95)
-  - [9.6.](#96)
-  - [9.7.](#97)
-  - [9.8.](#98)
-  - [9.9.](#99)
-  - [9.10.](#910)
-  - [9.11.](#911)
-  - [9.12.](#912)
-  - [9.13.](#913)
-  - [9.14.](#914)
-  - [9.15.](#915)
-  - [9.16.](#916)
-  - [9.17.](#917)
-  - [9.18.](#918)
+  - [9.2. Tela de Menu/Abertura](#92-tela-de-menuabertura)
+  - [9.3. Tela de Relatório de Clientes](#93-tela-de-relatório-de-clientes)
+  - [9.4. Tela de Relatório de Animais](#94-tela-de-relatório-de-animais)
+  - [9.5. Tela de Relatório de Veterinários](#95-tela-de-relatório-de-veterinários)
+  - [9.6. Tela de Relatório de Hospedagem](#96-tela-de-relatório-de-hospedagem)
+  - [9.7. Tela de Relatório de Internação](#97-tela-de-relatório-de-internação)
+  - [9.8. Tela de Relatório de Produto](#98-tela-de-relatório-de-produto)
+  - [9.9. Tela de Relatório de Creche](#99-tela-de-relatório-de-creche)
+  - [9.10. Tela de Relatório de Pagamento](#910-tela-de-relatório-de-pagamento)
+  - [9.11. Tela de Relatório de Atendimento](#911-tela-de-relatório-de-atendimento)
+  - [9.12. Tela de Gráfico](#912-tela-de-gráfico)
+    - [9.12.1. Gráfico Preço dos Produtos](#9121-gráfico-preço-dos-produtos)
+  - [9.13. Tela de Dashboard](#913-tela-de-dashboard)
+  - [9.14. Tela de Segurança](#914-tela-de-segurança)
+    - [9.14.1. Tela Alterar de Senha](#9141-tela-alterar-de-senha)
+    - [9.14.2. Tela Usuários](#9142-tela-usuários)
+    - [9.14.3. Tela Configurações](#9143-tela-configurações)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -456,76 +456,79 @@ classDiagram
 
 ## 9.1. Tela de Login
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 2 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/image.png)
 
-## 9.2.
+## 9.2. Tela de Menu/Abertura
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 3 - Protótipo da Tela de Menu/Abertura](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_menu.jpg)
 
-## 9.3.
+## 9.3. Tela de Relatório de Clientes
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 4 - Protótipo da Tela de Relatório de Clientes](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_cliente.jpg)
 
-## 9.4.
+## 9.4. Tela de Relatório de Animais
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 5 - Protótipo da Tela de Relatório de Animais](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_animal.jpg)
 
-## 9.5.
+![Figura 6 - Protótipo da Tela de Relatório de Animais](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_animal2.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.5. Tela de Relatório de Veterinários
 
-## 9.6.
+![Figura 7 - Protótipo da Tela de Relatório de Veterinários](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_vet.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.6. Tela de Relatório de Hospedagem
 
-## 9.7.
+![Figura 8 - Protótipo da Tela de Relatório de Hospedagem](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_hospedagem.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.7. Tela de Relatório de Internação
 
-## 9.8.
+![Figura 9 - Protótipo da Tela de Relatório de Internação](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_internacao.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.8. Tela de Relatório de Produto
 
-## 9.9.
+![Figura 10 - Protótipo da Tela de Relatório de Produto](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_produto.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.9. Tela de Relatório de Creche
 
-## 9.10.
+![Figura 11 - Protótipo da Tela de Relatório de Creche](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_creche.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.10. Tela de Relatório de Pagamento
 
-## 9.11.
+![Figura 12 - Protótipo da Tela de Relatório de Pagamento](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_pagamento.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.11. Tela de Relatório de Atendimento
 
-## 9.12.
+![Figura 13 - Protótipo da Tela de Relatório de Atendimento](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_atendimento.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.12. Tela de Gráfico
 
-## 9.13.
+### 9.12.1. Gráfico Preço dos Produtos
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 14 - Protótipo da Tela de Gráfico - Preço dos Produtos](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grafico2.jpg)
 
-## 9.14.
+![Figura 15 - Protótipo da Tela de Gráfico - Preço dos Produtos](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grafico.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.13. Tela de Dashboard
 
-## 9.15.
+![Figura 16 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 17 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard2.jpg)
 
-## 9.16.
+![Figura 18 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard3.jpg)
 
-![Figura 2 - Protótipo da Tela de Login]()
+## 9.14. Tela de Segurança
 
-## 9.17.
+### 9.14.1. Tela Alterar de Senha
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 19 - Protótipo da Tela de Segurança - Alterar de Senha](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_alt_senha.jpg)
 
-## 9.18.
+### 9.14.2. Tela Usuários
 
-![Figura 2 - Protótipo da Tela de Login]()
+![Figura 20 - Protótipo da Tela de Segurança - Usuários](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_usuarios.jpg)
 
+### 9.14.3. Tela Configurações
+
+![Figura 21 - Protótipo da Tela de Segurança - Configurações](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_config_seg.jpg)
 
 # 10. Diagrama de navegação de telas
 
