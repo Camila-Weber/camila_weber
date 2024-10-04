@@ -46,10 +46,6 @@ Docente: Emiliano Soares Monteiro
   - [9.12. Tela de Gráfico](#912-tela-de-gráfico)
     - [9.12.1. Gráfico Preço dos Produtos](#9121-gráfico-preço-dos-produtos)
   - [9.13. Tela de Dashboard](#913-tela-de-dashboard)
-  - [9.14. Tela de Segurança](#914-tela-de-segurança)
-    - [9.14.1. Tela Alterar de Senha](#9141-tela-alterar-de-senha)
-    - [9.14.2. Tela Usuários](#9142-tela-usuários)
-    - [9.14.3. Tela Configurações](#9143-tela-configurações)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
@@ -516,19 +512,6 @@ classDiagram
 
 ![Figura 18 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard3.jpg)
 
-## 9.14. Tela de Segurança
-
-### 9.14.1. Tela Alterar de Senha
-
-![Figura 19 - Protótipo da Tela de Segurança - Alterar de Senha](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_alt_senha.jpg)
-
-### 9.14.2. Tela Usuários
-
-![Figura 20 - Protótipo da Tela de Segurança - Usuários](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_usuarios.jpg)
-
-### 9.14.3. Tela Configurações
-
-![Figura 21 - Protótipo da Tela de Segurança - Configurações](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_config_seg.jpg)
 
 # 10. Diagrama de navegação de telas
 
