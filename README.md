@@ -373,7 +373,7 @@ classDiagram
 
 ## 6.1. Casos de uso
 
-![Figura 1 - Casos de uso](https://github.com/Camila-Weber/camila_weber/blob/main/casos_de_uso.png)
+![Figura 1 - Casos de uso](https://github.com/Camila-Weber/camila_weber/blob/main/telas/casos_de_uso.png)
 
 ## 6.2. Histórias de usuários
 
