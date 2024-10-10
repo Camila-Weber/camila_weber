@@ -232,7 +232,6 @@ erDiagram
     ATENDIMENTO ||--o{ PRODUTO : inclui
 ```
 
----
 ## 4.1. Descrição das Entidades
 
 > **CLIENTE**: Representa os clientes da clínica, incluindo informações pessoais e de contato.
