@@ -61,6 +61,7 @@ Docente: Emiliano Soares Monteiro
 
 O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços excluvivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada a seguir:
 
+---
 # 2. Descrição do negócio
 
 Descrição do cenário onde o sistema deverá funcionar:
@@ -253,6 +254,7 @@ erDiagram
 > **PAGAMENTO**: Contém informações sobre os pagamentos realizados pelos clientes.
 
 
+---
 # 5. Diagrama de classe
 
 ```mermaid
@@ -353,7 +355,6 @@ classDiagram
     Cliente "1" -- "0..*" Pagamento : realiza
 ```
 
----
 ## 5.1. Descrição das Classes
 
 > **Cliente**: Representa os clientes da clínica, com métodos para cadastrar clientes e gerenciar seus animais.
