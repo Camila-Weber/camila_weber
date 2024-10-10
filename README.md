@@ -56,7 +56,7 @@ Docente: Emiliano Soares Monteiro
   - [16.1. Comandos CREATE table](#161-comandos-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
 
-
+---
 # 1. Introdução
 
 O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços excluvivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada a seguir:
@@ -129,10 +129,12 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 **32.** O pagamento das da conta pode ser feito em dinheiro, pix e cartões.
 
+---
 # 3. Visão geral do sistema
 
 Descrição do sistema e suas relações.
 
+---
 # 4. Diagrama ER
 
 ```mermaid
@@ -229,6 +231,7 @@ erDiagram
     ATENDIMENTO ||--o{ PRODUTO : inclui
 ```
 
+---
 ## 4.1. Descrição das Entidades
 
 > **CLIENTE**: Representa os clientes da clínica, incluindo informações pessoais e de contato.
@@ -349,6 +352,8 @@ classDiagram
     Animal "0..*" -- "0..*" Creche : frequenta
     Cliente "1" -- "0..*" Pagamento : realiza
 ```
+
+---
 ## 5.1. Descrição das Classes
 
 > **Cliente**: Representa os clientes da clínica, com métodos para cadastrar clientes e gerenciar seus animais.
@@ -369,6 +374,7 @@ classDiagram
 > 
 > **Pagamento**: Armazena informações sobre os pagamentos realizados pelos clientes.
 
+---
 # 6. Casos de uso
 
 ## 6.1. Casos de uso
@@ -444,10 +450,13 @@ classDiagram
 > **quero** ter opções de pagamento como dinheiro, pix e cartões,  
 > **para** que eu possa escolher a forma que for mais conveniente para mim.
 
+---
 # 7. Diagrama de componentes
 
+---
 # 8. Diagrama de Implantação
 
+---
 # 9. Protótipo de telas
 
 ## 9.1. Tela de Login
@@ -512,19 +521,25 @@ classDiagram
 
 ![Figura 18 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard3.jpg)
 
-
+---
 # 10. Diagrama de navegação de telas
 
+---
 # 11. Pilha tecnológica
 
+---
 # 12. Requisitos de sistemas
 
+---
 # 13. Considerações sobre segurança
 
+---
 # 14. Manutenção e instalação
 
+---
 # 15. Glossário
 
+---
 # 16. Script SQL
 
 ## 16.1. Comandos CREATE table
