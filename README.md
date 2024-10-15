@@ -528,6 +528,40 @@ classDiagram
 ---
 # 10. Diagrama de navegação de telas
 
+```mermaid
+graph TD
+    A[Login] --> B[Menu]
+    
+    B --> C[Cadastrar Cliente]
+    B --> D[Cadastrar Animal]
+    B --> E[Agendar Atendimento]
+    B --> F[Atendimento Veterinário]
+    B --> G[Prontuário]
+    B --> H[Receitas Médicas]
+    B --> I[Hospedagem]
+    B --> J[Internação]
+    B --> K[Banho e Tosa]
+    B --> L[Creche]
+    B --> M[Petshop]
+    B --> N[Pagamento]
+    
+    C --> O[Formulário de Cadastro]
+    D --> P[Formulário de Cadastro de Animal]
+    E --> Q[Selecionar Veterinário]
+    E --> R[Escolher Data e Hora]
+    
+    F --> S[Entrevista]
+    F --> T[Exame do Animal]
+    F --> U[Aplicar Vacina]
+    
+    I --> V[Agendar Hospedagem]
+    J --> W[Registrar Internação]
+    K --> X[Agendar Banho/Tosa]
+    L --> Y[Planos de Creche]
+    M --> Z[Consultar Estoque]
+    N --> AA[Realizar Pagamento]
+```
+
 ---
 # 11. Pilha tecnológica
 
