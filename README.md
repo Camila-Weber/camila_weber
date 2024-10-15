@@ -453,10 +453,12 @@ classDiagram
 ---
 # 7. Diagrama de componentes
 
-![Figura 2 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/image.png)
+![Figura 2 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/diagrama_de_componentes.png)
 
 ---
 # 8. Diagrama de Implantação
+
+![Figura 2 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/diagrama_de_componentes.png)
 
 ---
 # 9. Protótipo de telas
