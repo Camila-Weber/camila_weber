@@ -49,9 +49,18 @@ Docente: Emiliano Soares Monteiro
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
+  - [12.1. Requisitos do Cliente](#121-requisitos-do-cliente)
+  - [12.2. Requisitos do Servidor](#122-requisitos-do-servidor)
 - [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
-- [14. Manutenção e instalação](#14-manutenção-e-instalação)
-- [15. Glossário](#15-glossário)
+  - [13.1. Lado Cliente](#131-lado-cliente)
+  - [13.2. Lado Servidor](#132-lado-servidor)
+- [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
+  - [14.1. Manutenção](#141-manutenção)
+  - [14.2. Instalação](#142-instalação)
+  - [14.3. Novas Funcionalidades](#143-novas-funcionalidades)
+- [15. Treinamento](#15-treinamento)
+  - [15.1. Usuário](#151-usuário)
+  - [15.2. Administrador do Sistema](#152-administrador-do-sistema)
 - [16. Script SQL](#16-script-sql)
   - [16.1. Comandos CREATE table](#161-comandos-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
@@ -134,6 +143,7 @@ Descrição do cenário onde o sistema deverá funcionar:
 # 3. Visão geral do sistema
 
 Descrição do sistema e suas relações.
+<!-- o que o sistema entrega do ponto de vista do usuário final -->
 
 ---
 # 4. Diagrama ER
@@ -565,17 +575,150 @@ graph TD
 ---
 # 11. Pilha tecnológica
 
+```mermaid
+graph TD
+    A[Camada de Apresentação] --> B[Interface do Usuário]
+    A --> C[Aplicativo Web/Móvel]
+    
+    B --> D[HTML/CSS/JavaScript]
+    C --> D
+
+    D --> E[Frameworks]
+    
+    E --> F[API REST]
+    
+    F --> G[Camada de Lógica de Negócio]
+    
+    G --> H[Servidor de Aplicação]
+    G --> I[Processamento de Dados]
+    
+    H --> J[Banco de Dados]
+    
+    J --> K[PostgreSQL/MySQL]
+    
+    J --> L[Armazenamento de Documentos]
+    
+    K --> M[Serviço de Autenticação]
+    
+    M --> N[OAuth2/JWT]
+    
+    O[Camada de Integração] --> P[Serviços Externos]
+    
+    P --> Q[Integração com Petshop]
+    P --> R[Parcerias com Farmácias]
+
+    S[Infraestrutura] --> T[Nuvem]
+    S --> U[Servidores Físicos/Locais]
+```
+
 ---
 # 12. Requisitos de sistemas
+
+<!-- complementar -->
+
+## 12.1. Requisitos do Cliente
+
+Para que o cliente tenha acesso a aplicação e consiga usar de maneira adequada ele irá precisar:
+
+**1.** Navegadores para acessar a aplicação (Chrome, Firefox, Safari, Edge);
+
+**2.** Endereço de acesso da aplicação;
+
+**3.** Conhecimento do funcionamento do sistema/aplicação;
+
+**4.** Autenticação de Usuário;
+
+## 12.2. Requisitos do Servidor
+
+<!-- Para que a aplicação funcione é necessário que os seguintes requisitos sejam atendidos:
+
+Servidores: Utilizar Apache ou Nginx para servir a aplicação.
+Ambiente de Execução: PHP (versão compatível com Scriptcase).
+Banco de Dados
+
+SGBD: MySQL ou PostgreSQL como sistema de gerenciamento de banco de dados.
+Conexão Segura: Utilizar conexões seguras (SSL) para interações com o banco de dados.
+API de Comunicação
+
+Implementar uma API RESTful para permitir a comunicação entre o front-end e o back-end.
+Documentação da API para facilitar a integração.
+Segurança
+
+Implementar medidas de segurança (firewalls, proteção contra SQL injection, XSS).
+Criptografia de dados sensíveis, como senhas (ex.: bcrypt).
+Escalabilidade
+
+Capacidade de escalar horizontalmente (adicionando mais servidores) ou verticalmente (aumentando recursos do servidor).
+Ambiente de Desenvolvimento e Produção
+
+Configuração de ambientes distintos para desenvolvimento, teste e produção.
+Uso de ferramentas de versionamento (ex.: Git).
+Monitoramento e Backup
+
+Implementar soluções de monitoramento de servidor e aplicação.
+Rotinas de backup regular do banco de dados e arquivos da aplicação.
+Integração com Serviços Externos
+
+APIs para integração com serviços de pagamento, petshops, ou outros sistemas necessários. -->
+
+**1.** Componentes da aplicação
+
+**2.** Servidor de Banco de Dados
+
+**3.** Servidor Web
+
+**4.** Banco de Dados
 
 ---
 # 13. Considerações sobre segurança
 
----
-# 14. Manutenção e instalação
+## 13.1. Lado Cliente
+
+<!-- regras de senhas
+captcha, qtd min. caracteres, maiusculas, minusculas, ...
+auteticação de dois fatores
+recuperação de senha com email
+código no email
+anti-virus
+mini politica de segurança
+CLAUDE
+SAPIENS -->
+
+
+## 13.2. Lado Servidor
+
+<!-- 
+politica de backup de aplcação e banco  (1x/mes 1 full backup) (1x por semana um backup incremental)
+o admin do sistema não acessa dados do usuario
+se for linux não precisa de anti-vírus, outros sim
+-->
 
 ---
-# 15. Glossário
+# 14. Manutenção, Instalação e Novas Funcionalidades
+
+## 14.1. Manutenção
+<!-- manter o software funcionando -->
+
+## 14.2. Instalação
+<!-- instalado no servidor -->
+
+## 14.3. Novas Funcionalidades
+<!-- formalizar pedido do cliente
+cliente não dá palpite em beleza de tela
+decidir sobre 3 critérios:
+a) equipe tem tempo?
+b) é economicamente viável?
+c) é tecnologicamente viável? -->
+
+---
+# 15. Treinamento
+
+## 15.1. Usuário
+
+<!-- video na web -->
+
+## 15.2. Administrador do Sistema
+<!-- o que vai ser passado para as pessoas reponsaveis/usuarios do sistema -->
 
 ---
 # 16. Script SQL
