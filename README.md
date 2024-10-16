@@ -11,6 +11,8 @@ Docente: Emiliano Soares Monteiro
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio](#2-descrição-do-negócio)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
+  - [3.1. Principais Módulos do Sistema](#31-principais-módulos-do-sistema)
+  - [3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final](#32-o-que-o-sistema-entrega-do-ponto-de-vista-do-usuário-final)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1. Descrição das Entidades](#41-descrição-das-entidades)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
@@ -142,8 +144,45 @@ Descrição do cenário onde o sistema deverá funcionar:
 ---
 # 3. Visão geral do sistema
 
-Descrição do sistema e suas relações.
-<!-- o que o sistema entrega do ponto de vista do usuário final -->
+O sistema proposto para a clínica veterinária é uma plataforma abrangente que integra diversas funcionalidades voltadas ao atendimento e ao gerenciamento de animais, clientes e serviços. Ele permite o cadastro de clientes e seus animais, agendamento de consultas, gestão de prontuários, geração de receitas, além de oferecer serviços adicionais como hospedagem, internação e creche.
+
+## 3.1. Principais Módulos do Sistema
+
+- Cadastro de Clientes e Animais: Os usuários podem criar perfis que contêm informações pessoais e dados dos animais, incluindo histórico de saúde e preferências alimentares.
+
+- Agendamento: Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
+
+- Atendimento Veterinário: Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
+
+- Serviços Adicionais: Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
+
+- Venda de Produtos: Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
+
+- Pagamentos: Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
+
+## 3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final
+
+- Acesso Rápido a Serviços: O sistema oferece uma interface amigável que permite aos clientes agendar consultas e serviços de forma eficiente e intuitiva.
+
+- Atendimento Personalizado: Cada animal é tratado de forma única, com informações detalhadas coletadas e registradas, o que resulta em um atendimento mais adequado às suas necessidades.
+
+- Histórico Completo de Saúde: Os clientes têm acesso a prontuários completos, que documentam todas as consultas, tratamentos e observações, permitindo um acompanhamento contínuo da saúde dos animais.
+
+- Flexibilidade de Agendamento: A possibilidade de agendar atendimentos com antecedência, escolhendo veterinários e horários, proporciona comodidade e evita filas.
+
+- Serviços de Emergência: O sistema garante atendimento imediato em situações de emergência, com veterinários disponíveis 24 horas, assegurando cuidados urgentes quando necessário.
+
+- Cuidado e Conforto Durante a Hospedagem: Clientes podem agendar a hospedagem de seus animais, com a certeza de que receberão cuidados adequados, alimentação e atividades recreativas.
+
+- Facilidade de Compras: A integração com o petshop permite que os clientes adquiram produtos essenciais durante suas visitas, simplificando o processo de compra.
+
+- Descontos e Benefícios: O sistema oferece acesso a descontos em farmácias para clientes cadastrados, proporcionando vantagens adicionais.
+
+- Variedade nos Métodos de Pagamento: A aceitação de diferentes formas de pagamento garante que os clientes possam realizar transações de forma prática e conveniente.
+
+- Experiência Geral Positiva: A combinação de funcionalidades robustas e uma interface amigável resulta em uma experiência de usuário satisfatória, fortalecendo a relação entre a clínica e seus clientes.
+
+Esses elementos destacam como o sistema atende às necessidades dos usuários finais, promovendo uma gestão eficiente e um atendimento de qualidade na clínica veterinária.
 
 ---
 # 4. Diagrama ER
