@@ -70,7 +70,7 @@ Docente: Emiliano Soares Monteiro
 ---
 # 1. Introdução
 
-O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços excluvivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada a seguir:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços excluvivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada a seguir:
 
 ---
 # 2. Descrição do negócio
@@ -144,62 +144,77 @@ Descrição do cenário onde o sistema deverá funcionar:
 ---
 # 3. Visão geral do sistema
 
-O sistema proposto para a clínica veterinária é uma plataforma abrangente que integra diversas funcionalidades voltadas ao atendimento e ao gerenciamento de animais, clientes e serviços. Ele permite o cadastro de clientes e seus animais, agendamento de consultas, gestão de prontuários, geração de receitas, além de oferecer serviços adicionais como hospedagem, internação e creche.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema proposto para a clínica veterinária é uma plataforma abrangente que integra diversas funcionalidades voltadas ao atendimento e ao gerenciamento de animais, clientes e serviços. Ele permite o cadastro de clientes e seus animais, agendamento de consultas, gestão de prontuários, geração de receitas, além de oferecer serviços adicionais como hospedagem, internação e creche.
 
 ## 3.1. Principais Módulos do Sistema
 
 **Cadastro de Clientes e Animais:**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
 
 **Agendamento:**
-Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
 
 **Atendimento Veterinário:**
-Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
 
 **Serviços Adicionais:**
-Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
 
 **Venda de Produtos:**
-Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
 
 **Pagamentos:**
-Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
 
 ## 3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final
 
-- **Acesso Rápido a Serviços:**
-    - O sistema oferece uma interface amigável que permite aos usuário agendar consultas e serviços para os clientes de forma eficiente e intuitiva.
+**Acesso Rápido a Serviços:**
 
-- **Atendimento Personalizado:**
-    - Cada animal é tratado de forma única, com informações detalhadas coletadas e registradas, o que resulta em um atendimento mais adequado às suas necessidades.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema oferece uma interface amigável que permite aos usuário agendar consultas e serviços para os clientes de forma eficiente e intuitiva.
 
-- **Histórico Completo de Saúde:**
-    - Os clientes têm acesso a prontuários completos, que documentam todas as consultas, tratamentos e observações, permitindo um acompanhamento contínuo da saúde dos animais.
+**Atendimento Personalizado:**
 
-- **Flexibilidade de Agendamento:**
-    - A possibilidade de agendar atendimentos com antecedência, escolhendo veterinários e horários, proporciona comodidade e evita filas.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cada animal é tratado de forma única, com informações detalhadas coletadas e registradas, o que resulta em um atendimento mais adequado às suas necessidades.
 
-- **Serviços de Emergência:**
-    - O sistema garante atendimento imediato em situações de emergência, com veterinários disponíveis 24 horas, assegurando cuidados urgentes quando necessário.
+**Histórico Completo de Saúde:**
 
-- **Cuidado e Conforto Durante a Hospedagem:**
-    - Clientes podem agendar a hospedagem de seus animais, com a certeza de que receberão cuidados adequados, alimentação e atividades recreativas.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Os clientes têm acesso a prontuários completos, que documentam todas as consultas, tratamentos e observações, permitindo um acompanhamento contínuo da saúde dos animais.
 
-- **Facilidade de Compras:**
-    - A integração com o petshop permite que os clientes adquiram produtos essenciais durante suas visitas, simplificando o processo de compra.
+**Flexibilidade de Agendamento:**
 
-- **Descontos e Benefícios:**
-    - O sistema oferece acesso a descontos em farmácias para clientes cadastrados, proporcionando vantagens adicionais.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A possibilidade de agendar atendimentos com antecedência, escolhendo veterinários e horários, proporciona comodidade e evita filas.
 
-- **Variedade nos Métodos de Pagamento:**
-    - A aceitação de diferentes formas de pagamento garante que os clientes possam realizar transações de forma prática e conveniente.
+**Serviços de Emergência:**
 
-- **Experiência Geral Positiva:**
-    - A combinação de funcionalidades robustas e uma interface amigável resulta em uma experiência de usuário satisfatória, fortalecendo a relação entre a clínica e seus clientes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema garante atendimento imediato em situações de emergência, com veterinários disponíveis 24 horas, assegurando cuidados urgentes quando necessário.
 
-Esses elementos destacam como o sistema atende às necessidades dos usuários finais, promovendo uma gestão eficiente e um atendimento de qualidade na clínica veterinária.
+**Cuidado e Conforto Durante a Hospedagem:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clientes podem agendar a hospedagem de seus animais, com a certeza de que receberão cuidados adequados, alimentação e atividades recreativas.
+
+**Facilidade de Compras:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A integração com o petshop permite que os clientes adquiram produtos essenciais durante suas visitas, simplificando o processo de compra.
+
+**Descontos e Benefícios:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema oferece acesso a descontos em farmácias para clientes cadastrados, proporcionando vantagens adicionais.
+
+**Variedade nos Métodos de Pagamento:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A aceitação de diferentes formas de pagamento garante que os clientes possam realizar transações de forma prática e conveniente.
+
+**Experiência Geral Positiva:**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A combinação de funcionalidades robustas e uma interface amigável resulta em uma experiência de usuário satisfatória, fortalecendo a relação entre a clínica e seus clientes.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esses elementos destacam como o sistema atende às necessidades dos usuários finais, promovendo uma gestão eficiente e um atendimento de qualidade na clínica veterinária.
 
 ---
 # 4. Diagrama ER
@@ -671,7 +686,7 @@ graph TD
 
 ## 12.1. Requisitos do Cliente
 
-Para que o cliente tenha acesso a aplicação e consiga usar de maneira adequada ele irá precisar:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para que o cliente tenha acesso a aplicação e consiga usar de maneira adequada ele irá precisar:
 
 **1. Navegadores Compatíveis:**
 
@@ -739,7 +754,7 @@ Para garantir o funcionamento adequado da aplicação, os seguintes requisitos d
 
 ## 13.1. Lado Cliente
 
-Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
 
 **1. Regras de Senha:**
 
@@ -773,7 +788,7 @@ Para garantir a segurança dos dados dos clientes e do sistema como um todo, as 
 
 ## 13.2. Lado Servidor
 
-Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
 
 **1 Política de Backup:**
 
@@ -858,7 +873,7 @@ Para assegurar a integridade e a segurança dos dados e do funcionamento do sist
 
 ## 15.1. Usuário
 
-O treinamento para usuários deve incluir:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para usuários deve incluir:
 
 **1. Formato do Treinamento:**
 
@@ -886,7 +901,7 @@ O treinamento para usuários deve incluir:
 
 ## 15.2. Administrador do Sistema
 
-O treinamento para administradores do sistema deve abranger:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para administradores do sistema deve abranger:
 
 **1. Formato do Treinamento:**
 
