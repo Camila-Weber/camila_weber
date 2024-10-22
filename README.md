@@ -149,6 +149,7 @@ O sistema proposto para a clínica veterinária é uma plataforma abrangente que
 ## 3.1. Principais Módulos do Sistema
 
 **Cadastro de Clientes e Animais:**
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
 
 **Agendamento:**
