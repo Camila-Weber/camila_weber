@@ -148,23 +148,23 @@ O sistema proposto para a clínica veterinária é uma plataforma abrangente que
 
 ## 3.1. Principais Módulos do Sistema
 
-- **Cadastro de Clientes e Animais:**
-    - Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
+**Cadastro de Clientes e Animais:**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
 
-- **Agendamento:**
-    - Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
+**Agendamento:**
+Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
 
-- **Atendimento Veterinário:**
-    - Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
+**Atendimento Veterinário:**
+Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
 
-- **Serviços Adicionais:**
-    - Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
+**Serviços Adicionais:**
+Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
 
-- **Venda de Produtos:**
-    - Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
+**Venda de Produtos:**
+Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
 
-- **Pagamentos:**
-    - Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
+**Pagamentos:**
+Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
 
 ## 3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final
 
