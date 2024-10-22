@@ -148,7 +148,7 @@ O sistema proposto para a clínica veterinária é uma plataforma abrangente que
 
 ## 3.1. Principais Módulos do Sistema
 
-- Cadastro de Clientes e Animais: Os usuários podem criar perfis que contêm informações pessoais e dados dos animais, incluindo histórico de saúde e preferências alimentares.
+- Cadastro de Clientes e Animais: Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
 
 - Agendamento: Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
 
@@ -162,7 +162,7 @@ O sistema proposto para a clínica veterinária é uma plataforma abrangente que
 
 ## 3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final
 
-- Acesso Rápido a Serviços: O sistema oferece uma interface amigável que permite aos clientes agendar consultas e serviços de forma eficiente e intuitiva.
+- Acesso Rápido a Serviços: O sistema oferece uma interface amigável que permite aos usuário agendar consultas e serviços para os clientes de forma eficiente e intuitiva.
 
 - Atendimento Personalizado: Cada animal é tratado de forma única, com informações detalhadas coletadas e registradas, o que resulta em um atendimento mais adequado às suas necessidades.
 
@@ -438,7 +438,6 @@ classDiagram
 > **quero** cadastrar minhas informações e as do meu animal,  
 > **para** que eu possa agendar atendimentos e receber cuidados adequados.
 
-
 ### 6.2.2. Marcação de Atendimento
 
 > **Como** um cliente,  
@@ -653,66 +652,107 @@ graph TD
 ---
 # 12. Requisitos de sistemas
 
-<!-- complementar -->
-
 ## 12.1. Requisitos do Cliente
 
 Para que o cliente tenha acesso a aplicação e consiga usar de maneira adequada ele irá precisar:
 
-**1.** Navegadores para acessar a aplicação (Chrome, Firefox, Safari, Edge);
+**1. Navegadores Compatíveis:**
 
-**2.** Endereço de acesso da aplicação;
+- Acesso através de navegadores como Chrome, Firefox, Safari ou Edge.
 
-**3.** Conhecimento do funcionamento do sistema/aplicação;
+**2. Endereço de Acesso:**
 
-**4.** Autenticação de Usuário;
+- Um URL específico para acessar a aplicação.
+
+**3. Conhecimento do Sistema:**
+
+- Familiaridade com o funcionamento da aplicação, incluindo como realizar cadastros e agendamentos.;
+
+**4. Autenticação de Usuário:**
+
+- Um sistema de login para garantir a segurança e a privacidade das informações.;
 
 ## 12.2. Requisitos do Servidor
 
-<!-- Para que a aplicação funcione é necessário que os seguintes requisitos sejam atendidos:
+Para garantir o funcionamento adequado da aplicação, os seguintes requisitos do servidor devem ser atendidos:
 
-Servidores: Utilizar Apache ou Nginx para servir a aplicação.
-Ambiente de Execução: PHP (versão compatível com Scriptcase).
-Banco de Dados
+**1. Servidores Web:**  
 
-SGBD: MySQL ou PostgreSQL como sistema de gerenciamento de banco de dados.
-Conexão Segura: Utilizar conexões seguras (SSL) para interações com o banco de dados.
-API de Comunicação
+- A aplicação deve ser servida através de servidores como Apache ou Nginx, que são amplamente utilizados para hospedar aplicações web.
 
-Implementar uma API RESTful para permitir a comunicação entre o front-end e o back-end.
-Documentação da API para facilitar a integração.
-Segurança
+**2. Ambiente de Execução:**
 
-Implementar medidas de segurança (firewalls, proteção contra SQL injection, XSS).
-Criptografia de dados sensíveis, como senhas (ex.: bcrypt).
-Escalabilidade
+- O sistema será executado em um ambiente PHP, com uma versão compatível com o Scriptcase, que é a plataforma utilizada para desenvolvimento da aplicação.
 
-Capacidade de escalar horizontalmente (adicionando mais servidores) ou verticalmente (aumentando recursos do servidor).
-Ambiente de Desenvolvimento e Produção
+**3. Banco de Dados:**
 
-Configuração de ambientes distintos para desenvolvimento, teste e produção.
-Uso de ferramentas de versionamento (ex.: Git).
-Monitoramento e Backup
+- SGBD: Utilizar MySQL ou PostgreSQL como sistema de gerenciamento de banco de dados, garantindo a integridade e a eficiência no armazenamento de dados relacionados a clientes, animais, agendamentos e atendimentos.
+- Conexão Segura: Implementar SSL para garantir a segurança nas interações entre a aplicação e o banco de dados.
 
-Implementar soluções de monitoramento de servidor e aplicação.
-Rotinas de backup regular do banco de dados e arquivos da aplicação.
-Integração com Serviços Externos
+**4. API de Comunicação:**
 
-APIs para integração com serviços de pagamento, petshops, ou outros sistemas necessários. -->
+- Implementação de uma API RESTful para facilitar a comunicação entre o front-end e o back-end da aplicação.
+- Documentação da API para auxiliar na integração com serviços externos e garantir a correta utilização de suas funcionalidades.
 
-**1.** Componentes da aplicação
+**5. Segurança:**
 
-**2.** Servidor de Banco de Dados
+- Implementar medidas de segurança robustas, incluindo firewalls e proteções contra SQL injection e XSS.
+- Utilizar criptografia para dados sensíveis, como senhas, utilizando algoritmos como bcrypt.
 
-**3.** Servidor Web
+**6. Escalabilidade:**
 
-**4.** Banco de Dados
+- A arquitetura do sistema deve permitir escalabilidade horizontal (adicionando mais servidores) ou vertical (aumentando os recursos de um servidor) conforme a demanda de usuários e atendimentos.
+
+**7. Ambiente de Desenvolvimento e Produção:**
+
+- Configuração de ambientes separados para desenvolvimento, teste e produção.
+- Uso de ferramentas de versionamento, como Git, para controle das versões do código.
+
+**8. Monitoramento e Backup:**
+
+- Implementação de soluções para monitorar o desempenho do servidor e da aplicação.
+- Estabelecimento de rotinas regulares de backup do banco de dados e dos arquivos da aplicação para garantir a recuperação em caso de falhas.
+
+**9. Integração com Serviços Externos:**
+
+- A aplicação deve se integrar com APIs de serviços de pagamento, sistemas de petshop e outros serviços relevantes, possibilitando uma experiência completa e conveniente para os usuários.
 
 ---
 # 13. Considerações sobre segurança
 
 ## 13.1. Lado Cliente
 
+Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
+
+**1. Regras de Senha:**
+
+- Senhas devem ter um mínimo de 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.
+- Senhas não devem ser facilmente adivinháveis, como sequências numéricas ou combinações comuns (ex.: "123456" ou "senha").
+
+**2. Autenticação de Dois Fatores:**
+
+- Implementar a autenticação de dois fatores (2FA) para aumentar a segurança no acesso, solicitando um código adicional enviado ao celular ou e-mail do usuário durante o login.
+
+**3. Recuperação de Senha:**
+
+- Oferecer um processo de recuperação de senha seguro, que envolve o envio de um código de verificação para o e-mail do usuário.
+- O usuário deve inserir esse código para redefinir sua senha, garantindo que apenas o proprietário da conta tenha acesso.
+
+**4. Captcha:**
+
+- Implementar a verificação de captcha em formulários sensíveis (como login e cadastro) para prevenir ataques automatizados, como tentativas de força bruta.
+
+**5. Proteção contra Malware:**
+
+- Recomendar aos usuários que mantenham um software antivírus atualizado em seus dispositivos para proteção contra malware e outras ameaças.
+
+**6. Política de Segurança:**
+
+- Criar uma mini política de segurança que informe os usuários sobre as melhores práticas, como a importância de não compartilhar senhas, desconectar de contas após o uso, e o uso de redes seguras (evitando Wi-Fi público para acessar informações sensíveis).
+
+**7. Comunicação Segura:**
+
+- Garantir que todas as comunicações entre o cliente e o servidor sejam feitas por meio de conexões seguras (HTTPS), protegendo os dados contra interceptações.
 <!-- regras de senhas
 captcha, qtd min. caracteres, maiusculas, minusculas, ...
 auteticação de dois fatores
@@ -726,6 +766,32 @@ SAPIENS -->
 
 ## 13.2. Lado Servidor
 
+Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
+
+**1 Política de Backup:**
+
+- Realizar backups completos da aplicação e do banco de dados uma vez por mês.
+- Executar backups incrementais semanalmente para garantir a recuperação de dados recentes em caso de falhas.
+- Armazenar os backups em locais seguros e separados do servidor principal, com acesso restrito.
+
+**2. Acesso a Dados:**
+
+- O administrador do sistema não deve ter acesso a dados pessoais dos usuários, exceto quando necessário para manutenção ou resolução de problemas. Todas as atividades devem ser registradas em logs para auditoria.
+- Implementar controles de acesso baseados em função (RBAC) para limitar o acesso a dados sensíveis apenas aos usuários autorizados.
+
+**3. Segurança do Servidor:**
+
+- Para servidores Linux, garantir que as práticas de segurança sejam seguidas, incluindo a configuração adequada de firewalls e a desativação de serviços desnecessários.
+- Para outros sistemas operacionais, utilizar software antivírus atualizado para proteger contra malware e ameaças cibernéticas.
+
+**4. Atualizações Regulares:**
+
+- Manter o sistema operacional, servidores web e quaisquer bibliotecas ou dependências atualizadas para proteger contra vulnerabilidades conhecidas.
+
+**5. Monitoramento e Auditoria:**
+
+- Implementar soluções de monitoramento para detectar atividades suspeitas ou não autorizadas.
+- Realizar auditorias de segurança regularmente para avaliar a conformidade com as políticas de segurança e identificar áreas de melhoria.
 <!-- 
 politica de backup de aplcação e banco  (1x/mes 1 full backup) (1x por semana um backup incremental)
 o admin do sistema não acessa dados do usuario
@@ -736,12 +802,59 @@ se for linux não precisa de anti-vírus, outros sim
 # 14. Manutenção, Instalação e Novas Funcionalidades
 
 ## 14.1. Manutenção
+
+**Objetivo:**
+
+- Garantir que o software esteja sempre funcionando de forma eficiente e segura.
+
+**Ações:**
+
+- Realizar atualizações periódicas, correções de bugs e melhorias de desempenho.
+- Testes regulares devem ser realizados para garantir que todas as funcionalidades estejam operacionais.
 <!-- manter o software funcionando -->
 
 ## 14.2. Instalação
+
+**Objetivo:**
+
+- Instalar a aplicação em servidores de produção de forma segura e eficaz.
+
+**Ações:**
+
+- Seguir um checklist de segurança durante a instalação, incluindo a configuração de firewalls, permissões de acesso e a verificação de que todas as práticas de segurança estão sendo seguidas.
 <!-- instalado no servidor -->
 
 ## 14.3. Novas Funcionalidades
+
+**Objetivo:**
+
+- Adicionar funcionalidades à aplicação de maneira estruturada e segura.
+  
+**Processo:**
+
+**1. Formalização do Pedido**:
+
+- Documentar claramente os requisitos e expectativas do cliente para novas funcionalidades, garantindo uma comunicação eficiente.
+
+**2. Foco na Experiência do Usuário**:
+
+- Manter o foco nas funcionalidades e na experiência do usuário, evitando sugestões do cliente sobre o design da interface.
+
+**3. Avaliação de Viabilidade**:
+
+- A viabilidade do pedido deve ser avaliada com base em três critérios:
+
+   **a)** **Disponibilidade da Equipe**:
+
+   - A equipe de desenvolvimento possui tempo e recursos suficientes para implementar a nova funcionalidade?
+
+   **b)** **Viabilidade Econômica**:
+
+   - A implementação da funcionalidade é financeiramente viável e trará benefícios para o negócio?
+
+   **c)** **Viabilidade Tecnológica**:
+
+   - A nova funcionalidade pode ser implementada utilizando a tecnologia atual da aplicação, sem comprometer a segurança ou a estabilidade do sistema?
 <!-- formalizar pedido do cliente
 cliente não dá palpite em beleza de tela
 decidir sobre 3 critérios:
@@ -754,9 +867,72 @@ c) é tecnologicamente viável? -->
 
 ## 15.1. Usuário
 
-<!-- video na web -->
+O treinamento para usuários deve incluir:
+
+**1. Formato do Treinamento:**
+
+- Oferecer opções de treinamento, como vídeos na web, tutoriais interativos ou sessões presenciais.
+
+**2. Conteúdo do Treinamento:**
+
+- **Introdução ao Sistema:**
+
+    - Apresentação geral do sistema, suas funcionalidades e objetivos.
+
+- **Cadastro de Usuário e Animais:**
+
+    - Demonstração de como criar e gerenciar perfis de clientes e animais.
+
+- **Agendamento de Consultas:**
+
+    - Instruções sobre como marcar consultas, selecionar veterinários e gerenciar horários.
+
+- **Uso da Ficha de Atendimento:**
+
+    - Orientação sobre como preencher e interpretar as fichas de atendimento e prontuários.
+
+- **Relatórios e Histórico:**
+
+    - Como acessar e entender os relatórios de atendimentos e o histórico de saúde dos animais.
+
+- **Dicas de Segurança:**
+
+    - Boas práticas para manter a segurança das informações e senhas.
+<!-- video na web, ou presencial -->
 
 ## 15.2. Administrador do Sistema
+
+O treinamento para administradores do sistema deve abranger:
+
+**1. Formato do Treinamento:**
+
+- Sessões presenciais ou webinars para interação direta, além de materiais gravados para consulta posterior.
+
+**2. Conteúdo do Treinamento:**
+
+- **Gerenciamento de Usuários:**
+
+    - Como criar, editar e excluir contas de usuários e administrar permissões.
+
+- **Manutenção do Sistema:**
+
+    - Procedimentos para atualização do sistema, realização de backups e monitoramento de desempenho.
+
+- **Configuração do Banco de Dados:**
+
+    - Instruções sobre como gerenciar e otimizar o banco de dados, incluindo estratégias de recuperação.
+
+- **Segurança e Compliance:**
+
+    - Treinamento sobre práticas de segurança, gestão de dados sensíveis e conformidade com normas e regulamentos.
+
+- **Suporte ao Usuário:**
+
+    - Como fornecer suporte técnico e solucionar problemas comuns que os usuários possam enfrentar.
+
+- **Relatórios Administrativos:**
+
+    - Como gerar e interpretar relatórios de uso do sistema e métricas de desempenho.
 <!-- o que vai ser passado para as pessoas reponsaveis/usuarios do sistema -->
 
 ---
