@@ -148,39 +148,55 @@ O sistema proposto para a clínica veterinária é uma plataforma abrangente que
 
 ## 3.1. Principais Módulos do Sistema
 
-- Cadastro de Clientes e Animais: Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
+- **Cadastro de Clientes e Animais:**
+    - Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
 
-- Agendamento: Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
+- **Agendamento:**
+    - Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
 
-- Atendimento Veterinário: Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
+- **Atendimento Veterinário:**
+    - Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
 
-- Serviços Adicionais: Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
+- **Serviços Adicionais:**
+    - Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
 
-- Venda de Produtos: Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
+- **Venda de Produtos:**
+    - Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
 
-- Pagamentos: Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
+- **Pagamentos:**
+    - Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
 
 ## 3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final
 
-- Acesso Rápido a Serviços: O sistema oferece uma interface amigável que permite aos usuário agendar consultas e serviços para os clientes de forma eficiente e intuitiva.
+- **Acesso Rápido a Serviços:**
+    - O sistema oferece uma interface amigável que permite aos usuário agendar consultas e serviços para os clientes de forma eficiente e intuitiva.
 
-- Atendimento Personalizado: Cada animal é tratado de forma única, com informações detalhadas coletadas e registradas, o que resulta em um atendimento mais adequado às suas necessidades.
+- **Atendimento Personalizado:**
+    - Cada animal é tratado de forma única, com informações detalhadas coletadas e registradas, o que resulta em um atendimento mais adequado às suas necessidades.
 
-- Histórico Completo de Saúde: Os clientes têm acesso a prontuários completos, que documentam todas as consultas, tratamentos e observações, permitindo um acompanhamento contínuo da saúde dos animais.
+- **Histórico Completo de Saúde:**
+    - Os clientes têm acesso a prontuários completos, que documentam todas as consultas, tratamentos e observações, permitindo um acompanhamento contínuo da saúde dos animais.
 
-- Flexibilidade de Agendamento: A possibilidade de agendar atendimentos com antecedência, escolhendo veterinários e horários, proporciona comodidade e evita filas.
+- **Flexibilidade de Agendamento:**
+    - A possibilidade de agendar atendimentos com antecedência, escolhendo veterinários e horários, proporciona comodidade e evita filas.
 
-- Serviços de Emergência: O sistema garante atendimento imediato em situações de emergência, com veterinários disponíveis 24 horas, assegurando cuidados urgentes quando necessário.
+- **Serviços de Emergência:**
+    - O sistema garante atendimento imediato em situações de emergência, com veterinários disponíveis 24 horas, assegurando cuidados urgentes quando necessário.
 
-- Cuidado e Conforto Durante a Hospedagem: Clientes podem agendar a hospedagem de seus animais, com a certeza de que receberão cuidados adequados, alimentação e atividades recreativas.
+- **Cuidado e Conforto Durante a Hospedagem:**
+    - Clientes podem agendar a hospedagem de seus animais, com a certeza de que receberão cuidados adequados, alimentação e atividades recreativas.
 
-- Facilidade de Compras: A integração com o petshop permite que os clientes adquiram produtos essenciais durante suas visitas, simplificando o processo de compra.
+- **Facilidade de Compras:**
+    - A integração com o petshop permite que os clientes adquiram produtos essenciais durante suas visitas, simplificando o processo de compra.
 
-- Descontos e Benefícios: O sistema oferece acesso a descontos em farmácias para clientes cadastrados, proporcionando vantagens adicionais.
+- **Descontos e Benefícios:**
+    - O sistema oferece acesso a descontos em farmácias para clientes cadastrados, proporcionando vantagens adicionais.
 
-- Variedade nos Métodos de Pagamento: A aceitação de diferentes formas de pagamento garante que os clientes possam realizar transações de forma prática e conveniente.
+- **Variedade nos Métodos de Pagamento:**
+    - A aceitação de diferentes formas de pagamento garante que os clientes possam realizar transações de forma prática e conveniente.
 
-- Experiência Geral Positiva: A combinação de funcionalidades robustas e uma interface amigável resulta em uma experiência de usuário satisfatória, fortalecendo a relação entre a clínica e seus clientes.
+- **Experiência Geral Positiva:**
+    - A combinação de funcionalidades robustas e uma interface amigável resulta em uma experiência de usuário satisfatória, fortalecendo a relação entre a clínica e seus clientes.
 
 Esses elementos destacam como o sistema atende às necessidades dos usuários finais, promovendo uma gestão eficiente e um atendimento de qualidade na clínica veterinária.
 
@@ -753,16 +769,6 @@ Para garantir a segurança dos dados dos clientes e do sistema como um todo, as 
 **7. Comunicação Segura:**
 
 - Garantir que todas as comunicações entre o cliente e o servidor sejam feitas por meio de conexões seguras (HTTPS), protegendo os dados contra interceptações.
-<!-- regras de senhas
-captcha, qtd min. caracteres, maiusculas, minusculas, ...
-auteticação de dois fatores
-recuperação de senha com email
-código no email
-anti-virus
-mini politica de segurança
-CLAUDE
-SAPIENS -->
-
 
 ## 13.2. Lado Servidor
 
@@ -792,11 +798,6 @@ Para assegurar a integridade e a segurança dos dados e do funcionamento do sist
 
 - Implementar soluções de monitoramento para detectar atividades suspeitas ou não autorizadas.
 - Realizar auditorias de segurança regularmente para avaliar a conformidade com as políticas de segurança e identificar áreas de melhoria.
-<!-- 
-politica de backup de aplcação e banco  (1x/mes 1 full backup) (1x por semana um backup incremental)
-o admin do sistema não acessa dados do usuario
-se for linux não precisa de anti-vírus, outros sim
--->
 
 ---
 # 14. Manutenção, Instalação e Novas Funcionalidades
@@ -811,7 +812,6 @@ se for linux não precisa de anti-vírus, outros sim
 
 - Realizar atualizações periódicas, correções de bugs e melhorias de desempenho.
 - Testes regulares devem ser realizados para garantir que todas as funcionalidades estejam operacionais.
-<!-- manter o software funcionando -->
 
 ## 14.2. Instalação
 
@@ -822,7 +822,6 @@ se for linux não precisa de anti-vírus, outros sim
 **Ações:**
 
 - Seguir um checklist de segurança durante a instalação, incluindo a configuração de firewalls, permissões de acesso e a verificação de que todas as práticas de segurança estão sendo seguidas.
-<!-- instalado no servidor -->
 
 ## 14.3. Novas Funcionalidades
 
@@ -845,22 +844,13 @@ se for linux não precisa de anti-vírus, outros sim
 - A viabilidade do pedido deve ser avaliada com base em três critérios:
 
    **a)** **Disponibilidade da Equipe**:
-
    - A equipe de desenvolvimento possui tempo e recursos suficientes para implementar a nova funcionalidade?
 
    **b)** **Viabilidade Econômica**:
-
    - A implementação da funcionalidade é financeiramente viável e trará benefícios para o negócio?
 
    **c)** **Viabilidade Tecnológica**:
-
    - A nova funcionalidade pode ser implementada utilizando a tecnologia atual da aplicação, sem comprometer a segurança ou a estabilidade do sistema?
-<!-- formalizar pedido do cliente
-cliente não dá palpite em beleza de tela
-decidir sobre 3 critérios:
-a) equipe tem tempo?
-b) é economicamente viável?
-c) é tecnologicamente viável? -->
 
 ---
 # 15. Treinamento
@@ -876,29 +866,22 @@ O treinamento para usuários deve incluir:
 **2. Conteúdo do Treinamento:**
 
 - **Introdução ao Sistema:**
-
     - Apresentação geral do sistema, suas funcionalidades e objetivos.
 
 - **Cadastro de Usuário e Animais:**
-
     - Demonstração de como criar e gerenciar perfis de clientes e animais.
 
 - **Agendamento de Consultas:**
-
     - Instruções sobre como marcar consultas, selecionar veterinários e gerenciar horários.
 
 - **Uso da Ficha de Atendimento:**
-
     - Orientação sobre como preencher e interpretar as fichas de atendimento e prontuários.
 
 - **Relatórios e Histórico:**
-
     - Como acessar e entender os relatórios de atendimentos e o histórico de saúde dos animais.
 
 - **Dicas de Segurança:**
-
     - Boas práticas para manter a segurança das informações e senhas.
-<!-- video na web, ou presencial -->
 
 ## 15.2. Administrador do Sistema
 
@@ -911,29 +894,22 @@ O treinamento para administradores do sistema deve abranger:
 **2. Conteúdo do Treinamento:**
 
 - **Gerenciamento de Usuários:**
-
     - Como criar, editar e excluir contas de usuários e administrar permissões.
 
 - **Manutenção do Sistema:**
-
     - Procedimentos para atualização do sistema, realização de backups e monitoramento de desempenho.
 
 - **Configuração do Banco de Dados:**
-
     - Instruções sobre como gerenciar e otimizar o banco de dados, incluindo estratégias de recuperação.
 
 - **Segurança e Compliance:**
-
     - Treinamento sobre práticas de segurança, gestão de dados sensíveis e conformidade com normas e regulamentos.
 
 - **Suporte ao Usuário:**
-
     - Como fornecer suporte técnico e solucionar problemas comuns que os usuários possam enfrentar.
 
 - **Relatórios Administrativos:**
-
     - Como gerar e interpretar relatórios de uso do sistema e métricas de desempenho.
-<!-- o que vai ser passado para as pessoas reponsaveis/usuarios do sistema -->
 
 ---
 # 16. Script SQL
