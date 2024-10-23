@@ -778,7 +778,6 @@ graph TD;
   - **Navegador**: Os navegadores suportados pelos usuários.
 
 
-
 ---
 # 12. Requisitos de sistemas
 
