@@ -7,6 +7,9 @@ Discente: Camila Weber
 
 Docente: Emiliano Soares Monteiro
 
+<!--  -->
+
+
 - [Camila Weber - Engenharia de Software](#camila-weber---engenharia-de-software)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio](#2-descrição-do-negócio)
@@ -50,6 +53,8 @@ Docente: Emiliano Soares Monteiro
   - [9.13. Tela de Dashboard](#913-tela-de-dashboard)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
+    - [Descrição do Diagrama:](#descrição-do-diagrama)
+    - [Descrição do Diagrama:](#descrição-do-diagrama-1)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
   - [12.1. Requisitos do Cliente](#121-requisitos-do-cliente)
   - [12.2. Requisitos do Servidor](#122-requisitos-do-servidor)
@@ -680,6 +685,99 @@ graph TD
     S[Infraestrutura] --> T[Nuvem]
     S --> U[Servidores Físicos/Locais]
 ```
+
+```mermaid
+graph TD;
+    A[Usuário] -->|Acessa| B[Interface do Usuário]
+    B -->|Comunica| C[Servidor Web]
+    C -->|Executa| D[Aplicação PHP]
+    D -->|Consulta| E[Banco de Dados MySQL]
+    E -->|Armazena/Recupera| F[Dados do Cliente e Animal]
+    
+    subgraph LAMP
+        A[Linux] --> B[Apache]
+        B --> D[PHP]
+        D --> E[MySQL]
+    end
+
+    F -->|Gera| G[Fichas e Prontuários]
+    G -->|Fornece| H[Receitas e Orientações]
+```
+
+
+### Descrição do Diagrama:
+
+>**Usuário**: Representa os clientes que acessam o sistema.
+>
+>**Interface do Usuário**: A camada onde os usuários interagem com o sistema.
+>
+>**Servidor Web (Apache)**: Responsável por gerenciar as solicitações do cliente.
+>
+>**Aplicação PHP**: A lógica do aplicativo que processa as solicitações e interage com o banco de dados.
+>
+>**Banco de Dados MySQL**: Onde são armazenadas as informações sobre clientes, animais e registros.
+>
+>**Dados do Cliente e Animal**: Armazenados no banco de dados.
+>
+>**Fichas e Prontuários**: Gerados com base nos dados armazenados.
+>
+>**Receitas e Orientações**: Fornecidas ao cliente após o atendimento.
+
+
+
+
+```mermaid
+graph TD;
+
+    %% Lado do Cliente
+    subgraph Cliente
+        A[Usuário] -->|Acessa| B[Navegador]
+        B -->|Interface| C[Interface do Usuário]
+    end
+
+    %% Lado do Servidor
+    subgraph Servidor
+        D[Servidor Web] -->|Apache| E[Aplicação PHP]
+        E -->|Consulta| F[Banco de Dados MySQL]
+        F -->|Armazena/Recupera| G[Dados de Clientes e Animais]
+        E -->|Gera| H[Fichas e Prontuários]
+        H -->|Fornece| I[Receitas e Orientações]
+    end
+
+    %% Infraestrutura
+    subgraph Infraestrutura
+        J[Sistema Operacional: Linux]
+        K[Hardware: Servidor]
+        L[Navegador: Chrome/Firefox/Edge]
+    end
+
+    %% Conexões
+    A -->|Utiliza| L
+    D -->|Executa em| J
+    D -->|Roda em| K
+```
+
+
+### Descrição do Diagrama:
+- **Cliente**:
+  - **Usuário**: A pessoa que utiliza o sistema.
+  - **Navegador**: O software (como Chrome, Firefox, Edge) que permite ao usuário acessar a aplicação web.
+  - **Interface do Usuário**: A camada visual que interage com o usuário.
+
+- **Servidor**:
+  - **Servidor Web**: Apache, que gerencia as solicitações.
+  - **Aplicação PHP**: Processa a lógica do aplicativo.
+  - **Banco de Dados MySQL**: Armazena as informações sobre clientes e animais.
+  - **Dados de Clientes e Animais**: Informações registradas no banco de dados.
+  - **Fichas e Prontuários**: Gerados a partir das informações armazenadas.
+  - **Receitas e Orientações**: Fornecidas ao cliente após o atendimento.
+
+- **Infraestrutura**:
+  - **Sistema Operacional**: Linux, no qual o servidor opera.
+  - **Hardware**: O servidor físico que suporta a aplicação.
+  - **Navegador**: Os navegadores suportados pelos usuários.
+
+
 
 ---
 # 12. Requisitos de sistemas
