@@ -739,9 +739,6 @@ graph TD;
     subgraph Servidor
         D[Servidor Web] -->|Apache| E[Aplicação PHP]
         E -->|Consulta| F[Banco de Dados MySQL]
-        F -->|Armazena/Recupera| G[Dados de Clientes e Animais]
-        E -->|Gera| H[Fichas e Prontuários]
-        H -->|Fornece| I[Receitas e Orientações]
     end
 
     %% Infraestrutura
@@ -777,6 +774,44 @@ graph TD;
   - **Hardware**: O servidor físico que suporta a aplicação.
   - **Navegador**: Os navegadores suportados pelos usuários.
 
+```mermaid
+graph TD;
+    subgraph Cliente
+        direction TB
+        A1[Hardware: Computador/Dispositivo Móvel]
+        A2[SO: Windows, macOS, Linux, Android, iOS]
+        A3[Navegador: Chrome, Firefox, Safari]
+        A1 --> A2
+        A1 --> A3
+    end
+
+    subgraph Servidor
+        direction TB
+        B1[Hardware: Servidor Dedicado ou VPS]
+        B2[SO: Linux]
+        B3[Servidor Web: Apache]
+        B4[Aplicação: Scriptcase]
+        B5[Banco de Dados: MySQL]
+        B1 --> B2
+        B2 --> B3
+        B2 --> B4
+        B4 --> B5
+    end
+```
+
+```mermaid
+graph TD;
+    A[Cliente] -->|Acessa| B[Navegador];
+    A -->|Utiliza| C[Aplicativo];
+
+    B -->|Solicitação| D[Servidor Web Apache];
+    C -->|Comunicação| D;
+
+    D -->|Processa| E[Aplicação Scriptcase];
+    D -->|Consulta| F[Banco de Dados MySQL];
+
+    E -->|Armazena/Recupera| F;
+```
 
 ---
 # 12. Requisitos de sistemas
