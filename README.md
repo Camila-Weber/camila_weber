@@ -57,10 +57,38 @@ Docente: Emiliano Soares Monteiro
     - [Descrição do Diagrama:](#descrição-do-diagrama-1)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
   - [12.1. Requisitos do Cliente](#121-requisitos-do-cliente)
+      - [**12.1.1. Sistema Operacional:**](#1211-sistema-operacional)
+      - [**12.1.2. Navegadores Compatíveis:**](#1212-navegadores-compatíveis)
+      - [**12.1.3. Acesso à Internet:**](#1213-acesso-à-internet)
+      - [**12.1.4. Recursos de Hardware:**](#1214-recursos-de-hardware)
+      - [**12.1.5. Permissões e Configurações de Segurança:**](#1215-permissões-e-configurações-de-segurança)
+      - [**12.1.6. Forma de Autenticação:**](#1216-forma-de-autenticação)
   - [12.2. Requisitos do Servidor](#122-requisitos-do-servidor)
-- [13. Considerações sobre segurança](#13-considerações-sobre-segurança)
+      - [**12.2.1. Tipo de Sistema Operacional:**](#1221-tipo-de-sistema-operacional)
+      - [**12.2.2. Processador:**](#1222-processador)
+      - [**12.2.3. Memória RAM:**](#1223-memória-ram)
+      - [**12.2.4. Armazenamento:**](#1224-armazenamento)
+      - [**12.2.5. Rede:**](#1225-rede)
+      - [**12.2.6. Segurança:**](#1226-segurança)
+      - [**12.2.7. Capacidade de Escalabilidade:**](#1227-capacidade-de-escalabilidade)
+      - [**12.2.8. Ambiente de Desenvolvimento e Produção:**](#1228-ambiente-de-desenvolvimento-e-produção)
+      - [**12.2.9. Monitoramento e Backup:**](#1229-monitoramento-e-backup)
+      - [**12.2.10. Integração com Serviços Externos:**](#12210-integração-com-serviços-externos)
+- [13. Considerações sobre Segurança](#13-considerações-sobre-segurança)
   - [13.1. Lado Cliente](#131-lado-cliente)
+      - [**13.1.1. Regras de Senha:**](#1311-regras-de-senha)
+      - [**13.1.2. Autenticação de Dois Fatores:**](#1312-autenticação-de-dois-fatores)
+      - [**13.1.3. Recuperação de Senha:**](#1313-recuperação-de-senha)
+      - [**13.1.4. Captcha:**](#1314-captcha)
+      - [**13.1.5. Proteção contra Malware:**](#1315-proteção-contra-malware)
+      - [**13.1.6. Política de Segurança:**](#1316-política-de-segurança)
+      - [**13.1.7. Comunicação Segura:**](#1317-comunicação-segura)
   - [13.2. Lado Servidor](#132-lado-servidor)
+      - [**13.2.1 Política de Backup:**](#1321-política-de-backup)
+      - [**13.2.2. Acesso a Dados:**](#1322-acesso-a-dados)
+      - [**13.2.3. Segurança do Servidor:**](#1323-segurança-do-servidor)
+      - [**13.2.4. Atualizações Regulares:**](#1324-atualizações-regulares)
+      - [**13.2.5. Monitoramento e Auditoria:**](#1325-monitoramento-e-auditoria)
 - [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
   - [14.1. Manutenção](#141-manutenção)
   - [14.2. Instalação](#142-instalação)
@@ -856,103 +884,144 @@ graph TD;
 
 ## 12.1. Requisitos do Cliente
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para que o cliente tenha acesso a aplicação e consiga usar de maneira adequada ele irá precisar:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para que o cliente tenha acesso à aplicação e consiga utilizá-la de maneira adequada, ele precisará atender aos seguintes requisitos:
 
-**1. Navegadores Compatíveis:**
+#### **12.1.1. Sistema Operacional:**
 
-- Acesso através de navegadores como Chrome, Firefox, Safari ou Edge.
+- A aplicação é compatível com os seguintes sistemas operacionais, é de preferência que o cliente utilize um deles:
+  - Para PC:
+      - Windows
+      - macOS
+      - Linux
+  - Para Mobile:
+      - Android
+      - iOS
 
-**2. Endereço de Acesso:**
+#### **12.1.2. Navegadores Compatíveis:**
 
-- Um URL específico para acessar a aplicação.
+- A aplicação pode ser acessada através de navegadores modernos, como:
+  - Google Chrome
+  - Mozilla Firefox
+  - Safari
+  - Microsoft Edge
 
-**3. Conhecimento do Sistema:**
+#### **12.1.3. Acesso à Internet:**
 
-- Familiaridade com o funcionamento da aplicação, incluindo como realizar cadastros e agendamentos.;
+- Como o acesso a aplicação é por meio de navegadores é recomendado uma conexão à internet estável, com largura de banda mínima recomendada de 100 Mbps para um desempenho adequado.
+- Se o cliente preferir pode ter dois pontos de internet de diferentes provedores, para garantir uma redundância da conexão de internet.
 
-**4. Autenticação de Usuário:**
+#### **12.1.4. Recursos de Hardware:**
 
-- Um sistema de login para garantir a segurança e a privacidade das informações.;
+- Dispositivos compatíveis devem ter as seguintes especificações mínimas:
+  - **PC:**
+    - Processador: 4 GHz ou superior
+    - Memória RAM: 8 GB ou mais
+    - Resolução de tela: Mínimo de 1366x768 pixels
+  - **Mobile:**
+    - Processador: Dual-core ou superior
+    - Memória RAM: 4 GB ou mais
+    - Resolução de tela: Mínimo de 720x1280 pixels
+
+#### **12.1.5. Permissões e Configurações de Segurança:**
+
+- Configurações de segurança no dispositivo devem permitir:
+  - Execução de scripts (JavaScript)
+  - Aceitação de cookies
+  - Permissões para acesso ao microfone e câmera, se necessário (para funcionalidades específicas)
+
+#### **12.1.6. Forma de Autenticação:**
+
+- Um sistema de login seguro que pode incluir:
+  - Nome de usuário e senha
+  - Autenticação de dois fatores (2FA) para maior segurança
 
 ## 12.2. Requisitos do Servidor
 
-Para garantir o funcionamento adequado da aplicação, os seguintes requisitos do servidor devem ser atendidos:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir o funcionamento adequado da aplicação, os seguintes requisitos do servidor devem ser atendidos:
 
-**1. Servidores Web:**  
+#### **12.2.1. Tipo de Sistema Operacional:**
 
-- A aplicação deve ser servida através de servidores como Apache ou Nginx, que são amplamente utilizados para hospedar aplicações web.
+- O servidor pode operar em ambientes Windows ou Linux, sendo ambos adequados para hospedar servidores web como Apache ou Nginx.
 
-**2. Ambiente de Execução:**
+#### **12.2.2. Processador:**
 
-- O sistema será executado em um ambiente PHP, com uma versão compatível com o Scriptcase, que é a plataforma utilizada para desenvolvimento da aplicação.
+- Processador com pelo menos 4 núcleos e velocidade mínima de 4 GHz, garantindo capacidade de processamento para múltiplas conexões simultâneas.
 
-**3. Banco de Dados:**
+#### **12.2.3. Memória RAM:**
 
-- SGBD: Utilizar MySQL ou PostgreSQL como sistema de gerenciamento de banco de dados, garantindo a integridade e a eficiência no armazenamento de dados relacionados a clientes, animais, agendamentos e atendimentos.
-- Conexão Segura: Implementar SSL para garantir a segurança nas interações entre a aplicação e o banco de dados.
+- Mínimo de 8 GB de RAM para suportar a execução da aplicação e o gerenciamento de várias conexões simultâneas.
 
-**4. API de Comunicação:**
+#### **12.2.4. Armazenamento:**
 
-- Implementação de uma API RESTful para facilitar a comunicação entre o front-end e o back-end da aplicação.
-- Documentação da API para auxiliar na integração com serviços externos e garantir a correta utilização de suas funcionalidades.
+- Armazenamento mínimo de 100 GB, dividido entre:
+  - Códigos da aplicação
+  - Banco de dados MySQL (clientes, animais, agendamentos e atendimentos)
+- Preferencialmente utilizar SSDs para melhor desempenho.
 
-**5. Segurança:**
+#### **12.2.5. Rede:**
 
-- Implementar medidas de segurança robustas, incluindo firewalls e proteções contra SQL injection e XSS.
-- Utilizar criptografia para dados sensíveis, como senhas, utilizando algoritmos como bcrypt.
+- Conexão à internet com largura de banda mínima de 10 Mbps para garantir um desempenho adequado durante picos de acesso.
+- Registro de um nome de domínio para acesso à aplicação.
 
-**6. Escalabilidade:**
+#### **12.2.6. Segurança:**
 
-- A arquitetura do sistema deve permitir escalabilidade horizontal (adicionando mais servidores) ou vertical (aumentando os recursos de um servidor) conforme a demanda de usuários e atendimentos.
+- Implementação de certificados SSL para garantir a segurança nas interações entre a aplicação e os usuários.
+- Utilização de firewalls para proteger o servidor contra acessos não autorizados e ataques cibernéticos.
 
-**7. Ambiente de Desenvolvimento e Produção:**
+#### **12.2.7. Capacidade de Escalabilidade:**
 
-- Configuração de ambientes separados para desenvolvimento, teste e produção.
+- A arquitetura do sistema deve permitir:
+  - Escalabilidade vertical: upgrades de hardware (aumento de CPU, RAM e armazenamento).
+  - Escalabilidade horizontal: adição de mais servidores conforme a demanda de usuários e conexões simultâneas.
+
+#### **12.2.8. Ambiente de Desenvolvimento e Produção:**
+
+- Configuração de ambientes separados para desenvolvimento, teste e produção, garantindo que alterações não afetem a operação do sistema em produção.
 - Uso de ferramentas de versionamento, como Git, para controle das versões do código.
 
-**8. Monitoramento e Backup:**
+#### **12.2.9. Monitoramento e Backup:**
 
-- Implementação de soluções para monitorar o desempenho do servidor e da aplicação.
-- Estabelecimento de rotinas regulares de backup do banco de dados e dos arquivos da aplicação para garantir a recuperação em caso de falhas.
+- Implementação de soluções para monitorar o desempenho do servidor e da aplicação, utilizando ferramentas como Nagios ou Zabbix.
+- Estabelecimento de rotinas regulares de backup do banco de dados e dos arquivos da aplicação, utilizando serviços de backup em nuvem ou locais.
 
-**9. Integração com Serviços Externos:**
+#### **12.2.10. Integração com Serviços Externos:**
 
-- A aplicação deve se integrar com APIs de serviços de pagamento, sistemas de petshop e outros serviços relevantes, possibilitando uma experiência completa e conveniente para os usuários.
+- A aplicação deve se integrar com APIs de serviços de pagamento, sistemas de pet shop e outros serviços relevantes, proporcionando uma experiência completa e conveniente para os usuários.
 
 ---
-# 13. Considerações sobre segurança
+# 13. Considerações sobre Segurança
 
 ## 13.1. Lado Cliente
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
 
-**1. Regras de Senha:**
+#### **13.1.1. Regras de Senha:**
 
 - Senhas devem ter um mínimo de 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.
 - Senhas não devem ser facilmente adivinháveis, como sequências numéricas ou combinações comuns (ex.: "123456" ou "senha").
 
-**2. Autenticação de Dois Fatores:**
+#### **13.1.2. Autenticação de Dois Fatores:**
 
 - Implementar a autenticação de dois fatores (2FA) para aumentar a segurança no acesso, solicitando um código adicional enviado ao celular ou e-mail do usuário durante o login.
 
-**3. Recuperação de Senha:**
+#### **13.1.3. Recuperação de Senha:**
 
 - Oferecer um processo de recuperação de senha seguro, que envolve o envio de um código de verificação para o e-mail do usuário.
 - O usuário deve inserir esse código para redefinir sua senha, garantindo que apenas o proprietário da conta tenha acesso.
 
-**4. Captcha:**
+#### **13.1.4. Captcha:**
 
 - Implementar a verificação de captcha em formulários sensíveis (como login e cadastro) para prevenir ataques automatizados, como tentativas de força bruta.
 
-**5. Proteção contra Malware:**
+#### **13.1.5. Proteção contra Malware:**
 
 - Recomendar aos usuários que mantenham um software antivírus atualizado em seus dispositivos para proteção contra malware e outras ameaças.
 
-**6. Política de Segurança:**
+#### **13.1.6. Política de Segurança:**
 
 - Criar uma mini política de segurança que informe os usuários sobre as melhores práticas, como a importância de não compartilhar senhas, desconectar de contas após o uso, e o uso de redes seguras (evitando Wi-Fi público para acessar informações sensíveis).
 
-**7. Comunicação Segura:**
+#### **13.1.7. Comunicação Segura:**
 
 - Garantir que todas as comunicações entre o cliente e o servidor sejam feitas por meio de conexões seguras (HTTPS), protegendo os dados contra interceptações.
 
@@ -960,27 +1029,27 @@ Para garantir o funcionamento adequado da aplicação, os seguintes requisitos d
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
 
-**1 Política de Backup:**
+#### **13.2.1 Política de Backup:**
 
 - Realizar backups completos da aplicação e do banco de dados uma vez por mês.
 - Executar backups incrementais semanalmente para garantir a recuperação de dados recentes em caso de falhas.
 - Armazenar os backups em locais seguros e separados do servidor principal, com acesso restrito.
 
-**2. Acesso a Dados:**
+#### **13.2.2. Acesso a Dados:**
 
 - O administrador do sistema não deve ter acesso a dados pessoais dos usuários, exceto quando necessário para manutenção ou resolução de problemas. Todas as atividades devem ser registradas em logs para auditoria.
 - Implementar controles de acesso baseados em função (RBAC) para limitar o acesso a dados sensíveis apenas aos usuários autorizados.
 
-**3. Segurança do Servidor:**
+#### **13.2.3. Segurança do Servidor:**
 
 - Para servidores Linux, garantir que as práticas de segurança sejam seguidas, incluindo a configuração adequada de firewalls e a desativação de serviços desnecessários.
 - Para outros sistemas operacionais, utilizar software antivírus atualizado para proteger contra malware e ameaças cibernéticas.
 
-**4. Atualizações Regulares:**
+#### **13.2.4. Atualizações Regulares:**
 
 - Manter o sistema operacional, servidores web e quaisquer bibliotecas ou dependências atualizadas para proteger contra vulnerabilidades conhecidas.
 
-**5. Monitoramento e Auditoria:**
+#### **13.2.5. Monitoramento e Auditoria:**
 
 - Implementar soluções de monitoramento para detectar atividades suspeitas ou não autorizadas.
 - Realizar auditorias de segurança regularmente para avaliar a conformidade com as políticas de segurança e identificar áreas de melhoria.
