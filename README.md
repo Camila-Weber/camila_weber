@@ -813,6 +813,44 @@ graph TD;
     E -->|Armazena/Recupera| F;
 ```
 
+
+```mermaid
+graph TD;
+    %% Blocos do Cliente
+    subgraph Cliente
+        direction TB
+        A1[Hardware: Computador/Desktop ou Dispositivo Móvel]
+        A2[SO: Windows, macOS, Linux, Android, iOS]
+        A3[Navegador: Chrome, Firefox, Safari]
+        A4[Aplicativo: App de gerenciamento]
+        A1 --> A2
+        A1 --> A3
+        A1 --> A4
+    end
+
+    %% Blocos do Servidor
+    subgraph Servidor
+        direction TB
+        B1[Hardware: Servidor Dedicado ou VPS]
+        B2[SO: Linux]
+        B3[Servidor Web: Apache]
+        B4[Aplicação: Scriptcase]
+        B5[Banco de Dados: MySQL]
+        B1 --> B2
+        B2 --> B3
+        B2 --> B4
+        B4 --> B5
+    end
+
+    %% Fluxo de Dados
+    A3 -->|Solicitação| B3
+    A4 -->|Comunicação| B3
+    B3 -->|Processa| B4
+    B4 -->|Consulta| B5
+    B4 -->|Retorna| A3
+    B4 -->|Retorna| A4
+```
+
 ---
 # 12. Requisitos de sistemas
 
