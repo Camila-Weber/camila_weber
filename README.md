@@ -7,9 +7,6 @@ Discente: Camila Weber
 
 Docente: Emiliano Soares Monteiro
 
-<!--  -->
-
-
 - [Camila Weber - Engenharia de Software](#camila-weber---engenharia-de-software)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio](#2-descrição-do-negócio)
@@ -18,8 +15,10 @@ Docente: Emiliano Soares Monteiro
   - [3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final](#32-o-que-o-sistema-entrega-do-ponto-de-vista-do-usuário-final)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1. Descrição das Entidades](#41-descrição-das-entidades)
+  - [4.2. Descrição dos relacionamentos](#42-descrição-dos-relacionamentos)
 - [5. Diagrama de classe](#5-diagrama-de-classe)
   - [5.1. Descrição das Classes](#51-descrição-das-classes)
+  - [5.2. Descrição dos relacionamentos](#52-descrição-dos-relacionamentos)
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1. Casos de uso](#61-casos-de-uso)
   - [6.2. Histórias de usuários](#62-histórias-de-usuários)
@@ -103,7 +102,9 @@ Docente: Emiliano Soares Monteiro
 ---
 # 1. Introdução
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços excluvivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada a seguir:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto a seguir apresenta um sistema desenvolvido para um petshop. A empresa é considerada micro e iniciou as atividades recentemente. Ao possuir serviços excluvivos, os sistemas presentes no mercado não se enquadram, desta forma, os proprietários decidiram desenvolver uma solução própria. Esta solução é detalhada nos seguintes tópicos.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 2. Descrição do negócio
@@ -174,80 +175,88 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 **32.** O pagamento das da conta pode ser feito em dinheiro, pix e cartões.
 
+**33.** O acesso ao sistema da clínica é feito por meio do login, com nome de usuário e senha.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ---
 # 3. Visão geral do sistema
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema proposto para a clínica veterinária é uma plataforma abrangente que integra diversas funcionalidades voltadas ao atendimento e ao gerenciamento de animais, clientes e serviços. Ele permite o cadastro de clientes e seus animais, agendamento de consultas, gestão de prontuários, geração de receitas, além de oferecer serviços adicionais como hospedagem, internação e creche.
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 3.1. Principais Módulos do Sistema
 
-**Cadastro de Clientes e Animais:**
+- **Cadastro de Clientes e Animais**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Os usuários podem criar perfis que contêm informações pessoais dos clientes e dados dos animais, incluindo histórico de saúde e preferências alimentares.
 
-**Agendamento:**
+- **Agendamento**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Permite que os clientes marquem atendimentos com veterinários, escolhendo horários e serviços conforme a necessidade (rotina ou emergência).
 
-**Atendimento Veterinário:**
+- **Atendimento Veterinário**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Inclui a realização de entrevistas, exames e anotações em prontuário, além da geração de receitas e orientações pós-atendimento.
 
-**Serviços Adicionais:**
+- **Serviços Adicionais**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gerencia a hospedagem, internação, banho e tosa, e creche, proporcionando uma experiência completa para os animais sob cuidados.
 
-**Venda de Produtos:**
+- **Venda de Produtos**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integra um petshop com um amplo estoque de produtos, permitindo que os clientes façam compras diretamente na clínica.
 
-**Pagamentos:**
+- **Pagamentos**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Oferece opções variadas de pagamento, incluindo dinheiro, pix e cartões, facilitando a transação.
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final
 
-**Acesso Rápido a Serviços:**
+- **Acesso Rápido a Serviços**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema oferece uma interface amigável que permite aos usuário agendar consultas e serviços para os clientes de forma eficiente e intuitiva.
 
-**Atendimento Personalizado:**
+- **Atendimento Personalizado**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cada animal é tratado de forma única, com informações detalhadas coletadas e registradas, o que resulta em um atendimento mais adequado às suas necessidades.
 
-**Histórico Completo de Saúde:**
+- **Histórico Completo de Saúde**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Os clientes têm acesso a prontuários completos, que documentam todas as consultas, tratamentos e observações, permitindo um acompanhamento contínuo da saúde dos animais.
 
-**Flexibilidade de Agendamento:**
+- **Flexibilidade de Agendamento**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A possibilidade de agendar atendimentos com antecedência, escolhendo veterinários e horários, proporciona comodidade e evita filas.
 
-**Serviços de Emergência:**
+- **Serviços de Emergência**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema garante atendimento imediato em situações de emergência, com veterinários disponíveis 24 horas, assegurando cuidados urgentes quando necessário.
 
-**Cuidado e Conforto Durante a Hospedagem:**
+- **Cuidado e Conforto Durante a Hospedagem**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clientes podem agendar a hospedagem de seus animais, com a certeza de que receberão cuidados adequados, alimentação e atividades recreativas.
 
-**Facilidade de Compras:**
+- **Facilidade de Compras**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A integração com o petshop permite que os clientes adquiram produtos essenciais durante suas visitas, simplificando o processo de compra.
 
-**Descontos e Benefícios:**
+- **Descontos e Benefícios**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema oferece acesso a descontos em farmácias para clientes cadastrados, proporcionando vantagens adicionais.
 
-**Variedade nos Métodos de Pagamento:**
+- **Variedade nos Métodos de Pagamento**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A aceitação de diferentes formas de pagamento garante que os clientes possam realizar transações de forma prática e conveniente.
 
-**Experiência Geral Positiva:**
+- **Experiência Geral Positiva**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A combinação de funcionalidades robustas e uma interface amigável resulta em uma experiência de usuário satisfatória, fortalecendo a relação entre a clínica e seus clientes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Esses elementos destacam como o sistema atende às necessidades dos usuários finais, promovendo uma gestão eficiente e um atendimento de qualidade na clínica veterinária.
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 4. Diagrama ER
@@ -346,13 +355,15 @@ erDiagram
     ATENDIMENTO ||--o{ PRODUTO : inclui
 ```
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 4.1. Descrição das Entidades
 
 > **CLIENTE**: Representa os clientes da clínica, incluindo informações pessoais e de contato.
 > 
 > **ANIMAL**: Registra os animais cadastrados, com detalhes sobre nome, tipo, condições médicas e hábitos.
 > 
-> **VETERINARIO**: Contém informações sobre os veterinários, incluindo especializações e horários de plantão.
+> **Veterinário**: Contém informações sobre os veterinários, incluindo especializações e horários de plantão.
 > 
 > **ATENDIMENTO**: Relaciona os atendimentos realizados, incluindo informações sobre o cliente, animal, veterinário, tipo de atendimento e documentação gerada (prontuário, receita).
 > 
@@ -366,6 +377,33 @@ erDiagram
 > 
 > **PAGAMENTO**: Contém informações sobre os pagamentos realizados pelos clientes.
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 4.2. Descrição dos relacionamentos
+
+>**CLIENTE** pode ter vários **ANIMAL**s.
+>
+>**CLIENTE** pode realizar vários **ATENDIMENTO**s.
+>
+>**CLIENTE** pode agendar várias **HOSPEDAGEM**s.
+>
+>**CLIENTE** pode solicitar várias **INTERNAÇÃO**s.
+>
+>**CLIENTE** pode efetuar vários **PAGAMENTO**s.
+>
+>**ANIMAL** pode participar de vários **ATENDIMENTO**s.
+>
+>**ANIMAL** pode se hospedar em várias **HOSPEDAGEM**s.
+>
+>**ANIMAL** pode ser internado em várias **INTERNAÇÃO**s.
+>
+>**ANIMAL** pode frequentar a **CRECHE** em diferentes ocasiões.
+>
+>**Veterinário** pode atender a vários **ATENDIMENTO**s.
+>
+>**ATENDIMENTO** pode incluir vários **PRODUTO**s.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 5. Diagrama de classe
@@ -468,19 +506,21 @@ classDiagram
     Cliente "1" -- "0..*" Pagamento : realiza
 ```
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 5.1. Descrição das Classes
 
 > **Cliente**: Representa os clientes da clínica, com métodos para cadastrar clientes e gerenciar seus animais.
 > 
 > **Animal**: Contém informações sobre os animais, como tipo e descrição, e métodos para gerenciar atendimentos.
 > 
-> **Veterinario**: Armazena dados sobre os veterinários e seus métodos de atendimento e aplicação de vacinas.
+> **Veterinário**: Armazena dados sobre os veterinários e seus métodos de atendimento e aplicação de vacinas.
 > 
 > **Atendimento**: Registra informações sobre os atendimentos realizados, incluindo clientes, animais e veterinários.
 > 
 > **Hospedagem**: Representa serviços de hospedagem para animais.
 > 
-> **Internacao**: Armazena informações sobre internações de animais.
+> **Internação**: Armazena informações sobre internações de animais.
 > 
 > **Creche**: Detalha atividades dos animais na creche.
 > 
@@ -488,12 +528,40 @@ classDiagram
 > 
 > **Pagamento**: Armazena informações sobre os pagamentos realizados pelos clientes.
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 5.2. Descrição dos relacionamentos
+
+>**Cliente** pode ter vários **Animal**s.
+>
+>**Veterinário** pode atender a vários **Atendimento**s.
+>
+>**Animal** pode ser atendido por vários **Veterinário**s.
+>
+>**Atendimento** é registrado para um único **Cliente**.
+>
+>**Atendimento** inclui um único **Animal.
+>
+>**Atendimento** é gerado por um único **Veterinário**.
+>
+>**Animal** pode se hospedar em várias **Hospedagem**s.
+>
+>**Animal** pode ser internado em várias **Internação**s.
+>
+>**Animal** pode frequentar a **Creche** em várias ocasiões.
+>
+>**Cliente** pode realizar vários **Pagamento**s.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ---
 # 6. Casos de uso
 
 ## 6.1. Casos de uso
 
 ![Figura 1 - Casos de uso](https://github.com/Camila-Weber/camila_weber/blob/main/telas/casos_de_uso.png)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 6.2. Histórias de usuários
 
@@ -563,10 +631,14 @@ classDiagram
 > **quero** ter opções de pagamento como dinheiro, pix e cartões,  
 > **para** que eu possa escolher a forma que for mais conveniente para mim.
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ---
 # 7. Diagrama de componentes
 
 ![Figura 19 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/diagrama_de_componentes.png)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 8. Diagrama de Implantação
