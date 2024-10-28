@@ -669,12 +669,20 @@ classDiagram
 > **para** que eu possa encontrar tudo o que preciso em um só lugar.
 
 - **Critérios de aceitação**
+    - O cliente pode visualizar os produtos disponíveis no petshop da clínica.
+    - O cliente pode adicionar produtos ao carrinho e finalizar a compra.
+    - O sistema deve confirmar a compra e enviar um recibo ao cliente.
 
 ### 6.2.11. História de Usuário 11: Pagamento das Contas
 
 > **Como** um cliente,  
 > **quero** ter opções de pagamento como dinheiro, pix e cartões,  
 > **para** que eu possa escolher a forma que for mais conveniente para mim.
+
+- **Critérios de aceitação**
+    - O cliente deve ter opções de pagamento como dinheiro, pix e cartões durante o checkout.
+    - O sistema deve processar o pagamento e confirmar a transação.
+    - O cliente deve receber um comprovante de pagamento.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
