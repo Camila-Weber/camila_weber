@@ -22,17 +22,17 @@ Docente: Emiliano Soares Monteiro
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1. Casos de uso](#61-casos-de-uso)
   - [6.2. Histórias de usuários](#62-histórias-de-usuários)
-    - [6.2.1. Cadastro de Cliente e Animal](#621-cadastro-de-cliente-e-animal)
-    - [6.2.2. Marcação de Atendimento](#622-marcação-de-atendimento)
-    - [6.2.3. Registro de Condições](#623-registro-de-condições)
-    - [6.2.4. Atendimento de Emergência](#624-atendimento-de-emergência)
-    - [6.2.5. Receitas e Orientações](#625-receitas-e-orientações)
-    - [6.2.6. Ficha e Prontuário do Animal](#626-ficha-e-prontuário-do-animal)
-    - [6.2.7. Agendamento de Hospedagem](#627-agendamento-de-hospedagem)
-    - [6.2.8. Serviços de Banho e Tosa](#628-serviços-de-banho-e-tosa)
-    - [6.2.9. Creche para Animais](#629-creche-para-animais)
-    - [6.2.10. Compras no Petshop](#6210-compras-no-petshop)
-    - [6.2.11. Pagamento das Contas](#6211-pagamento-das-contas)
+    - [6.2.1. História de Usuário 01: Cadastro de Cliente e Animal](#621-história-de-usuário-01-cadastro-de-cliente-e-animal)
+    - [6.2.2. História de Usuário 02: Marcação de Atendimento](#622-história-de-usuário-02-marcação-de-atendimento)
+    - [6.2.3. História de Usuário 03: Registro de Condições](#623-história-de-usuário-03-registro-de-condições)
+    - [6.2.4. História de Usuário 04: Atendimento de Emergência](#624-história-de-usuário-04-atendimento-de-emergência)
+    - [6.2.5. História de Usuário 05: Receitas e Orientações](#625-história-de-usuário-05-receitas-e-orientações)
+    - [6.2.6. História de Usuário 06: Ficha e Prontuário do Animal](#626-história-de-usuário-06-ficha-e-prontuário-do-animal)
+    - [6.2.7. História de Usuário 07: Agendamento de Hospedagem](#627-história-de-usuário-07-agendamento-de-hospedagem)
+    - [6.2.8. História de Usuário 08: Serviços de Banho e Tosa](#628-história-de-usuário-08-serviços-de-banho-e-tosa)
+    - [6.2.9. História de Usuário 09: Creche para Animais](#629-história-de-usuário-09-creche-para-animais)
+    - [6.2.10. História de Usuário 10: Compras no Petshop](#6210-história-de-usuário-10-compras-no-petshop)
+    - [6.2.11. História de Usuário 11: Pagamento das Contas](#6211-história-de-usuário-11-pagamento-das-contas)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de Implantação](#8-diagrama-de-implantação)
 - [9. Protótipo de telas](#9-protótipo-de-telas)
@@ -565,67 +565,112 @@ classDiagram
 
 ## 6.2. Histórias de usuários
 
-### 6.2.1. Cadastro de Cliente e Animal
+### 6.2.1. História de Usuário 01: Cadastro de Cliente e Animal
 
 > **Como** um cliente,  
 > **quero** cadastrar minhas informações e as do meu animal,  
 > **para** que eu possa agendar atendimentos e receber cuidados adequados.
 
-### 6.2.2. Marcação de Atendimento
+- **Critérios de aceitação**
+    - O cliente pode inserir seu nome, endereço e telefone.
+    - O sistema deve armazenar essas informações e associá-las ao cliente.
+    - O cliente pode inserir o nome, tipo (gato ou cachorro), condição, tipo de ração e hábitos do animal.
+    - O sistema deve associar o animal ao cliente que o cadastrou.
+
+### 6.2.2. História de Usuário 02: Marcação de Atendimento
 
 > **Como** um cliente,  
 > **quero** marcar um horário com antecedência,  
 > **para** que eu possa escolher o veterinário e evitar filas.
 
-### 6.2.3. Registro de Condições
+- **Critérios de aceitação**
+    - O cliente pode visualizar a disponibilidade de veterinários.
+    - O cliente pode escolher um veterinário e um horário para o atendimento.
+    - O sistema deve confirmar o agendamento e enviar uma notificação ao cliente.
+
+### 6.2.3. História de Usuário 03: Registro de Condições
 
 > **Como** um cliente,  
 > **quero** informar as condições de saúde do meu animal e seus hábitos,  
 > **para** que o veterinário possa oferecer um atendimento adequado.
 
-### 6.2.4. Atendimento de Emergência
+- **Critérios de aceitação**
+    - O cliente pode informar as condições de saúde do animal e seus hábitos durante o cadastro ou atualização do perfil.
+    - Essas informações devem ser armazenadas no perfil do animal e estar acessíveis ao veterinário durante o atendimento.
+
+### 6.2.4. História de Usuário 04: Atendimento de Emergência
 
 > **Como** um cliente,  
 > **quero** saber que posso levar meu animal para atendimento de emergência a qualquer hora,  
 > **para** que ele receba os cuidados necessários rapidamente.
 
-### 6.2.5. Receitas e Orientações
+- **Critérios de aceitação**
+    - O cliente deve ser informado sobre a disponibilidade de atendimento de emergência.
+    - O sistema deve permitir que o cliente registre a entrada do animal para atendimento de emergência a qualquer hora.
+
+### 6.2.5. História de Usuário 05: Receitas e Orientações
 
 > **Como** um veterinário,  
 > **quero** gerar receitas com informações detalhadas após o atendimento,  
 > **para** que os clientes possam seguir corretamente as orientações de cuidado.
 
-### 6.2.6. Ficha e Prontuário do Animal
+- **Critérios de aceitação**
+    - O veterinário deve poder gerar receitas detalhadas após o atendimento.
+    - As receitas devem ser armazenadas no sistema e enviadas ao cliente.
+    - O cliente deve poder visualizar e imprimir as orientações de cuidado.
+
+### 6.2.6. História de Usuário 06: Ficha e Prontuário do Animal
 
 > **Como** um veterinário,  
 > **quero** registrar todas as informações e observações em uma ficha,  
 > **para** que haja um histórico completo do atendimento do animal.
 
-### 6.2.7. Agendamento de Hospedagem
+- **Critérios de aceitação**
+    - O veterinário deve registrar todas as informações e observações na ficha do animal após cada atendimento.
+    - O sistema deve manter um histórico completo do atendimento do animal, acessível para consulta futura.
+
+### 6.2.7. História de Usuário 07: Agendamento de Hospedagem
 
 > **Como** um cliente,  
 > **quero** agendar a hospedagem do meu animal com uma semana de antecedência,  
 > **para** que eu possa viajar tranquilo, sabendo que ele está bem cuidado.
 
-### 6.2.8. Serviços de Banho e Tosa
+- **Critérios de aceitação**
+    - O cliente pode visualizar a disponibilidade de hospedagem para seu animal.
+    - O cliente pode agendar a hospedagem com uma semana de antecedência.
+    - O sistema deve confirmar a reserva e enviar uma notificação ao cliente.
+
+### 6.2.8. História de Usuário 08: Serviços de Banho e Tosa
 
 > **Como** um cliente,  
 > **quero** agendar serviços de banho e tosa,  
 > **para** que meu animal possa ficar limpo e bem cuidado.
 
-### 6.2.9. Creche para Animais
+- **Critérios de aceitação**
+    - O cliente pode visualizar a disponibilidade para serviços de banho e tosa.
+    - O cliente pode agendar um horário para o serviço.
+    - O sistema deve confirmar o agendamento e enviar uma notificação ao cliente.
+
+### 6.2.9. História de Usuário 09: Creche para Animais
 
 > **Como** um cliente,  
 > **quero** inscrever meu animal na creche,  
 > **para** que ele tenha companhia e cuidados durante o dia.
 
-### 6.2.10. Compras no Petshop
+- **Critérios de aceitação**
+    - O cliente pode inscrever seu animal na creche.
+    - O sistema deve registrar a inscrição e os dias de frequência.
+    - O cliente deve ser notificado sobre o status da inscrição.
+
+### 6.2.10. História de Usuário 10: Compras no Petshop
 
 > **Como** um cliente,  
 > **quero** comprar produtos de higiene e ração no petshop da clínica,  
 > **para** que eu possa encontrar tudo o que preciso em um só lugar.
 
-### 6.2.11. Pagamento das Contas
+- **Critérios de aceitação**
+
+### 6.2.11. História de Usuário 11: Pagamento das Contas
 
 > **Como** um cliente,  
 > **quero** ter opções de pagamento como dinheiro, pix e cartões,  
