@@ -97,11 +97,21 @@ Docente: Emiliano Soares Monteiro
       - [13.2.5. Monitoramento e Auditoria](#1325-monitoramento-e-auditoria)
 - [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
   - [14.1. Manutenção](#141-manutenção)
+      - [14.1.1. Objetivo](#1411-objetivo)
+      - [14.1.2. Ações](#1412-ações)
   - [14.2. Instalação](#142-instalação)
+      - [14.2.1. Objetivo](#1421-objetivo)
+      - [14.2.2. Ações](#1422-ações)
   - [14.3. Novas Funcionalidades](#143-novas-funcionalidades)
+      - [14.3.1. Objetivo](#1431-objetivo)
+      - [14.3.2. Processo](#1432-processo)
 - [15. Treinamento](#15-treinamento)
   - [15.1. Usuário](#151-usuário)
+      - [15.1.1. Formato do Treinamento](#1511-formato-do-treinamento)
+      - [15.1.2. Conteúdo do Treinamento](#1512-conteúdo-do-treinamento)
   - [15.2. Administrador do Sistema](#152-administrador-do-sistema)
+      - [15.2.1. Formato do Treinamento](#1521-formato-do-treinamento)
+      - [15.2.2. Conteúdo do Treinamento](#1522-conteúdo-do-treinamento)
 - [16. Script SQL](#16-script-sql)
   - [16.1. Comandos CREATE table](#161-comandos-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
@@ -941,58 +951,58 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O frontend é a interface do usuário, onde os clientes e funcionários interagem com o sistema. Os principais componentes incluem:
 
-- HTML/CSS/JavaScript: Tecnologias básicas para construir a estrutura e o estilo da aplicação.
-- Bootstrap: Framework para design responsivo, permitindo que o sistema seja acessível em diferentes dispositivos.
-- Formulários de Cadastro e Atendimento: Interfaces para que os clientes possam cadastrar suas informações e solicitar atendimentos.
-- Interface de Agendamento: Funcionalidade para agendar consultas e serviços com veterinários.
-- Dashboard para Veterinários: Painel para que os veterinários visualizem suas agendas, atendimentos e prontuários dos animais.
+- **HTML/CSS/JavaScript**: Tecnologias básicas para construir a estrutura e o estilo da aplicação.
+- **Bootstrap**: Framework para design responsivo, permitindo que o sistema seja acessível em diferentes dispositivos.
+- **Formulários de Cadastro e Atendimento**: Interfaces para que os clientes possam cadastrar suas informações e solicitar atendimentos.
+- **Interface de Agendamento**: Funcionalidade para agendar consultas e serviços com veterinários.
+- **Dashboard para Veterinários**: Painel para que os veterinários visualizem suas agendas, atendimentos e prontuários dos animais.
   
 #### 11.1.3. Backend
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O backend é responsável pela lógica de negócio e pela manipulação de dados. Ele inclui:
 
-- PHP: Linguagem de programação principal usada para desenvolver a lógica do sistema.
-- Framework PHP (Laravel/Symfony): Facilita o desenvolvimento, proporcionando ferramentas e estruturas que agilizam a criação de aplicações.
-- Componentes do Sistema: Módulos que gerenciam funcionalidades específicas, como cadastro, agendamentos e prontuários.
-- Gerenciamento de Sessões: Controla as sessões de usuários para autenticação e segurança.
-- Validação de Formulários: Garante que os dados inseridos pelos usuários sejam válidos e seguros.
-- Cadastro de Cliente e Animal: Módulo específico para registrar clientes e seus animais.
-- Agendamentos e Atendimentos: Gestão de consultas agendadas e atendimentos realizados.
-- Controle de Prontuários: Armazena e gerencia o histórico médico de cada animal.
-- Geração de Receitas: Módulo que cria receitas para tratamentos prescritos.
+- **PHP**: Linguagem de programação principal usada para desenvolver a lógica do sistema.
+- **Framework PHP**: Facilita o desenvolvimento, proporcionando ferramentas e estruturas que agilizam a criação de aplicações.
+- **Componentes do Sistema**: Módulos que gerenciam funcionalidades específicas, como cadastro, agendamentos e prontuários.
+- **Gerenciamento de Sessões**: Controla as sessões de usuários para autenticação e segurança.
+- **Validação de Formulários**: Garante que os dados inseridos pelos usuários sejam válidos e seguros.
+- **Cadastro de Cliente e Animal**: Módulo específico para registrar clientes e seus animais.
+- **Agendamentos e Atendimentos**: Gestão de consultas agendadas e atendimentos realizados.
+- **Controle de Prontuários**: Armazena e gerencia o histórico médico de cada animal.
+- **Geração de Receitas**: Módulo que cria receitas para tratamentos prescritos.
 
 #### 11.1.4. Banco de Dados
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O banco de dados é fundamental para armazenar informações essenciais:
 
-- MySQL: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar os dados.
-- phpMyAdmin/MySQL Workbench: Ferramentas para facilitar a gestão e a visualização dos dados.
-- Tabelas: Estruturas que organizam os dados, incluindo tabelas para Clientes, Animais, Atendimentos, Prontuários, Veterinários e Receitas.
+- **MySQL**: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar os dados.
+- **phpMyAdmin/MySQL Workbench**: Ferramentas para facilitar a gestão e a visualização dos dados.
+- **Tabelas**: Estruturas que organizam os dados, incluindo tabelas para Clientes, Animais, Atendimentos, Prontuários, Veterinários e Receitas.
 
 #### 11.1.5. Servidor Web
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O servidor web hospeda a aplicação e a torna acessível aos usuários:
 
-- Apache HTTP Server: O servidor utilizado para servir a aplicação web.
-- LARAGON/XAMPP/WAMP/MAMP: Pacotes de software que incluem Apache, MySQL e PHP, facilitando a configuração do ambiente de desenvolvimento.
+- **Apache HTTP Server**: O servidor utilizado para servir a aplicação web.
+- **LARAGON/XAMPP/WAMP/MAMP**: Pacotes de software que incluem Apache, MySQL e PHP, facilitando a configuração do ambiente de desenvolvimento.
 
 #### 11.1.6. Segurança
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Medidas de segurança são implementadas para proteger os dados e as comunicações:
 
-- SSL/TLS: Protocolos que garantem a criptografia das informações transmitidas entre o usuário e o servidor.
-- Let’s Encrypt: Serviço para emissão de certificados SSL gratuitos, garantindo segurança na comunicação.
-- Autenticação de Usuários: Mecanismos para garantir que apenas usuários autorizados possam acessar o sistema.
+- **SSL/TLS**: Protocolos que garantem a criptografia das informações transmitidas entre o usuário e o servidor.
+- **Let’s Encrypt**: Serviço para emissão de certificados SSL gratuitos, garantindo segurança na comunicação.
+- **Autenticação de Usuários**: Mecanismos para garantir que apenas usuários autorizados possam acessar o sistema.
 
 #### 11.1.7. Ambiente de Desenvolvimento
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O ambiente de desenvolvimento é essencial para os programadores que trabalham no sistema:
 
-- Visual Studio Code/Sublime Text/PHPStorm: Editores de código utilizados para programar a aplicação.
-- Git: Sistema de controle de versão que ajuda a gerenciar alterações no código.
-- GitHub/GitLab/Bitbucket: Plataformas para hospedagem de repositórios Git, facilitando a colaboração entre desenvolvedores.
-- Composer: Gerenciador de dependências para PHP, simplificando a instalação e atualização de bibliotecas.
-- PHPUnit para Testes: Framework utilizado para realizar testes automatizados na aplicação, assegurando a qualidade do código.
+- **Visual Studio Code/Sublime Text/PHPStorm**: Editores de código utilizados para programar a aplicação.
+- **Git**: Sistema de controle de versão que ajuda a gerenciar alterações no código.
+- **GitHub/GitLab/Bitbucket**: Plataformas para hospedagem de repositórios Git, facilitando a colaboração entre desenvolvedores.
+- **Composer**: Gerenciador de dependências para PHP, simplificando a instalação e atualização de bibliotecas.
+- **PHPUnit para Testes**: Framework utilizado para realizar testes automatizados na aplicação, assegurando a qualidade do código.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
@@ -1183,11 +1193,11 @@ graph LR;
 
 ## 14.1. Manutenção
 
-**Objetivo:**
+#### 14.1.1. Objetivo
 
 - Garantir que o software esteja sempre funcionando de forma eficiente e segura.
 
-**Ações:**
+#### 14.1.2. Ações
 
 - Realizar atualizações periódicas, correções de bugs e melhorias de desempenho.
 - Testes regulares devem ser realizados para garantir que todas as funcionalidades estejam operacionais.
@@ -1196,11 +1206,11 @@ graph LR;
 
 ## 14.2. Instalação
 
-**Objetivo:**
+#### 14.2.1. Objetivo
 
 - Instalar a aplicação em servidores de produção de forma segura e eficaz.
 
-**Ações:**
+#### 14.2.2. Ações
 
 - Seguir um checklist de segurança durante a instalação, incluindo a configuração de firewalls, permissões de acesso e a verificação de que todas as práticas de segurança estão sendo seguidas.
 - Testar o funcionamento da aplicação. 
@@ -1209,11 +1219,11 @@ graph LR;
 
 ## 14.3. Novas Funcionalidades
 
-**Objetivo:**
+#### 14.3.1. Objetivo
 
 - Adicionar funcionalidades à aplicação de maneira estruturada e segura.
   
-**Processo:**
+#### 14.3.2. Processo
 
 **1. Formalização do Pedido**:
 
@@ -1245,11 +1255,11 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para usuários deve incluir:
 
-**1. Formato do Treinamento:**
+#### 15.1.1. Formato do Treinamento
 
 - Oferecer opções de treinamento, como vídeos na web, tutoriais interativos ou sessões presenciais.
 
-**2. Conteúdo do Treinamento:**
+#### 15.1.2. Conteúdo do Treinamento
 
 - **Introdução ao Sistema:**
     - Apresentação geral do sistema, suas funcionalidades e objetivos.
@@ -1275,11 +1285,11 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para administradores do sistema deve abranger:
 
-**1. Formato do Treinamento:**
+#### 15.2.1. Formato do Treinamento
 
 - Sessões presenciais ou webinars para interação direta, além de materiais gravados para consulta posterior.
 
-**2. Conteúdo do Treinamento:**
+#### 15.2.2. Conteúdo do Treinamento
 
 - **Gerenciamento de Usuários:**
     - Como criar, editar e excluir contas de usuários e administrar permissões.
