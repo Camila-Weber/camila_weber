@@ -13,6 +13,7 @@ Docente: Emiliano Soares Monteiro
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
   - [3.1. Principais Módulos do Sistema](#31-principais-módulos-do-sistema)
   - [3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final](#32-o-que-o-sistema-entrega-do-ponto-de-vista-do-usuário-final)
+  - [3.3. Diagrama de funcionamento](#33-diagrama-de-funcionamento)
 - [4. Diagrama ER](#4-diagrama-er)
   - [4.1. Descrição das Entidades](#41-descrição-das-entidades)
   - [4.2. Descrição dos relacionamentos](#42-descrição-dos-relacionamentos)
@@ -52,8 +53,14 @@ Docente: Emiliano Soares Monteiro
   - [9.13. Tela de Dashboard](#913-tela-de-dashboard)
 - [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
 - [11. Pilha tecnológica](#11-pilha-tecnológica)
-    - [Descrição do Diagrama:](#descrição-do-diagrama)
-    - [Descrição do Diagrama:](#descrição-do-diagrama-1)
+  - [11.1. Descrição do Diagrama da Pilha Tecnológica](#111-descrição-do-diagrama-da-pilha-tecnológica)
+      - [11.1.1. Sistema da Clínica Veterinária](#1111-sistema-da-clínica-veterinária)
+      - [11.1.2. Frontend](#1112-frontend)
+      - [11.1.3. Backend](#1113-backend)
+      - [11.1.4. Banco de Dados](#1114-banco-de-dados)
+      - [11.1.5. Servidor Web](#1115-servidor-web)
+      - [11.1.6. Segurança](#1116-segurança)
+      - [11.1.7. Ambiente de Desenvolvimento](#1117-ambiente-de-desenvolvimento)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
   - [12.1. Requisitos do Cliente](#121-requisitos-do-cliente)
       - [12.1.1. Sistema Operacional](#1211-sistema-operacional)
@@ -257,6 +264,41 @@ Descrição do cenário onde o sistema deverá funcionar:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A combinação de funcionalidades robustas e uma interface amigável resulta em uma experiência de usuário satisfatória, fortalecendo a relação entre a clínica e seus clientes.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 3.3. Diagrama de funcionamento
+
+```mermaid
+flowchart TD
+    A[Chegada do Cliente] --> B[Atendimento por Atendente]
+    B --> C{Cadastro do Cliente e do Animal?}
+    C -->|Sim| D[Verificação de Agenda]
+    C -->|Não| E[Cadastrar Cliente e Animal]
+    E --> D
+
+    D --> F{Agenda Disponível?}
+    F -->|Sim| G[Agendar Atendimento]
+    F -->|Não| H[Incluir na Fila de Espera]
+
+    G --> I[Atendimento Veterinário]
+    I --> J[Entrevista pelo Veterinário]
+    J --> K[Exame do Animal]
+    K --> L[Prescrição de Tratamentos?]
+    L -->|Sim| M[Gerar Receita]
+    L -->|Não| N[Registrar Observações]
+
+    M --> O[Entrega da Receita e Orientações]
+    N --> O
+
+    O --> P[Registrar Atendimento e Atualizações no Prontuário]
+
+    P --> Q{Serviços Adicionais?}
+    Q -->|Sim| R[Agendar Serviços Complementares]
+    Q -->|Não| S[Vendas e Pagamento]
+
+    R --> S
+    S --> T[Compra de Produtos no Petshop]
+    T --> U[Finalização do Pagamento]
+```
 
 ---
 # 4. Diagrama ER
@@ -839,205 +881,120 @@ graph LR
 # 11. Pilha tecnológica
 
 ```mermaid
-graph TD
-    A[Camada de Apresentação] --> B[Interface do Usuário]
-    A --> C[Aplicativo Web/Móvel]
+graph LR;
+    A[Sistema da Clínica Veterinária] --> B[Frontend]
+    A --> C[Backend]
+    A --> D[Banco de Dados]
+    A --> E[Servidor Web]
+    A --> F[Segurança]
+    A --> G[Ambiente de Desenvolvimento]
     
-    B --> D[HTML/CSS/JavaScript]
-    C --> D
+    %% Frontend Details
+    B --> B1[HTML/CSS/JavaScript]
+    B --> B2[Bootstrap]
+    B --> B3[Formulários de Cadastro e Atendimento]
+    B --> B4[Interface de Agendamento]
+    B --> B5[Dashboard para Veterinários]
 
-    D --> E[Frameworks]
-    
-    E --> F[API REST]
-    
-    F --> G[Camada de Lógica de Negócio]
-    
-    G --> H[Servidor de Aplicação]
-    G --> I[Processamento de Dados]
-    
-    H --> J[Banco de Dados]
-    
-    J --> K[PostgreSQL/MySQL]
-    
-    J --> L[Armazenamento de Documentos]
-    
-    K --> M[Serviço de Autenticação]
-    
-    M --> N[OAuth2/JWT]
-    
-    O[Camada de Integração] --> P[Serviços Externos]
-    
-    P --> Q[Integração com Petshop]
-    P --> R[Parcerias com Farmácias]
+    %% Backend Details
+    C --> C1[PHP]
+    C --> C2[Framework PHP]
+    C --> C3[Componentes do Sistema]
+    C1 --> C4[Gerenciamento de Sessões]
+    C1 --> C5[Validação de Formulários]
+    C3 --> C6[Cadastro de Cliente e Animal]
+    C3 --> C7[Agendamentos e Atendimentos]
+    C3 --> C8[Controle de Prontuários]
+    C3 --> C9[Geração de Receitas]
 
-    S[Infraestrutura] --> T[Nuvem]
-    S --> U[Servidores Físicos/Locais]
+    %% Database Details
+    D --> D1[MySQL]
+    D --> D2[phpMyAdmin/MySQL Workbench]
+    D --> D3[Tabelas: Clientes, Animais, Atendimentos, Prontuários, Veterinários, Receitas]
+
+    %% Web Server Details
+    E --> E1[Apache HTTP Server]
+    E --> E2[LARAGON/XAMPP/WAMP/MAMP]
+
+    %% Security Details
+    F --> F1[SSL/TLS]
+    F --> F2[Let’s Encrypt]
+    F --> F3[Autenticação de Usuários]
+
+    %% Development Environment Details
+    G --> G1[Visual Studio Code/Sublime Text/PHPStorm]
+    G --> G2[Git]
+    G --> G3[GitHub/GitLab/Bitbucket]
+    G --> G4[Composer]
+    G --> G5[PHPUnit para Testes]
 ```
 
-```mermaid
-graph TD;
-    A[Usuário] -->|Acessa| B[Interface do Usuário]
-    B -->|Comunica| C[Servidor Web]
-    C -->|Executa| D[Aplicação PHP]
-    D -->|Consulta| E[Banco de Dados MySQL]
-    E -->|Armazena/Recupera| F[Dados do Cliente e Animal]
-    
-    subgraph LAMP
-        A[Linux] --> B[Apache]
-        B --> D[PHP]
-        D --> E[MySQL]
-    end
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
-    F -->|Gera| G[Fichas e Prontuários]
-    G -->|Fornece| H[Receitas e Orientações]
-```
+## 11.1. Descrição do Diagrama da Pilha Tecnológica
 
+#### 11.1.1. Sistema da Clínica Veterinária
 
-### Descrição do Diagrama:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema é projetado para gerenciar os diversos aspectos da operação de uma clínica veterinária, abrangendo desde o cadastro de clientes e animais até o agendamento de atendimentos e gestão de prontuários.
 
->**Usuário**: Representa os clientes que acessam o sistema.
->
->**Interface do Usuário**: A camada onde os usuários interagem com o sistema.
->
->**Servidor Web (Apache)**: Responsável por gerenciar as solicitações do cliente.
->
->**Aplicação PHP**: A lógica do aplicativo que processa as solicitações e interage com o banco de dados.
->
->**Banco de Dados MySQL**: Onde são armazenadas as informações sobre clientes, animais e registros.
->
->**Dados do Cliente e Animal**: Armazenados no banco de dados.
->
->**Fichas e Prontuários**: Gerados com base nos dados armazenados.
->
->**Receitas e Orientações**: Fornecidas ao cliente após o atendimento.
+#### 11.1.2. Frontend
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O frontend é a interface do usuário, onde os clientes e funcionários interagem com o sistema. Os principais componentes incluem:
 
+- HTML/CSS/JavaScript: Tecnologias básicas para construir a estrutura e o estilo da aplicação.
+- Bootstrap: Framework para design responsivo, permitindo que o sistema seja acessível em diferentes dispositivos.
+- Formulários de Cadastro e Atendimento: Interfaces para que os clientes possam cadastrar suas informações e solicitar atendimentos.
+- Interface de Agendamento: Funcionalidade para agendar consultas e serviços com veterinários.
+- Dashboard para Veterinários: Painel para que os veterinários visualizem suas agendas, atendimentos e prontuários dos animais.
+  
+#### 11.1.3. Backend
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O backend é responsável pela lógica de negócio e pela manipulação de dados. Ele inclui:
 
-```mermaid
-graph TD;
+- PHP: Linguagem de programação principal usada para desenvolver a lógica do sistema.
+- Framework PHP (Laravel/Symfony): Facilita o desenvolvimento, proporcionando ferramentas e estruturas que agilizam a criação de aplicações.
+- Componentes do Sistema: Módulos que gerenciam funcionalidades específicas, como cadastro, agendamentos e prontuários.
+- Gerenciamento de Sessões: Controla as sessões de usuários para autenticação e segurança.
+- Validação de Formulários: Garante que os dados inseridos pelos usuários sejam válidos e seguros.
+- Cadastro de Cliente e Animal: Módulo específico para registrar clientes e seus animais.
+- Agendamentos e Atendimentos: Gestão de consultas agendadas e atendimentos realizados.
+- Controle de Prontuários: Armazena e gerencia o histórico médico de cada animal.
+- Geração de Receitas: Módulo que cria receitas para tratamentos prescritos.
 
-    %% Lado do Cliente
-    subgraph Cliente
-        A[Usuário] -->|Acessa| B[Navegador]
-        B -->|Interface| C[Interface do Usuário]
-    end
+#### 11.1.4. Banco de Dados
 
-    %% Lado do Servidor
-    subgraph Servidor
-        D[Servidor Web] -->|Apache| E[Aplicação PHP]
-        E -->|Consulta| F[Banco de Dados MySQL]
-    end
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O banco de dados é fundamental para armazenar informações essenciais:
 
-    %% Infraestrutura
-    subgraph Infraestrutura
-        J[Sistema Operacional: Linux]
-        K[Hardware: Servidor]
-        L[Navegador: Chrome/Firefox/Edge]
-    end
+- MySQL: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar os dados.
+- phpMyAdmin/MySQL Workbench: Ferramentas para facilitar a gestão e a visualização dos dados.
+- Tabelas: Estruturas que organizam os dados, incluindo tabelas para Clientes, Animais, Atendimentos, Prontuários, Veterinários e Receitas.
 
-    %% Conexões
-    A -->|Utiliza| L
-    D -->|Executa em| J
-    D -->|Roda em| K
-```
+#### 11.1.5. Servidor Web
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O servidor web hospeda a aplicação e a torna acessível aos usuários:
 
-### Descrição do Diagrama:
-- **Cliente**:
-  - **Usuário**: A pessoa que utiliza o sistema.
-  - **Navegador**: O software (como Chrome, Firefox, Edge) que permite ao usuário acessar a aplicação web.
-  - **Interface do Usuário**: A camada visual que interage com o usuário.
+- Apache HTTP Server: O servidor utilizado para servir a aplicação web.
+- LARAGON/XAMPP/WAMP/MAMP: Pacotes de software que incluem Apache, MySQL e PHP, facilitando a configuração do ambiente de desenvolvimento.
 
-- **Servidor**:
-  - **Servidor Web**: Apache, que gerencia as solicitações.
-  - **Aplicação PHP**: Processa a lógica do aplicativo.
-  - **Banco de Dados MySQL**: Armazena as informações sobre clientes e animais.
-  - **Dados de Clientes e Animais**: Informações registradas no banco de dados.
-  - **Fichas e Prontuários**: Gerados a partir das informações armazenadas.
-  - **Receitas e Orientações**: Fornecidas ao cliente após o atendimento.
+#### 11.1.6. Segurança
 
-- **Infraestrutura**:
-  - **Sistema Operacional**: Linux, no qual o servidor opera.
-  - **Hardware**: O servidor físico que suporta a aplicação.
-  - **Navegador**: Os navegadores suportados pelos usuários.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Medidas de segurança são implementadas para proteger os dados e as comunicações:
 
-```mermaid
-graph TD;
-    subgraph Cliente
-        direction TB
-        A1[Hardware: Computador/Dispositivo Móvel]
-        A2[SO: Windows, macOS, Linux, Android, iOS]
-        A3[Navegador: Chrome, Firefox, Safari]
-        A1 --> A2
-        A1 --> A3
-    end
+- SSL/TLS: Protocolos que garantem a criptografia das informações transmitidas entre o usuário e o servidor.
+- Let’s Encrypt: Serviço para emissão de certificados SSL gratuitos, garantindo segurança na comunicação.
+- Autenticação de Usuários: Mecanismos para garantir que apenas usuários autorizados possam acessar o sistema.
 
-    subgraph Servidor
-        direction TB
-        B1[Hardware: Servidor Dedicado ou VPS]
-        B2[SO: Linux]
-        B3[Servidor Web: Apache]
-        B4[Aplicação: Scriptcase]
-        B5[Banco de Dados: MySQL]
-        B1 --> B2
-        B2 --> B3
-        B2 --> B4
-        B4 --> B5
-    end
-```
+#### 11.1.7. Ambiente de Desenvolvimento
 
-```mermaid
-graph TD;
-    A[Cliente] -->|Acessa| B[Navegador];
-    A -->|Utiliza| C[Aplicativo];
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O ambiente de desenvolvimento é essencial para os programadores que trabalham no sistema:
 
-    B -->|Solicitação| D[Servidor Web Apache];
-    C -->|Comunicação| D;
+- Visual Studio Code/Sublime Text/PHPStorm: Editores de código utilizados para programar a aplicação.
+- Git: Sistema de controle de versão que ajuda a gerenciar alterações no código.
+- GitHub/GitLab/Bitbucket: Plataformas para hospedagem de repositórios Git, facilitando a colaboração entre desenvolvedores.
+- Composer: Gerenciador de dependências para PHP, simplificando a instalação e atualização de bibliotecas.
+- PHPUnit para Testes: Framework utilizado para realizar testes automatizados na aplicação, assegurando a qualidade do código.
 
-    D -->|Processa| E[Aplicação Scriptcase];
-    D -->|Consulta| F[Banco de Dados MySQL];
-
-    E -->|Armazena/Recupera| F;
-```
-
-
-```mermaid
-graph TD;
-    %% Blocos do Cliente
-    subgraph Cliente
-        direction TB
-        A1[Hardware: Computador/Desktop ou Dispositivo Móvel]
-        A2[SO: Windows, macOS, Linux, Android, iOS]
-        A3[Navegador: Chrome, Firefox, Safari]
-        A4[Aplicativo: App de gerenciamento]
-        A1 --> A2
-        A1 --> A3
-        A1 --> A4
-    end
-
-    %% Blocos do Servidor
-    subgraph Servidor
-        direction TB
-        B1[Hardware: Servidor Dedicado ou VPS]
-        B2[SO: Linux]
-        B3[Servidor Web: Apache]
-        B4[Aplicação: Scriptcase]
-        B5[Banco de Dados: MySQL]
-        B1 --> B2
-        B2 --> B3
-        B2 --> B4
-        B4 --> B5
-    end
-
-    %% Fluxo de Dados
-    A3 -->|Solicitação| B3
-    A4 -->|Comunicação| B3
-    B3 -->|Processa| B4
-    B4 -->|Consulta| B5
-    B4 -->|Retorna| A3
-    B4 -->|Retorna| A4
-```
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 12. Requisitos de sistemas
