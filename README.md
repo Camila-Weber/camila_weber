@@ -56,38 +56,38 @@ Docente: Emiliano Soares Monteiro
     - [Descrição do Diagrama:](#descrição-do-diagrama-1)
 - [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
   - [12.1. Requisitos do Cliente](#121-requisitos-do-cliente)
-      - [**12.1.1. Sistema Operacional:**](#1211-sistema-operacional)
-      - [**12.1.2. Navegadores Compatíveis:**](#1212-navegadores-compatíveis)
-      - [**12.1.3. Acesso à Internet:**](#1213-acesso-à-internet)
-      - [**12.1.4. Recursos de Hardware:**](#1214-recursos-de-hardware)
-      - [**12.1.5. Permissões e Configurações de Segurança:**](#1215-permissões-e-configurações-de-segurança)
-      - [**12.1.6. Forma de Autenticação:**](#1216-forma-de-autenticação)
+      - [12.1.1. Sistema Operacional](#1211-sistema-operacional)
+      - [12.1.2. Navegadores Compatíveis](#1212-navegadores-compatíveis)
+      - [12.1.3. Acesso à Internet](#1213-acesso-à-internet)
+      - [12.1.4. Recursos de Hardware](#1214-recursos-de-hardware)
+      - [12.1.5. Permissões e Configurações de Segurança](#1215-permissões-e-configurações-de-segurança)
+      - [12.1.6. Forma de Autenticação](#1216-forma-de-autenticação)
   - [12.2. Requisitos do Servidor](#122-requisitos-do-servidor)
-      - [**12.2.1. Tipo de Sistema Operacional:**](#1221-tipo-de-sistema-operacional)
-      - [**12.2.2. Processador:**](#1222-processador)
-      - [**12.2.3. Memória RAM:**](#1223-memória-ram)
-      - [**12.2.4. Armazenamento:**](#1224-armazenamento)
-      - [**12.2.5. Rede:**](#1225-rede)
-      - [**12.2.6. Segurança:**](#1226-segurança)
-      - [**12.2.7. Capacidade de Escalabilidade:**](#1227-capacidade-de-escalabilidade)
-      - [**12.2.8. Ambiente de Desenvolvimento e Produção:**](#1228-ambiente-de-desenvolvimento-e-produção)
-      - [**12.2.9. Monitoramento e Backup:**](#1229-monitoramento-e-backup)
-      - [**12.2.10. Integração com Serviços Externos:**](#12210-integração-com-serviços-externos)
+      - [12.2.1. Tipo de Sistema Operacional](#1221-tipo-de-sistema-operacional)
+      - [12.2.2. Processador](#1222-processador)
+      - [12.2.3. Memória RAM](#1223-memória-ram)
+      - [12.2.4. Armazenamento](#1224-armazenamento)
+      - [12.2.5. Rede](#1225-rede)
+      - [12.2.6. Segurança](#1226-segurança)
+      - [12.2.7. Capacidade de Escalabilidade](#1227-capacidade-de-escalabilidade)
+      - [12.2.8. Ambiente de Desenvolvimento e Produção](#1228-ambiente-de-desenvolvimento-e-produção)
+      - [12.2.9. Monitoramento e Backup](#1229-monitoramento-e-backup)
+      - [12.2.10. Integração com Serviços Externos](#12210-integração-com-serviços-externos)
 - [13. Considerações sobre Segurança](#13-considerações-sobre-segurança)
   - [13.1. Lado Cliente](#131-lado-cliente)
-      - [**13.1.1. Regras de Senha:**](#1311-regras-de-senha)
-      - [**13.1.2. Autenticação de Dois Fatores:**](#1312-autenticação-de-dois-fatores)
-      - [**13.1.3. Recuperação de Senha:**](#1313-recuperação-de-senha)
-      - [**13.1.4. Captcha:**](#1314-captcha)
-      - [**13.1.5. Proteção contra Malware:**](#1315-proteção-contra-malware)
-      - [**13.1.6. Política de Segurança:**](#1316-política-de-segurança)
-      - [**13.1.7. Comunicação Segura:**](#1317-comunicação-segura)
+      - [13.1.1. Regras de Senha](#1311-regras-de-senha)
+      - [13.1.2. Autenticação de Dois Fatores](#1312-autenticação-de-dois-fatores)
+      - [13.1.3. Recuperação de Senha](#1313-recuperação-de-senha)
+      - [13.1.4. Captcha](#1314-captcha)
+      - [13.1.5. Proteção contra Malware](#1315-proteção-contra-malware)
+      - [13.1.6. Política de Segurança](#1316-política-de-segurança)
+      - [13.1.7. Comunicação Segura](#1317-comunicação-segura)
   - [13.2. Lado Servidor](#132-lado-servidor)
-      - [**13.2.1 Política de Backup:**](#1321-política-de-backup)
-      - [**13.2.2. Acesso a Dados:**](#1322-acesso-a-dados)
-      - [**13.2.3. Segurança do Servidor:**](#1323-segurança-do-servidor)
-      - [**13.2.4. Atualizações Regulares:**](#1324-atualizações-regulares)
-      - [**13.2.5. Monitoramento e Auditoria:**](#1325-monitoramento-e-auditoria)
+      - [13.2.1 Política de Backup](#1321-política-de-backup)
+      - [13.2.2. Acesso a Dados](#1322-acesso-a-dados)
+      - [13.2.3. Segurança do Servidor](#1323-segurança-do-servidor)
+      - [13.2.4. Atualizações Regulares](#1324-atualizações-regulares)
+      - [13.2.5. Monitoramento e Auditoria](#1325-monitoramento-e-auditoria)
 - [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
   - [14.1. Manutenção](#141-manutenção)
   - [14.2. Instalação](#142-instalação)
@@ -585,7 +585,7 @@ classDiagram
 
 - **Critérios de aceitação**
     - O cliente pode visualizar a disponibilidade de veterinários.
-    - O cliente pode escolher um veterinário e um horário para o atendimento.
+    - O cliente pode escolher um veterinário e um horário para o atendimento com a atendente, pessoalmente ou pelo número da clínica.
     - O sistema deve confirmar o agendamento e enviar uma notificação ao cliente.
 
 ### 6.2.3. História de Usuário 03: Registro de Condições
@@ -616,7 +616,7 @@ classDiagram
 
 - **Critérios de aceitação**
     - O veterinário deve poder gerar receitas detalhadas após o atendimento.
-    - As receitas devem ser armazenadas no sistema e enviadas ao cliente.
+    - As receitas devem ser armazenadas no sistema e enviadas ao cliente, para o número contido no registro.
     - O cliente deve poder visualizar e imprimir as orientações de cuidado.
 
 ### 6.2.6. História de Usuário 06: Ficha e Prontuário do Animal
@@ -637,7 +637,7 @@ classDiagram
 
 - **Critérios de aceitação**
     - O cliente pode visualizar a disponibilidade de hospedagem para seu animal.
-    - O cliente pode agendar a hospedagem com uma semana de antecedência.
+    - O cliente pode agendar a hospedagem com pelo menos uma semana de antecedência com a atendente, pessoalmente ou pelo número da clínica.
     - O sistema deve confirmar a reserva e enviar uma notificação ao cliente.
 
 ### 6.2.8. História de Usuário 08: Serviços de Banho e Tosa
@@ -648,7 +648,7 @@ classDiagram
 
 - **Critérios de aceitação**
     - O cliente pode visualizar a disponibilidade para serviços de banho e tosa.
-    - O cliente pode agendar um horário para o serviço.
+    - O cliente pode agendar um horário para o serviço com a atendente, pessoalmente ou pelo número da clínica.
     - O sistema deve confirmar o agendamento e enviar uma notificação ao cliente.
 
 ### 6.2.9. História de Usuário 09: Creche para Animais
@@ -669,8 +669,8 @@ classDiagram
 > **para** que eu possa encontrar tudo o que preciso em um só lugar.
 
 - **Critérios de aceitação**
-    - O cliente pode visualizar os produtos disponíveis no petshop da clínica.
-    - O cliente pode adicionar produtos ao carrinho e finalizar a compra.
+    - O cliente pode visualizar e escolher os produtos disponíveis no petshop da clínica.
+    - O cliente pode comprar pessoalmente ou encomendar pelo número da clínica.
     - O sistema deve confirmar a compra e enviar um recibo ao cliente.
 
 ### 6.2.11. História de Usuário 11: Pagamento das Contas
@@ -698,6 +698,8 @@ classDiagram
 
 ![Figura 20 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/diagrama_de_implantacao.png)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ---
 # 9. Protótipo de telas
 
@@ -705,47 +707,71 @@ classDiagram
 
 ![Figura 2 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/image.png)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 9.2. Tela de Menu/Abertura
 
 ![Figura 3 - Protótipo da Tela de Menu/Abertura](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_menu.jpg)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 9.3. Tela de Relatório de Clientes
 
 ![Figura 4 - Protótipo da Tela de Relatório de Clientes](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_cliente.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 9.4. Tela de Relatório de Animais
 
 ![Figura 5 - Protótipo da Tela de Relatório de Animais](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_animal.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ![Figura 6 - Protótipo da Tela de Relatório de Animais](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_animal2.jpg)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 9.5. Tela de Relatório de Veterinários
 
 ![Figura 7 - Protótipo da Tela de Relatório de Veterinários](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_vet.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 9.6. Tela de Relatório de Hospedagem
 
 ![Figura 8 - Protótipo da Tela de Relatório de Hospedagem](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_hospedagem.jpg)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 9.7. Tela de Relatório de Internação
 
 ![Figura 9 - Protótipo da Tela de Relatório de Internação](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_internacao.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 9.8. Tela de Relatório de Produto
 
 ![Figura 10 - Protótipo da Tela de Relatório de Produto](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_produto.jpg)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 9.9. Tela de Relatório de Creche
 
 ![Figura 11 - Protótipo da Tela de Relatório de Creche](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_creche.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 9.10. Tela de Relatório de Pagamento
 
 ![Figura 12 - Protótipo da Tela de Relatório de Pagamento](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_pagamento.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 9.11. Tela de Relatório de Atendimento
 
 ![Figura 13 - Protótipo da Tela de Relatório de Atendimento](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_atendimento.jpg)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 9.12. Tela de Gráfico
 
@@ -755,6 +781,8 @@ classDiagram
 
 ![Figura 15 - Protótipo da Tela de Gráfico - Preço dos Produtos](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grafico.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 9.13. Tela de Dashboard
 
 ![Figura 16 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard.jpg)
@@ -763,19 +791,19 @@ classDiagram
 
 ![Figura 18 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard3.jpg)
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ---
 # 10. Diagrama de navegação de telas
 
 ```mermaid
-graph TD
+graph LR
     A[Login] --> B[Menu]
     
     B --> C[Cadastrar Cliente]
     B --> D[Cadastrar Animal]
     B --> E[Agendar Atendimento]
     B --> F[Atendimento Veterinário]
-    B --> G[Prontuário]
-    B --> H[Receitas Médicas]
     B --> I[Hospedagem]
     B --> J[Internação]
     B --> K[Banho e Tosa]
@@ -783,14 +811,19 @@ graph TD
     B --> M[Petshop]
     B --> N[Pagamento]
     
-    C --> O[Formulário de Cadastro]
+    C --> O[Formulário de Cadastro do Cliente]
     D --> P[Formulário de Cadastro de Animal]
     E --> Q[Selecionar Veterinário]
-    E --> R[Escolher Data e Hora]
+
+    O --> BB[Salvar Cliente]
+    P --> CC[Salvar Animal]
+    Q --> R[Escolher Data e Hora]
     
     F --> S[Entrevista]
-    F --> T[Exame do Animal]
-    F --> U[Aplicar Vacina]
+    S --> T[Exame do Animal]
+    F --> U[Registro do Atendimento]
+    U --> G[Prontuário]
+    U --> H[Receitas Médicas]
     
     I --> V[Agendar Hospedagem]
     J --> W[Registrar Internação]
@@ -799,6 +832,8 @@ graph TD
     M --> Z[Consultar Estoque]
     N --> AA[Realizar Pagamento]
 ```
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 11. Pilha tecnológica
@@ -1011,7 +1046,7 @@ graph TD;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para que o cliente tenha acesso à aplicação e consiga utilizá-la de maneira adequada, ele precisará atender aos seguintes requisitos:
 
-#### **12.1.1. Sistema Operacional:**
+#### 12.1.1. Sistema Operacional
 
 - A aplicação é compatível com os seguintes sistemas operacionais, é de preferência que o cliente utilize um deles:
   - Para PC:
@@ -1022,7 +1057,7 @@ graph TD;
       - Android
       - iOS
 
-#### **12.1.2. Navegadores Compatíveis:**
+#### 12.1.2. Navegadores Compatíveis
 
 - A aplicação pode ser acessada através de navegadores modernos, como:
   - Google Chrome
@@ -1030,12 +1065,12 @@ graph TD;
   - Safari
   - Microsoft Edge
 
-#### **12.1.3. Acesso à Internet:**
+#### 12.1.3. Acesso à Internet
 
-- Como o acesso a aplicação é por meio de navegadores é recomendado uma conexão à internet estável, com largura de banda mínima recomendada de 100 Mbps para um desempenho adequado.
+- Como o acesso a aplicação é por meio de navegadores é recomendado uma conexão à internet estável, com largura de banda mínima recomendada de 800 Mbps para um desempenho adequado.
 - Se o cliente preferir pode ter dois pontos de internet de diferentes provedores, para garantir uma redundância da conexão de internet.
 
-#### **12.1.4. Recursos de Hardware:**
+#### 12.1.4. Recursos de Hardware
 
 - Dispositivos compatíveis devem ter as seguintes especificações mínimas:
   - **PC:**
@@ -1047,71 +1082,74 @@ graph TD;
     - Memória RAM: 4 GB ou mais
     - Resolução de tela: Mínimo de 720x1280 pixels
 
-#### **12.1.5. Permissões e Configurações de Segurança:**
+#### 12.1.5. Permissões e Configurações de Segurança
 
 - Configurações de segurança no dispositivo devem permitir:
   - Execução de scripts (JavaScript)
   - Aceitação de cookies
-  - Permissões para acesso ao microfone e câmera, se necessário (para funcionalidades específicas)
 
-#### **12.1.6. Forma de Autenticação:**
+#### 12.1.6. Forma de Autenticação
 
 - Um sistema de login seguro que pode incluir:
   - Nome de usuário e senha
   - Autenticação de dois fatores (2FA) para maior segurança
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 12.2. Requisitos do Servidor
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir o funcionamento adequado da aplicação, os seguintes requisitos do servidor devem ser atendidos:
 
-#### **12.2.1. Tipo de Sistema Operacional:**
+#### 12.2.1. Tipo de Sistema Operacional
 
 - O servidor pode operar em ambientes Windows ou Linux, sendo ambos adequados para hospedar servidores web como Apache ou Nginx.
 
-#### **12.2.2. Processador:**
+#### 12.2.2. Processador
 
 - Processador com pelo menos 4 núcleos e velocidade mínima de 4 GHz, garantindo capacidade de processamento para múltiplas conexões simultâneas.
 
-#### **12.2.3. Memória RAM:**
+#### 12.2.3. Memória RAM
 
 - Mínimo de 8 GB de RAM para suportar a execução da aplicação e o gerenciamento de várias conexões simultâneas.
 
-#### **12.2.4. Armazenamento:**
+#### 12.2.4. Armazenamento
 
 - Armazenamento mínimo de 100 GB, dividido entre:
   - Códigos da aplicação
-  - Banco de dados MySQL (clientes, animais, agendamentos e atendimentos)
+  - Banco de dados MySQL
 - Preferencialmente utilizar SSDs para melhor desempenho.
 
-#### **12.2.5. Rede:**
+#### 12.2.5. Rede
 
-- Conexão à internet com largura de banda mínima de 10 Mbps para garantir um desempenho adequado durante picos de acesso.
+- Conexão à internet com largura de banda mínima de 100 Gb para garantir um desempenho adequado durante picos de acesso.
 - Registro de um nome de domínio para acesso à aplicação.
 
-#### **12.2.6. Segurança:**
+#### 12.2.6. Segurança
 
 - Implementação de certificados SSL para garantir a segurança nas interações entre a aplicação e os usuários.
 - Utilização de firewalls para proteger o servidor contra acessos não autorizados e ataques cibernéticos.
 
-#### **12.2.7. Capacidade de Escalabilidade:**
+#### 12.2.7. Capacidade de Escalabilidade
 
 - A arquitetura do sistema deve permitir:
   - Escalabilidade vertical: upgrades de hardware (aumento de CPU, RAM e armazenamento).
   - Escalabilidade horizontal: adição de mais servidores conforme a demanda de usuários e conexões simultâneas.
 
-#### **12.2.8. Ambiente de Desenvolvimento e Produção:**
+#### 12.2.8. Ambiente de Desenvolvimento e Produção
 
 - Configuração de ambientes separados para desenvolvimento, teste e produção, garantindo que alterações não afetem a operação do sistema em produção.
 - Uso de ferramentas de versionamento, como Git, para controle das versões do código.
 
-#### **12.2.9. Monitoramento e Backup:**
+#### 12.2.9. Monitoramento e Backup
 
 - Implementação de soluções para monitorar o desempenho do servidor e da aplicação, utilizando ferramentas como Nagios ou Zabbix.
 - Estabelecimento de rotinas regulares de backup do banco de dados e dos arquivos da aplicação, utilizando serviços de backup em nuvem ou locais.
 
-#### **12.2.10. Integração com Serviços Externos:**
+#### 12.2.10. Integração com Serviços Externos
 
 - A aplicação deve se integrar com APIs de serviços de pagamento, sistemas de pet shop e outros serviços relevantes, proporcionando uma experiência completa e conveniente para os usuários.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 13. Considerações sobre Segurança
@@ -1120,64 +1158,68 @@ graph TD;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
 
-#### **13.1.1. Regras de Senha:**
+#### 13.1.1. Regras de Senha
 
 - Senhas devem ter um mínimo de 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.
 - Senhas não devem ser facilmente adivinháveis, como sequências numéricas ou combinações comuns (ex.: "123456" ou "senha").
 
-#### **13.1.2. Autenticação de Dois Fatores:**
+#### 13.1.2. Autenticação de Dois Fatores
 
 - Implementar a autenticação de dois fatores (2FA) para aumentar a segurança no acesso, solicitando um código adicional enviado ao celular ou e-mail do usuário durante o login.
 
-#### **13.1.3. Recuperação de Senha:**
+#### 13.1.3. Recuperação de Senha
 
 - Oferecer um processo de recuperação de senha seguro, que envolve o envio de um código de verificação para o e-mail do usuário.
 - O usuário deve inserir esse código para redefinir sua senha, garantindo que apenas o proprietário da conta tenha acesso.
 
-#### **13.1.4. Captcha:**
+#### 13.1.4. Captcha
 
 - Implementar a verificação de captcha em formulários sensíveis (como login e cadastro) para prevenir ataques automatizados, como tentativas de força bruta.
 
-#### **13.1.5. Proteção contra Malware:**
+#### 13.1.5. Proteção contra Malware
 
 - Recomendar aos usuários que mantenham um software antivírus atualizado em seus dispositivos para proteção contra malware e outras ameaças.
 
-#### **13.1.6. Política de Segurança:**
+#### 13.1.6. Política de Segurança
 
-- Criar uma mini política de segurança que informe os usuários sobre as melhores práticas, como a importância de não compartilhar senhas, desconectar de contas após o uso, e o uso de redes seguras (evitando Wi-Fi público para acessar informações sensíveis).
+- Criar uma mini política de segurança que informe os usuários sobre as melhores práticas, como a importância de não compartilhar senhas, desconectar de contas após o uso, e o uso de redes seguras.
 
-#### **13.1.7. Comunicação Segura:**
+#### 13.1.7. Comunicação Segura
 
 - Garantir que todas as comunicações entre o cliente e o servidor sejam feitas por meio de conexões seguras (HTTPS), protegendo os dados contra interceptações.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 13.2. Lado Servidor
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
 
-#### **13.2.1 Política de Backup:**
+#### 13.2.1 Política de Backup
 
 - Realizar backups completos da aplicação e do banco de dados uma vez por mês.
 - Executar backups incrementais semanalmente para garantir a recuperação de dados recentes em caso de falhas.
 - Armazenar os backups em locais seguros e separados do servidor principal, com acesso restrito.
 
-#### **13.2.2. Acesso a Dados:**
+#### 13.2.2. Acesso a Dados
 
 - O administrador do sistema não deve ter acesso a dados pessoais dos usuários, exceto quando necessário para manutenção ou resolução de problemas. Todas as atividades devem ser registradas em logs para auditoria.
 - Implementar controles de acesso baseados em função (RBAC) para limitar o acesso a dados sensíveis apenas aos usuários autorizados.
 
-#### **13.2.3. Segurança do Servidor:**
+#### 13.2.3. Segurança do Servidor
 
 - Para servidores Linux, garantir que as práticas de segurança sejam seguidas, incluindo a configuração adequada de firewalls e a desativação de serviços desnecessários.
 - Para outros sistemas operacionais, utilizar software antivírus atualizado para proteger contra malware e ameaças cibernéticas.
 
-#### **13.2.4. Atualizações Regulares:**
+#### 13.2.4. Atualizações Regulares
 
 - Manter o sistema operacional, servidores web e quaisquer bibliotecas ou dependências atualizadas para proteger contra vulnerabilidades conhecidas.
 
-#### **13.2.5. Monitoramento e Auditoria:**
+#### 13.2.5. Monitoramento e Auditoria
 
 - Implementar soluções de monitoramento para detectar atividades suspeitas ou não autorizadas.
 - Realizar auditorias de segurança regularmente para avaliar a conformidade com as políticas de segurança e identificar áreas de melhoria.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 14. Manutenção, Instalação e Novas Funcionalidades
@@ -1193,6 +1235,8 @@ graph TD;
 - Realizar atualizações periódicas, correções de bugs e melhorias de desempenho.
 - Testes regulares devem ser realizados para garantir que todas as funcionalidades estejam operacionais.
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 14.2. Instalação
 
 **Objetivo:**
@@ -1202,6 +1246,9 @@ graph TD;
 **Ações:**
 
 - Seguir um checklist de segurança durante a instalação, incluindo a configuração de firewalls, permissões de acesso e a verificação de que todas as práticas de segurança estão sendo seguidas.
+- Testar o funcionamento da aplicação. 
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ## 14.3. Novas Funcionalidades
 
@@ -1223,14 +1270,16 @@ graph TD;
 
 - A viabilidade do pedido deve ser avaliada com base em três critérios:
 
-   **a)** **Disponibilidade da Equipe**:
+   **a) Disponibilidade da Equipe**:
    - A equipe de desenvolvimento possui tempo e recursos suficientes para implementar a nova funcionalidade?
 
-   **b)** **Viabilidade Econômica**:
+   **b) Viabilidade Econômica**:
    - A implementação da funcionalidade é financeiramente viável e trará benefícios para o negócio?
 
-   **c)** **Viabilidade Tecnológica**:
+   **c) Viabilidade Tecnológica**:
    - A nova funcionalidade pode ser implementada utilizando a tecnologia atual da aplicação, sem comprometer a segurança ou a estabilidade do sistema?
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 15. Treinamento
@@ -1263,6 +1312,8 @@ graph TD;
 - **Dicas de Segurança:**
     - Boas práticas para manter a segurança das informações e senhas.
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 15.2. Administrador do Sistema
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para administradores do sistema deve abranger:
@@ -1290,6 +1341,8 @@ graph TD;
 
 - **Relatórios Administrativos:**
     - Como gerar e interpretar relatórios de uso do sistema e métricas de desempenho.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
 # 16. Script SQL
@@ -1398,6 +1451,8 @@ CREATE TABLE Pagamento (
 );
 ```
 
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ## 16.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
@@ -1448,3 +1503,5 @@ INSERT INTO Pagamento (id_cliente, valor, metodo_pagamento) VALUES
 (1, 100.00, 'cartão'),
 (2, 200.00, 'dinheiro');
 ```
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
