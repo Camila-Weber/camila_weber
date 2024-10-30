@@ -89,16 +89,24 @@ Docente: Emiliano Soares Monteiro
       - [13.1.5. Proteção contra Malware](#1315-proteção-contra-malware)
       - [13.1.6. Política de Segurança](#1316-política-de-segurança)
       - [13.1.7. Comunicação Segura](#1317-comunicação-segura)
+      - [13.1.8. Validação de Navegador](#1318-validação-de-navegador)
+      - [13.1.9. Validações de Páginas e Conteúdo](#1319-validações-de-páginas-e-conteúdo)
   - [13.2. Lado Servidor](#132-lado-servidor)
       - [13.2.1 Política de Backup](#1321-política-de-backup)
       - [13.2.2. Acesso a Dados](#1322-acesso-a-dados)
       - [13.2.3. Segurança do Servidor](#1323-segurança-do-servidor)
       - [13.2.4. Atualizações Regulares](#1324-atualizações-regulares)
       - [13.2.5. Monitoramento e Auditoria](#1325-monitoramento-e-auditoria)
+      - [13.2.6. Configuração de Pastas](#1326-configuração-de-pastas)
+      - [13.2.7. Verificação de Dados de Entrada](#1327-verificação-de-dados-de-entrada)
+      - [13.2.8. Hospedagem Segura](#1328-hospedagem-segura)
+      - [13.2.9. Uso de Certificado no Servidor](#1329-uso-de-certificado-no-servidor)
+      - [13.2.10. Serviços Gerando Logs](#13210-serviços-gerando-logs)
 - [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
   - [14.1. Manutenção](#141-manutenção)
       - [14.1.1. Objetivo](#1411-objetivo)
       - [14.1.2. Ações](#1412-ações)
+      - [14.1.3. Tipos de Manutenção](#1413-tipos-de-manutenção)
   - [14.2. Instalação](#142-instalação)
       - [14.2.1. Objetivo](#1421-objetivo)
       - [14.2.2. Ações](#1422-ações)
@@ -1156,6 +1164,15 @@ graph LR;
 #### 13.1.7. Comunicação Segura
 
 - Garantir que todas as comunicações entre o cliente e o servidor sejam feitas por meio de conexões seguras (HTTPS), protegendo os dados contra interceptações.
+- Utilizar HTTPS para todas as páginas do site, garantindo que os dados transmitidos entre o cliente e o servidor sejam criptografados. Isso ajuda a proteger informações sensíveis, como credenciais de login e dados pessoais, contra ataques de interceptação.
+
+#### 13.1.8. Validação de Navegador
+
+- Implementar validações para garantir que os usuários estejam acessando o sistema a partir de navegadores compatíveis e atualizados. Navegadores desatualizados podem conter vulnerabilidades que podem ser exploradas por atacantes.
+
+#### 13.1.9. Validações de Páginas e Conteúdo
+
+- Realizar validações rigorosas em todas as páginas e conteúdos gerados pelo usuário para prevenir a injeção de scripts maliciosos (XSS) e outras formas de ataque. Isso inclui a sanitização de entradas e a verificação de que o conteúdo exibido seja seguro para o usuário.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
@@ -1168,6 +1185,7 @@ graph LR;
 - Realizar backups completos da aplicação e do banco de dados uma vez por mês.
 - Executar backups incrementais semanalmente para garantir a recuperação de dados recentes em caso de falhas.
 - Armazenar os backups em locais seguros e separados do servidor principal, com acesso restrito.
+- Implementar um sistema automatizado para garantir que os backups sejam realizados de forma consistente e pontual, minimizando o risco de erro humano.
 
 #### 13.2.2. Acesso a Dados
 
@@ -1182,11 +1200,33 @@ graph LR;
 #### 13.2.4. Atualizações Regulares
 
 - Manter o sistema operacional, servidores web e quaisquer bibliotecas ou dependências atualizadas para proteger contra vulnerabilidades conhecidas.
+- Estabelecer um cronograma de atualizações e realizar testes para garantir que as atualizações não afetem a funcionalidade do sistema.
 
 #### 13.2.5. Monitoramento e Auditoria
 
 - Implementar soluções de monitoramento para detectar atividades suspeitas ou não autorizadas.
 - Realizar auditorias de segurança regularmente para avaliar a conformidade com as políticas de segurança e identificar áreas de melhoria.
+- Integrar um sistema que emita alertas em tempo real sobre eventos críticos, como tentativas de acesso não autorizado ou falhas de segurança.
+
+#### 13.2.6. Configuração de Pastas
+
+- Configurar permissões de pastas de forma rigorosa, garantindo que apenas usuários e serviços autorizados tenham acesso a diretórios sensíveis. Pastas que contêm dados críticos ou configurações devem ser restritas para minimizar o risco de acesso indevido.
+
+#### 13.2.7. Verificação de Dados de Entrada
+
+- Implementar validações rigorosas nos dados de entrada para prevenir injeções de SQL e outras formas de ataque. Todos os dados recebidos devem ser sanitizados e validados antes de serem processados pelo sistema.
+
+#### 13.2.8. Hospedagem Segura
+
+- Escolher provedores de hospedagem que ofereçam infraestrutura segura, com medidas de segurança integradas, como proteção DDoS, criptografia de dados e ambientes isolados para diferentes clientes.
+
+#### 13.2.9. Uso de Certificado no Servidor
+
+- Utilizar certificados SSL/TLS para garantir que todas as comunicações entre o servidor e os clientes sejam criptografadas, protegendo dados sensíveis durante a transmissão.
+
+#### 13.2.10. Serviços Gerando Logs
+
+- Garantir que todos os serviços e componentes do sistema gerem logs detalhados de suas atividades, incluindo acessos, erros e eventos de segurança. Esses logs devem ser armazenados de forma segura e monitorados regularmente para detectar comportamentos anômalos.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
@@ -1197,12 +1237,21 @@ graph LR;
 
 #### 14.1.1. Objetivo
 
-- Garantir que o software esteja sempre funcionando de forma eficiente e segura.
+- Garantir que o software esteja sempre funcionando de forma eficiente e segura, além de corrigir problemas existentes. Isso implica em priorizar a estabilidade e a performance do sistema, evitando a introdução de novos recursos que possam impactar a operação atual.
 
 #### 14.1.2. Ações
 
 - Realizar atualizações periódicas, correções de bugs e melhorias de desempenho.
 - Testes regulares devem ser realizados para garantir que todas as funcionalidades estejam operacionais.
+
+#### 14.1.3. Tipos de Manutenção
+
+- **Manutenção Corretiva**
+    - Implementar processos para a correção de erros e falhas que possam surgir no sistema, garantindo que problemas identificados sejam resolvidos de forma rápida e eficaz.
+- **Manutenção Evolutiva**
+    - Realizar atualizações e melhorias no software para atender a novas necessidades ou requisitos dos usuários, adaptando-se às mudanças no ambiente ou no mercado.
+- **Manutenção Adaptativa**
+    - Fazer ajustes necessários para garantir a compatibilidade do software com novos ambientes, sistemas operacionais ou tecnologias, assegurando que o sistema continue funcionando de maneira otimizada.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
