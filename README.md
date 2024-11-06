@@ -10,6 +10,8 @@ Docente: Emiliano Soares Monteiro
 - [Camila Weber - Engenharia de Software](#camila-weber---engenharia-de-software)
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio](#2-descrição-do-negócio)
+  - [2.1. Requisitos](#21-requisitos)
+      - [2.1. Requisitos Funcionais e Não Funcionais](#21-requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
   - [3.1. Principais Módulos do Sistema](#31-principais-módulos-do-sistema)
   - [3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final](#32-o-que-o-sistema-entrega-do-ponto-de-vista-do-usuário-final)
@@ -36,24 +38,33 @@ Docente: Emiliano Soares Monteiro
     - [6.2.11. História de Usuário 11: Pagamento das Contas](#6211-história-de-usuário-11-pagamento-das-contas)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de Implantação](#8-diagrama-de-implantação)
-- [9. Protótipo de telas](#9-protótipo-de-telas)
-  - [9.1. Tela de Login](#91-tela-de-login)
-  - [9.2. Tela de Menu/Abertura](#92-tela-de-menuabertura)
-  - [9.3. Tela de Relatório de Clientes](#93-tela-de-relatório-de-clientes)
-  - [9.4. Tela de Relatório de Animais](#94-tela-de-relatório-de-animais)
-  - [9.5. Tela de Relatório de Veterinários](#95-tela-de-relatório-de-veterinários)
-  - [9.6. Tela de Relatório de Hospedagem](#96-tela-de-relatório-de-hospedagem)
-  - [9.7. Tela de Relatório de Internação](#97-tela-de-relatório-de-internação)
-  - [9.8. Tela de Relatório de Produto](#98-tela-de-relatório-de-produto)
-  - [9.9. Tela de Relatório de Creche](#99-tela-de-relatório-de-creche)
-  - [9.10. Tela de Relatório de Pagamento](#910-tela-de-relatório-de-pagamento)
-  - [9.11. Tela de Relatório de Atendimento](#911-tela-de-relatório-de-atendimento)
-  - [9.12. Tela de Gráfico](#912-tela-de-gráfico)
+- [9. Diagrama C4](#9-diagrama-c4)
+  - [9.1. Diagrama de Contexto](#91-diagrama-de-contexto)
+      - [9.1.1. Descrição do Diagrama de Contexto](#911-descrição-do-diagrama-de-contexto)
+  - [9.2. Diagrama de Container](#92-diagrama-de-container)
+      - [9.2.1. Descrição do Diagrama de Container](#921-descrição-do-diagrama-de-container)
+  - [9.3. Diagrama de Componente](#93-diagrama-de-componente)
+      - [9.3.1. Descrição do Diagrama de Componente](#931-descrição-do-diagrama-de-componente)
+  - [9.4. Diagrama de Código](#94-diagrama-de-código)
+      - [9.4.1. Descrição do Diagrama de Código](#941-descrição-do-diagrama-de-código)
+- [10. Protótipo de telas](#10-protótipo-de-telas)
+  - [10.1. Tela de Login](#101-tela-de-login)
+  - [10.2. Tela de Menu/Abertura](#102-tela-de-menuabertura)
+  - [10.3. Tela de Relatório de Clientes](#103-tela-de-relatório-de-clientes)
+  - [10.4. Tela de Relatório de Animais](#104-tela-de-relatório-de-animais)
+  - [10.5. Tela de Relatório de Veterinários](#105-tela-de-relatório-de-veterinários)
+  - [10.6. Tela de Relatório de Hospedagem](#106-tela-de-relatório-de-hospedagem)
+  - [10.7. Tela de Relatório de Internação](#107-tela-de-relatório-de-internação)
+  - [10.8. Tela de Relatório de Produto](#108-tela-de-relatório-de-produto)
+  - [10.9. Tela de Relatório de Creche](#109-tela-de-relatório-de-creche)
+  - [10.10. Tela de Relatório de Pagamento](#1010-tela-de-relatório-de-pagamento)
+  - [10.11. Tela de Relatório de Atendimento](#1011-tela-de-relatório-de-atendimento)
+  - [10.12. Tela de Gráfico](#1012-tela-de-gráfico)
     - [9.12.1. Gráfico Preço dos Produtos](#9121-gráfico-preço-dos-produtos)
-  - [9.13. Tela de Dashboard](#913-tela-de-dashboard)
-- [10. Diagrama de navegação de telas](#10-diagrama-de-navegação-de-telas)
-- [11. Pilha tecnológica](#11-pilha-tecnológica)
-  - [11.1. Descrição do Diagrama da Pilha Tecnológica](#111-descrição-do-diagrama-da-pilha-tecnológica)
+  - [10.13. Tela de Dashboard](#1013-tela-de-dashboard)
+- [11. Diagrama de navegação de telas](#11-diagrama-de-navegação-de-telas)
+- [12. Pilha tecnológica](#12-pilha-tecnológica)
+  - [12.1. Descrição do Diagrama da Pilha Tecnológica](#121-descrição-do-diagrama-da-pilha-tecnológica)
       - [11.1.1. Sistema da Clínica Veterinária](#1111-sistema-da-clínica-veterinária)
       - [11.1.2. Frontend](#1112-frontend)
       - [11.1.3. Backend](#1113-backend)
@@ -61,15 +72,15 @@ Docente: Emiliano Soares Monteiro
       - [11.1.5. Servidor Web](#1115-servidor-web)
       - [11.1.6. Segurança](#1116-segurança)
       - [11.1.7. Ambiente de Desenvolvimento](#1117-ambiente-de-desenvolvimento)
-- [12. Requisitos de sistemas](#12-requisitos-de-sistemas)
-  - [12.1. Requisitos do Cliente](#121-requisitos-do-cliente)
+- [13. Requisitos de sistemas](#13-requisitos-de-sistemas)
+  - [13.1. Requisitos do Cliente](#131-requisitos-do-cliente)
       - [12.1.1. Sistema Operacional](#1211-sistema-operacional)
       - [12.1.2. Navegadores Compatíveis](#1212-navegadores-compatíveis)
       - [12.1.3. Acesso à Internet](#1213-acesso-à-internet)
       - [12.1.4. Recursos de Hardware](#1214-recursos-de-hardware)
       - [12.1.5. Permissões e Configurações de Segurança](#1215-permissões-e-configurações-de-segurança)
       - [12.1.6. Forma de Autenticação](#1216-forma-de-autenticação)
-  - [12.2. Requisitos do Servidor](#122-requisitos-do-servidor)
+  - [13.2. Requisitos do Servidor](#132-requisitos-do-servidor)
       - [12.2.1. Tipo de Sistema Operacional](#1221-tipo-de-sistema-operacional)
       - [12.2.2. Processador](#1222-processador)
       - [12.2.3. Memória RAM](#1223-memória-ram)
@@ -80,8 +91,8 @@ Docente: Emiliano Soares Monteiro
       - [12.2.8. Ambiente de Desenvolvimento e Produção](#1228-ambiente-de-desenvolvimento-e-produção)
       - [12.2.9. Monitoramento e Backup](#1229-monitoramento-e-backup)
       - [12.2.10. Integração com Serviços Externos](#12210-integração-com-serviços-externos)
-- [13. Considerações sobre Segurança](#13-considerações-sobre-segurança)
-  - [13.1. Lado Cliente](#131-lado-cliente)
+- [14. Considerações sobre Segurança](#14-considerações-sobre-segurança)
+  - [14.1. Lado Cliente](#141-lado-cliente)
       - [13.1.1. Regras de Senha](#1311-regras-de-senha)
       - [13.1.2. Autenticação de Dois Fatores](#1312-autenticação-de-dois-fatores)
       - [13.1.3. Recuperação de Senha](#1313-recuperação-de-senha)
@@ -91,7 +102,7 @@ Docente: Emiliano Soares Monteiro
       - [13.1.7. Comunicação Segura](#1317-comunicação-segura)
       - [13.1.8. Validação de Navegador](#1318-validação-de-navegador)
       - [13.1.9. Validações de Páginas e Conteúdo](#1319-validações-de-páginas-e-conteúdo)
-  - [13.2. Lado Servidor](#132-lado-servidor)
+  - [14.2. Lado Servidor](#142-lado-servidor)
       - [13.2.1 Política de Backup](#1321-política-de-backup)
       - [13.2.2. Acesso a Dados](#1322-acesso-a-dados)
       - [13.2.3. Segurança do Servidor](#1323-segurança-do-servidor)
@@ -102,25 +113,25 @@ Docente: Emiliano Soares Monteiro
       - [13.2.8. Hospedagem Segura](#1328-hospedagem-segura)
       - [13.2.9. Uso de Certificado no Servidor](#1329-uso-de-certificado-no-servidor)
       - [13.2.10. Serviços Gerando Logs](#13210-serviços-gerando-logs)
-- [14. Manutenção, Instalação e Novas Funcionalidades](#14-manutenção-instalação-e-novas-funcionalidades)
-  - [14.1. Manutenção](#141-manutenção)
-      - [14.1.1. Objetivo](#1411-objetivo)
-      - [14.1.2. Ações](#1412-ações)
-      - [14.1.3. Tipos de Manutenção](#1413-tipos-de-manutenção)
-  - [14.2. Instalação](#142-instalação)
-      - [14.2.1. Objetivo](#1421-objetivo)
-      - [14.2.2. Ações](#1422-ações)
-  - [14.3. Novas Funcionalidades](#143-novas-funcionalidades)
-      - [14.3.1. Objetivo](#1431-objetivo)
-      - [14.3.2. Processo](#1432-processo)
-- [15. Treinamento](#15-treinamento)
+- [15. Manutenção, Instalação e Novas Funcionalidades](#15-manutenção-instalação-e-novas-funcionalidades)
+  - [15.1. Manutenção](#151-manutenção)
+      - [15.1.1. Objetivo](#1511-objetivo)
+      - [15.1.2. Ações](#1512-ações)
+      - [15.1.3. Tipos de Manutenção](#1513-tipos-de-manutenção)
+  - [15.2. Instalação](#152-instalação)
+      - [15.2.1. Objetivo](#1521-objetivo)
+      - [15.2.2. Ações](#1522-ações)
+  - [15.3. Novas Funcionalidades](#153-novas-funcionalidades)
+      - [15.3.1. Objetivo](#1531-objetivo)
+      - [15.3.2. Processo](#1532-processo)
+- [16. Treinamento](#16-treinamento)
   - [15.1. Usuário](#151-usuário)
       - [15.1.1. Formato do Treinamento](#1511-formato-do-treinamento)
       - [15.1.2. Conteúdo do Treinamento](#1512-conteúdo-do-treinamento)
   - [15.2. Administrador do Sistema](#152-administrador-do-sistema)
       - [15.2.1. Formato do Treinamento](#1521-formato-do-treinamento)
       - [15.2.2. Conteúdo do Treinamento](#1522-conteúdo-do-treinamento)
-- [16. Script SQL](#16-script-sql)
+- [17. Script SQL](#17-script-sql)
   - [16.1. Comandos CREATE table](#161-comandos-create-table)
   - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
 
@@ -201,6 +212,47 @@ Descrição do cenário onde o sistema deverá funcionar:
 **32.** O pagamento das da conta pode ser feito em dinheiro, pix e cartões.
 
 **33.** O acesso ao sistema da clínica é feito por meio do login, com nome de usuário e senha.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 2.1. Requisitos
+
+#### 2.1. Requisitos Funcionais e Não Funcionais
+
+| **Tipo**            | **Requisito**                                                                                       |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Funcional** | O sistema deve permitir o cadastro de clientes e seus animais, com informações pessoais e de contato. |
+|  | O sistema deve permitir marcar os animais com RFID a pedido do cliente.                              |
+|  | O sistema deve permitir aos clientes informar as condições de chegada dos animais (rotina ou emergência). |
+|  | O sistema deve permitir aos clientes informar o tipo de ração que o animal consome e condições médicas. |
+|  | O sistema deve permitir ao cliente informar hábitos dos animais.                                      |
+|  | O sistema deve permitir o agendamento de atendimentos com veterinários, permitindo escolha do veterinário e horário. |
+|  | O sistema deve permitir que mais de um veterinário atenda um animal, e que um veterinário atenda múltiplos animais. |
+|  | O sistema deve gerar uma ficha para cada animal atendido, contendo informações e prontuário médico.   |
+|  | O sistema deve gerar receitas para os animais quando necessário, com informações de medicamentos, dosagens e horários. |
+|  | O sistema deve permitir ao atendente cadastrar clientes e animais ao chegarem na clínica.            |
+|  | O sistema deve permitir ao atendente verificar disponibilidade de agenda e preencher horário de atendimento. |
+|  | O sistema deve permitir ao atendente colocar o cliente e o animal na fila de espera, quando necessário. |
+|  | O sistema deve permitir ao atendente levar o cliente e o animal até o veterinário.                    |
+|  | O sistema deve permitir que o veterinário realize entrevistas com o dono do animal e registre as observações em um formulário. |
+|  | O sistema deve permitir ao veterinário registrar exames e anotações no prontuário do animal.           |
+|  | O sistema deve permitir o agendamento de vacinas para os animais, exceto em casos de emergência.       |
+|  | O sistema deve permitir agendamentos de serviços como hospedagem, internação, banho e tosa, e creche para os animais. |
+|  | O sistema deve permitir a venda de produtos de petshop e oferecer descontos para clientes cadastrados. |
+|  | O sistema deve permitir o pagamento das contas dos clientes por dinheiro, Pix ou cartões.            |
+|  | O sistema deve permitir acesso ao sistema por meio de login com nome de usuário e senha.             |
+|  | O sistema deve fornecer uma opção de emergência para atendimentos médicos urgentes durante a madrugada. |
+|  | O sistema deve registrar e controlar o estoque de produtos de higiene, brinquedos e rações no petshop. |
+| **Requisito Não Funcional** | O sistema deve ser acessível de forma rápida e eficiente, com baixa latência para os usuários.         |
+|  | O sistema deve ser seguro, protegendo dados sensíveis dos clientes e animais, como informações de pagamento. |
+|  | O sistema deve ser escalável, permitindo expansão para suportar aumento no número de clientes e transações. |
+|  | O sistema deve ser altamente disponível, com mínimo tempo de inatividade, especialmente para o atendimento de emergências. |
+|  | O sistema deve ter uma interface amigável e de fácil navegação para os usuários (clientes, atendentes, veterinários). |
+|  | O sistema deve ser compatível com múltiplos dispositivos e navegadores, incluindo desktops e dispositivos móveis. |
+|  | O sistema deve fornecer backup regular de dados para evitar perda de informações importantes. |
+|  | O sistema deve garantir a integridade dos dados, sem duplicação ou inconsistência nas informações armazenadas. |
+|  | O sistema deve ser compatível com sistemas de pagamento via Pix, cartões e dinheiro, garantindo segurança nas transações. |
+|  | O sistema deve fornecer relatórios gerenciais sobre atendimentos, estoque de produtos e finanças.       |
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
@@ -763,27 +815,208 @@ classDiagram
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 9. Protótipo de telas
+# 9. Diagrama C4
 
-## 9.1. Tela de Login
+## 9.1. Diagrama de Contexto
+
+```mermaid
+graph TD
+    A[Cliente] -->|Interage com| B[Sistema da Clínica Veterinária]
+    C[Veterinário] -->|Interage com| B[Sistema da Clínica Veterinária]
+    D[Atendente] -->|Interage com| B[Sistema da Clínica Veterinária]
+    E[PetShop] -->|Interage com| B[Sistema da Clínica Veterinária]
+    F[Farmácias Parceiras] -->|Interage com| B[Sistema da Clínica Veterinária]
+    B[Sistema da Clínica Veterinária] -->|Armazena Dados| G[Banco de Dados]
+    
+    B -->|Agendamentos| H[Sistema de Agendamentos]
+    B -->|Estoque de Produtos| I[Sistema de Estoque PetShop]
+```
+
+#### 9.1.1. Descrição do Diagrama de Contexto
+
+>**Cliente**: Cadastro e agendamento de serviços (consultas, hospedagem, creche, etc.).
+>
+>**Veterinário**: Acesso a prontuários, atendimento, receitas e exames dos animais.
+>
+>**Atendente**: Responsável por cadastro e agendamento de serviços.
+>
+>**PetShop**: Sistema de gerenciamento de produtos de higiene, brinquedos, rações, etc.
+>
+>**Farmácias Parceiras**: Oferecem descontos para clientes com cadastro.
+>
+>**Banco de Dados**: Armazena todas as informações relacionadas aos clientes, animais, prontuários e agendamentos.
+>
+>**Sistema de Agendamentos**: Gerencia os horários e disponibilidade dos atendimentos veterinários.
+>
+>**Sistema de Estoque PetShop**: Gerencia o estoque de produtos para venda.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 9.2. Diagrama de Container
+
+```mermaid
+graph TD
+    A[Frontend Web] -->|Interage com| B[Backend API]
+    B[Backend API] -->|Interage com| C[Banco de Dados]
+    B[Backend API] -->|Interage com| D[Sistema de Agendamentos]
+    B[Backend API] -->|Interage com| E[Sistema de Estoque PetShop]
+    B[Backend API] -->|Interage com| F[Sistema de Farmácias Parceiras]
+    F[Sistema de Farmácias Parceiras] -->|Descontos para| A[Frontend Web]
+    B[Backend API] -->|Gerencia| G[Sistema de Pagamento]
+    
+    C[Banco de Dados] -->|Armazena| H[Clientes e Animais]
+    C[Banco de Dados] -->|Armazena| I[Prontuários e Fichas]
+    C[Banco de Dados] -->|Armazena| J[Agendamentos]
+    C[Banco de Dados] -->|Armazena| K[Estoque PetShop]
+```
+
+#### 9.2.1. Descrição do Diagrama de Container
+
+>**Frontend Web**: Interface do usuário para acessar o sistema, incluindo clientes, veterinários, atendentes, e administradores.
+>
+>**Backend API**: Processa as requisições do frontend, lida com a lógica de negócios e interage com os containers abaixo.
+>
+>**Banco de Dados**: Armazena dados persistentes, como clientes, animais, prontuários, agendamentos e estoque.
+>
+>**Sistema de Agendamentos**: Gerencia o calendário de atendimentos e disponibilidades.
+>
+>**Sistema de Estoque PetShop**: Gerencia o inventário de produtos para venda.
+>
+>**Sistema de Farmácias Parceiras**: Gerencia descontos de farmácias para clientes cadastrados.
+>
+>**Sistema de Pagamento**: Processa pagamentos via Pix, cartão e dinheiro.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 9.3. Diagrama de Componente
+
+```mermaid
+graph TD
+    A[Componente Cadastro] --> B[Componente Agendamento]
+    A[Componente Cadastro] --> C[Componente Receitas]
+    A[Componente Cadastro] --> D[Componente Prontuário]
+    B[Componente Agendamento] --> E[Componente Veterinário]
+    B[Componente Agendamento] --> F[Componente Pagamento]
+    C[Componente Receitas] --> G[Componente Estoque PetShop]
+    D[Componente Prontuário] --> H[Componente Sistema de Farmácias]
+    
+    E[Componente Veterinário] -->|Cria| I[Componente Ficha]
+    F[Componente Pagamento] -->|Processa| J[Componente Banco de Dados]
+    G[Componente Estoque PetShop] -->|Consulta| K[Componente Banco de Dados]
+    H[Componente Sistema de Farmácias] -->|Oferece Desconto| L[Componente Banco de Dados]
+```
+
+#### 9.3.1. Descrição do Diagrama de Componente
+
+>**Componente Cadastro**: Gerencia cadastro de clientes e animais, incluindo informações pessoais, condições médicas, hábitos e tipo de alimentação.
+>
+>**Componente Agendamento**: Gerencia agendamento de consultas e outros serviços, como hospedagem e creche.
+>
+>**Componente Receitas**: Emite receitas para os animais, com medicamentos e orientações.
+>
+>**Componente Prontuário**: Registra os prontuários médicos dos animais, incluindo históricos de atendimentos e exames.
+>
+>**Componente Veterinário**: Registra o atendimento e cria fichas para os animais, incluindo diagnósticos e prescrições.
+>
+>**Componente Pagamento**: Processa os pagamentos dos clientes pelos serviços prestados.
+>
+>**Componente Estoque PetShop**: Gerencia o estoque de produtos vendidos pela clínica.
+>
+>**Componente Sistema de Farmácias**: Gerencia os descontos e benefícios de farmácias parceiras para clientes cadastrados.
+>
+>**Componente Banco de Dados**: Armazena e acessa dados persistentes, como registros de clientes, animais, prontuários e agendamentos.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 9.4. Diagrama de Código
+
+```mermaid
+classDiagram
+    class Cliente {
+        +int id
+        +string nome
+        +string telefone
+        +string email
+        +void cadastrar()
+        +void atualizar()
+    }
+
+    class Animal {
+        +int id
+        +string nome
+        +string tipo
+        +string ração
+        +string condição_medica
+        +void registrar()
+        +void atualizar()
+    }
+
+    class Agendamento {
+        +int id
+        +datetime data_hora
+        +int animal_id
+        +int veterinario_id
+        +void agendar()
+        +void cancelar()
+    }
+
+    class Veterinario {
+        +int id
+        +string nome
+        +string especialidade
+        +void atender()
+        +void prescrever()
+    }
+
+    class Receita {
+        +int id
+        +int animal_id
+        +string medicamentos
+        +void gerar()
+    }
+
+    Cliente "1" --> "0..*" Animal
+    Animal "1" --> "0..*" Agendamento
+    Veterinario "1" --> "0..*" Agendamento
+    Animal "1" --> "0..*" Receita
+```
+
+#### 9.4.1. Descrição do Diagrama de Código
+
+>**Classe Cliente**: Contém as informações pessoais do cliente, como nome, telefone, e-mail, e métodos para cadastrar e atualizar.
+>
+>**Classe Animal**: Contém informações sobre o animal, como nome, tipo, ração e condições médicas, e métodos para registrar e atualizar.
+>
+>**Classe Agendamento**: Gerencia os agendamentos, associando um animal e veterinário a uma data e horário, com métodos para agendar e cancelar.
+>
+>**Classe Veterinário**: Contém as informações sobre o veterinário e seus métodos para atender animais e prescrever tratamentos.
+>
+>**Classe Receita**: Registra as receitas médicas para o animal, com informações sobre os medicamentos e suas dosagens.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+---
+# 10. Protótipo de telas
+
+## 10.1. Tela de Login
 
 ![Figura 2 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/image.png)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.2. Tela de Menu/Abertura
+## 10.2. Tela de Menu/Abertura
 
 ![Figura 3 - Protótipo da Tela de Menu/Abertura](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_menu.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.3. Tela de Relatório de Clientes
+## 10.3. Tela de Relatório de Clientes
 
 ![Figura 4 - Protótipo da Tela de Relatório de Clientes](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_cliente.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.4. Tela de Relatório de Animais
+## 10.4. Tela de Relatório de Animais
 
 ![Figura 5 - Protótipo da Tela de Relatório de Animais](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_animal.jpg)
 
@@ -793,49 +1026,49 @@ classDiagram
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.5. Tela de Relatório de Veterinários
+## 10.5. Tela de Relatório de Veterinários
 
 ![Figura 7 - Protótipo da Tela de Relatório de Veterinários](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_vet.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.6. Tela de Relatório de Hospedagem
+## 10.6. Tela de Relatório de Hospedagem
 
 ![Figura 8 - Protótipo da Tela de Relatório de Hospedagem](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_hospedagem.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.7. Tela de Relatório de Internação
+## 10.7. Tela de Relatório de Internação
 
 ![Figura 9 - Protótipo da Tela de Relatório de Internação](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_internacao.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.8. Tela de Relatório de Produto
+## 10.8. Tela de Relatório de Produto
 
 ![Figura 10 - Protótipo da Tela de Relatório de Produto](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_produto.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.9. Tela de Relatório de Creche
+## 10.9. Tela de Relatório de Creche
 
 ![Figura 11 - Protótipo da Tela de Relatório de Creche](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_creche.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.10. Tela de Relatório de Pagamento
+## 10.10. Tela de Relatório de Pagamento
 
 ![Figura 12 - Protótipo da Tela de Relatório de Pagamento](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_pagamento.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.11. Tela de Relatório de Atendimento
+## 10.11. Tela de Relatório de Atendimento
 
 ![Figura 13 - Protótipo da Tela de Relatório de Atendimento](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grid_atendimento.jpg)
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.12. Tela de Gráfico
+## 10.12. Tela de Gráfico
 
 ### 9.12.1. Gráfico Preço dos Produtos
 
@@ -845,7 +1078,7 @@ classDiagram
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 9.13. Tela de Dashboard
+## 10.13. Tela de Dashboard
 
 ![Figura 16 - Protótipo da Tela de Dashboard](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_dashboard.jpg)
 
@@ -856,7 +1089,7 @@ classDiagram
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 10. Diagrama de navegação de telas
+# 11. Diagrama de navegação de telas
 
 ```mermaid
 graph LR
@@ -898,7 +1131,7 @@ graph LR
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 11. Pilha tecnológica
+# 12. Pilha tecnológica
 
 ```mermaid
 graph LR;
@@ -951,7 +1184,7 @@ graph LR;
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 11.1. Descrição do Diagrama da Pilha Tecnológica
+## 12.1. Descrição do Diagrama da Pilha Tecnológica
 
 #### 11.1.1. Sistema da Clínica Veterinária
 
@@ -1017,9 +1250,9 @@ graph LR;
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 12. Requisitos de sistemas
+# 13. Requisitos de sistemas
 
-## 12.1. Requisitos do Cliente
+## 13.1. Requisitos do Cliente
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para que o cliente tenha acesso à aplicação e consiga utilizá-la de maneira adequada, ele precisará atender aos seguintes requisitos:
 
@@ -1073,7 +1306,7 @@ graph LR;
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 12.2. Requisitos do Servidor
+## 13.2. Requisitos do Servidor
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir o funcionamento adequado da aplicação, os seguintes requisitos do servidor devem ser atendidos:
 
@@ -1129,9 +1362,9 @@ graph LR;
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 13. Considerações sobre Segurança
+# 14. Considerações sobre Segurança
 
-## 13.1. Lado Cliente
+## 14.1. Lado Cliente
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
 
@@ -1176,7 +1409,7 @@ graph LR;
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 13.2. Lado Servidor
+## 14.2. Lado Servidor
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
 
@@ -1231,20 +1464,20 @@ graph LR;
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 14. Manutenção, Instalação e Novas Funcionalidades
+# 15. Manutenção, Instalação e Novas Funcionalidades
 
-## 14.1. Manutenção
+## 15.1. Manutenção
 
-#### 14.1.1. Objetivo
+#### 15.1.1. Objetivo
 
 - Garantir que o software esteja sempre funcionando de forma eficiente e segura, além de corrigir problemas existentes. Isso implica em priorizar a estabilidade e a performance do sistema, evitando a introdução de novos recursos que possam impactar a operação atual.
 
-#### 14.1.2. Ações
+#### 15.1.2. Ações
 
 - Realizar atualizações periódicas, correções de bugs e melhorias de desempenho.
 - Testes regulares devem ser realizados para garantir que todas as funcionalidades estejam operacionais.
 
-#### 14.1.3. Tipos de Manutenção
+#### 15.1.3. Tipos de Manutenção
 
 - **Manutenção Corretiva**
     - Implementar processos para a correção de erros e falhas que possam surgir no sistema, garantindo que problemas identificados sejam resolvidos de forma rápida e eficaz.
@@ -1255,26 +1488,26 @@ graph LR;
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 14.2. Instalação
+## 15.2. Instalação
 
-#### 14.2.1. Objetivo
+#### 15.2.1. Objetivo
 
 - Instalar a aplicação em servidores de produção de forma segura e eficaz.
 
-#### 14.2.2. Ações
+#### 15.2.2. Ações
 
 - Seguir um checklist de segurança durante a instalação, incluindo a configuração de firewalls, permissões de acesso e a verificação de que todas as práticas de segurança estão sendo seguidas.
 - Testar o funcionamento da aplicação. 
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 14.3. Novas Funcionalidades
+## 15.3. Novas Funcionalidades
 
-#### 14.3.1. Objetivo
+#### 15.3.1. Objetivo
 
 - Adicionar funcionalidades à aplicação de maneira estruturada e segura.
   
-#### 14.3.2. Processo
+#### 15.3.2. Processo
 
 **1. Formalização do Pedido**:
 
@@ -1300,7 +1533,7 @@ graph LR;
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 15. Treinamento
+# 16. Treinamento
 
 ## 15.1. Usuário
 
@@ -1363,7 +1596,7 @@ graph LR;
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
 ---
-# 16. Script SQL
+# 17. Script SQL
 
 ## 16.1. Comandos CREATE table
 
