@@ -24,17 +24,17 @@ Docente: Emiliano Soares Monteiro
 - [6. Casos de uso](#6-casos-de-uso)
   - [6.1. Casos de uso](#61-casos-de-uso)
   - [6.2. Histórias de usuários](#62-histórias-de-usuários)
-    - [6.2.1. História de Usuário 01: Cadastro de Cliente e Animal](#621-história-de-usuário-01-cadastro-de-cliente-e-animal)
-    - [6.2.2. História de Usuário 02: Marcação de Atendimento](#622-história-de-usuário-02-marcação-de-atendimento)
-    - [6.2.3. História de Usuário 03: Registro de Condições](#623-história-de-usuário-03-registro-de-condições)
-    - [6.2.4. História de Usuário 04: Atendimento de Emergência](#624-história-de-usuário-04-atendimento-de-emergência)
-    - [6.2.5. História de Usuário 05: Receitas e Orientações](#625-história-de-usuário-05-receitas-e-orientações)
-    - [6.2.6. História de Usuário 06: Ficha e Prontuário do Animal](#626-história-de-usuário-06-ficha-e-prontuário-do-animal)
-    - [6.2.7. História de Usuário 07: Agendamento de Hospedagem](#627-história-de-usuário-07-agendamento-de-hospedagem)
-    - [6.2.8. História de Usuário 08: Serviços de Banho e Tosa](#628-história-de-usuário-08-serviços-de-banho-e-tosa)
-    - [6.2.9. História de Usuário 09: Creche para Animais](#629-história-de-usuário-09-creche-para-animais)
-    - [6.2.10. História de Usuário 10: Compras no Petshop](#6210-história-de-usuário-10-compras-no-petshop)
-    - [6.2.11. História de Usuário 11: Pagamento das Contas](#6211-história-de-usuário-11-pagamento-das-contas)
+    - [6.2.1. HU\_01: Cadastro de Cliente e Animal](#621-hu_01-cadastro-de-cliente-e-animal)
+    - [6.2.2. HU\_02: Marcação de Atendimento](#622-hu_02-marcação-de-atendimento)
+    - [6.2.3. HU\_03: Registro de Condições](#623-hu_03-registro-de-condições)
+    - [6.2.4. HU\_04: Atendimento de Emergência](#624-hu_04-atendimento-de-emergência)
+    - [6.2.5. HU\_05: Receitas e Orientações](#625-hu_05-receitas-e-orientações)
+    - [6.2.6. HU\_06: Ficha e Prontuário do Animal](#626-hu_06-ficha-e-prontuário-do-animal)
+    - [6.2.7. HU\_07: Agendamento de Hospedagem](#627-hu_07-agendamento-de-hospedagem)
+    - [6.2.8. HU\_08: Serviços de Banho e Tosa](#628-hu_08-serviços-de-banho-e-tosa)
+    - [6.2.9. HU\_09: Creche para Animais](#629-hu_09-creche-para-animais)
+    - [6.2.10. HU\_10: Compras no Petshop](#6210-hu_10-compras-no-petshop)
+    - [6.2.11. HU\_11: Pagamento das Contas](#6211-hu_11-pagamento-das-contas)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
 - [8. Diagrama de Implantação](#8-diagrama-de-implantação)
 - [9. Diagrama C4](#9-diagrama-c4)
@@ -64,13 +64,6 @@ Docente: Emiliano Soares Monteiro
 - [11. Diagrama de navegação de telas](#11-diagrama-de-navegação-de-telas)
 - [12. Pilha tecnológica](#12-pilha-tecnológica)
   - [12.1. Descrição do Diagrama da Pilha Tecnológica](#121-descrição-do-diagrama-da-pilha-tecnológica)
-      - [12.1.1. Sistema da Clínica Veterinária](#1211-sistema-da-clínica-veterinária)
-      - [12.1.2. Frontend](#1212-frontend)
-      - [12.1.3. Backend](#1213-backend)
-      - [12.1.4. Banco de Dados](#1214-banco-de-dados)
-      - [12.1.5. Servidor Web](#1215-servidor-web)
-      - [12.1.6. Segurança](#1216-segurança)
-      - [12.1.7. Ambiente de Desenvolvimento](#1217-ambiente-de-desenvolvimento)
 - [13. Requisitos de sistemas](#13-requisitos-de-sistemas)
   - [13.1. Requisitos do Cliente](#131-requisitos-do-cliente)
   - [13.2. Requisitos do Servidor](#132-requisitos-do-servidor)
@@ -633,7 +626,7 @@ classDiagram
 
 ## 6.2. Histórias de usuários
 
-### 6.2.1. História de Usuário 01: Cadastro de Cliente e Animal
+### 6.2.1. HU_01: Cadastro de Cliente e Animal
 
 > **Como** um cliente,  
 > **quero** cadastrar minhas informações e as do meu animal,  
@@ -645,7 +638,7 @@ classDiagram
     - O cliente pode inserir o nome, tipo (gato ou cachorro), condição, tipo de ração e hábitos do animal.
     - O sistema deve associar o animal ao cliente que o cadastrou.
 
-### 6.2.2. História de Usuário 02: Marcação de Atendimento
+### 6.2.2. HU_02: Marcação de Atendimento
 
 > **Como** um cliente,  
 > **quero** marcar um horário com antecedência,  
@@ -656,7 +649,7 @@ classDiagram
     - O cliente pode escolher um veterinário e um horário para o atendimento com a atendente, pessoalmente ou pelo número da clínica.
     - O sistema deve confirmar o agendamento e enviar uma notificação ao cliente.
 
-### 6.2.3. História de Usuário 03: Registro de Condições
+### 6.2.3. HU_03: Registro de Condições
 
 > **Como** um cliente,  
 > **quero** informar as condições de saúde do meu animal e seus hábitos,  
@@ -666,7 +659,7 @@ classDiagram
     - O cliente pode informar as condições de saúde do animal e seus hábitos durante o cadastro ou atualização do perfil.
     - Essas informações devem ser armazenadas no perfil do animal e estar acessíveis ao veterinário durante o atendimento.
 
-### 6.2.4. História de Usuário 04: Atendimento de Emergência
+### 6.2.4. HU_04: Atendimento de Emergência
 
 > **Como** um cliente,  
 > **quero** saber que posso levar meu animal para atendimento de emergência a qualquer hora,  
@@ -676,7 +669,7 @@ classDiagram
     - O cliente deve ser informado sobre a disponibilidade de atendimento de emergência.
     - O sistema deve permitir que o cliente registre a entrada do animal para atendimento de emergência a qualquer hora.
 
-### 6.2.5. História de Usuário 05: Receitas e Orientações
+### 6.2.5. HU_05: Receitas e Orientações
 
 > **Como** um veterinário,  
 > **quero** gerar receitas com informações detalhadas após o atendimento,  
@@ -687,7 +680,7 @@ classDiagram
     - As receitas devem ser armazenadas no sistema e enviadas ao cliente, para o número contido no registro.
     - O cliente deve poder visualizar e imprimir as orientações de cuidado.
 
-### 6.2.6. História de Usuário 06: Ficha e Prontuário do Animal
+### 6.2.6. HU_06: Ficha e Prontuário do Animal
 
 > **Como** um veterinário,  
 > **quero** registrar todas as informações e observações em uma ficha,  
@@ -697,7 +690,7 @@ classDiagram
     - O veterinário deve registrar todas as informações e observações na ficha do animal após cada atendimento.
     - O sistema deve manter um histórico completo do atendimento do animal, acessível para consulta futura.
 
-### 6.2.7. História de Usuário 07: Agendamento de Hospedagem
+### 6.2.7. HU_07: Agendamento de Hospedagem
 
 > **Como** um cliente,  
 > **quero** agendar a hospedagem do meu animal com uma semana de antecedência,  
@@ -708,7 +701,7 @@ classDiagram
     - O cliente pode agendar a hospedagem com pelo menos uma semana de antecedência com a atendente, pessoalmente ou pelo número da clínica.
     - O sistema deve confirmar a reserva e enviar uma notificação ao cliente.
 
-### 6.2.8. História de Usuário 08: Serviços de Banho e Tosa
+### 6.2.8. HU_08: Serviços de Banho e Tosa
 
 > **Como** um cliente,  
 > **quero** agendar serviços de banho e tosa,  
@@ -719,7 +712,7 @@ classDiagram
     - O cliente pode agendar um horário para o serviço com a atendente, pessoalmente ou pelo número da clínica.
     - O sistema deve confirmar o agendamento e enviar uma notificação ao cliente.
 
-### 6.2.9. História de Usuário 09: Creche para Animais
+### 6.2.9. HU_09: Creche para Animais
 
 > **Como** um cliente,  
 > **quero** inscrever meu animal na creche,  
@@ -730,7 +723,7 @@ classDiagram
     - O sistema deve registrar a inscrição e os dias de frequência.
     - O cliente deve ser notificado sobre o status da inscrição.
 
-### 6.2.10. História de Usuário 10: Compras no Petshop
+### 6.2.10. HU_10: Compras no Petshop
 
 > **Como** um cliente,  
 > **quero** comprar produtos de higiene e ração no petshop da clínica,  
@@ -741,7 +734,7 @@ classDiagram
     - O cliente pode comprar pessoalmente ou encomendar pelo número da clínica.
     - O sistema deve confirmar a compra e enviar um recibo ao cliente.
 
-### 6.2.11. História de Usuário 11: Pagamento das Contas
+### 6.2.11. HU_11: Pagamento das Contas
 
 > **Como** um cliente,  
 > **quero** ter opções de pagamento como dinheiro, pix e cartões,  
@@ -1140,11 +1133,11 @@ graph LR;
 
 ## 12.1. Descrição do Diagrama da Pilha Tecnológica
 
-#### 12.1.1. Sistema da Clínica Veterinária
+> **Sistema da Clínica Veterinária**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema é projetado para gerenciar os diversos aspectos da operação de uma clínica veterinária, abrangendo desde o cadastro de clientes e animais até o agendamento de atendimentos e gestão de prontuários.
 
-#### 12.1.2. Frontend
+> **Frontend**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O frontend é a interface do usuário, onde os clientes e funcionários interagem com o sistema. Os principais componentes incluem:
 
@@ -1154,7 +1147,7 @@ graph LR;
 - **Interface de Agendamento**: Funcionalidade para agendar consultas e serviços com veterinários.
 - **Dashboard para Veterinários**: Painel para que os veterinários visualizem suas agendas, atendimentos e prontuários dos animais.
   
-#### 12.1.3. Backend
+> **Backend**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O backend é responsável pela lógica de negócio e pela manipulação de dados. Ele inclui:
 
@@ -1168,7 +1161,7 @@ graph LR;
 - **Controle de Prontuários**: Armazena e gerencia o histórico médico de cada animal.
 - **Geração de Receitas**: Módulo que cria receitas para tratamentos prescritos.
 
-#### 12.1.4. Banco de Dados
+> **Banco de Dados**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O banco de dados é fundamental para armazenar informações essenciais:
 
@@ -1176,14 +1169,14 @@ graph LR;
 - **phpMyAdmin/MySQL Workbench**: Ferramentas para facilitar a gestão e a visualização dos dados.
 - **Tabelas**: Estruturas que organizam os dados, incluindo tabelas para Clientes, Animais, Atendimentos, Prontuários, Veterinários e Receitas.
 
-#### 12.1.5. Servidor Web
+> **Servidor Web**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O servidor web hospeda a aplicação e a torna acessível aos usuários:
 
 - **Apache HTTP Server**: O servidor utilizado para servir a aplicação web.
 - **LARAGON/XAMPP/WAMP/MAMP**: Pacotes de software que incluem Apache, MySQL e PHP, facilitando a configuração do ambiente de desenvolvimento.
 
-#### 12.1.6. Segurança
+> **Segurança**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Medidas de segurança são implementadas para proteger os dados e as comunicações:
 
@@ -1191,7 +1184,7 @@ graph LR;
 - **Let’s Encrypt**: Serviço para emissão de certificados SSL gratuitos, garantindo segurança na comunicação.
 - **Autenticação de Usuários**: Mecanismos para garantir que apenas usuários autorizados possam acessar o sistema.
 
-#### 12.1.7. Ambiente de Desenvolvimento
+> **Ambiente de Desenvolvimento**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O ambiente de desenvolvimento é essencial para os programadores que trabalham no sistema:
 
