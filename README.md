@@ -60,7 +60,7 @@ Docente: Emiliano Soares Monteiro
   - [10.10. Tela de Relatório de Pagamento](#1010-tela-de-relatório-de-pagamento)
   - [10.11. Tela de Relatório de Atendimento](#1011-tela-de-relatório-de-atendimento)
   - [10.12. Tela de Gráfico](#1012-tela-de-gráfico)
-    - [9.12.1. Gráfico Preço dos Produtos](#9121-gráfico-preço-dos-produtos)
+    - [10.12.1. Gráfico Preço dos Produtos](#10121-gráfico-preço-dos-produtos)
   - [10.13. Tela de Dashboard](#1013-tela-de-dashboard)
 - [11. Diagrama de navegação de telas](#11-diagrama-de-navegação-de-telas)
 - [12. Pilha tecnológica](#12-pilha-tecnológica)
@@ -243,7 +243,6 @@ Descrição do cenário onde o sistema deverá funcionar:
 |      | Acesso ao sistema via login com usuário e senha.                         |
 |      | Atendimento emergencial disponível 24 horas.                             |
 |      | Controle de estoque de produtos petshop.                                 |
-|-----------------------------|---------------------------------------------------|
 | **Requisito Não Funcional** | Baixa latência e alta performance.                |
 |      | Segurança dos dados (informações de pagamento e pessoais).               |
 |      | Escalabilidade para suportar aumento de usuários e transações.           |
@@ -1071,7 +1070,7 @@ classDiagram
 
 ## 10.12. Tela de Gráfico
 
-### 9.12.1. Gráfico Preço dos Produtos
+### 10.12.1. Gráfico Preço dos Produtos
 
 ![Figura 14 - Protótipo da Tela de Gráfico - Preço dos Produtos](https://github.com/Camila-Weber/camila_weber/blob/main/telas/tela_grafico2.jpg)
 
