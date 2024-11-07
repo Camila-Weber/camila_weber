@@ -73,63 +73,18 @@ Docente: Emiliano Soares Monteiro
       - [12.1.7. Ambiente de Desenvolvimento](#1217-ambiente-de-desenvolvimento)
 - [13. Requisitos de sistemas](#13-requisitos-de-sistemas)
   - [13.1. Requisitos do Cliente](#131-requisitos-do-cliente)
-      - [13.1.1. Sistema Operacional](#1311-sistema-operacional)
-      - [13.1.2. Navegadores Compatíveis](#1312-navegadores-compatíveis)
-      - [13.1.3. Acesso à Internet](#1313-acesso-à-internet)
-      - [13.1.4. Recursos de Hardware](#1314-recursos-de-hardware)
-      - [13.1.5. Permissões e Configurações de Segurança](#1315-permissões-e-configurações-de-segurança)
-      - [13.1.6. Forma de Autenticação](#1316-forma-de-autenticação)
   - [13.2. Requisitos do Servidor](#132-requisitos-do-servidor)
-      - [13.2.1. Tipo de Sistema Operacional](#1321-tipo-de-sistema-operacional)
-      - [13.2.2. Processador](#1322-processador)
-      - [13.2.3. Memória RAM](#1323-memória-ram)
-      - [13.2.4. Armazenamento](#1324-armazenamento)
-      - [13.2.5. Rede](#1325-rede)
-      - [13.2.6. Segurança](#1326-segurança)
-      - [13.2.7. Capacidade de Escalabilidade](#1327-capacidade-de-escalabilidade)
-      - [13.2.8. Ambiente de Desenvolvimento e Produção](#1328-ambiente-de-desenvolvimento-e-produção)
-      - [13.2.9. Monitoramento e Backup](#1329-monitoramento-e-backup)
-      - [13.2.10. Integração com Serviços Externos](#13210-integração-com-serviços-externos)
 - [14. Considerações sobre Segurança](#14-considerações-sobre-segurança)
   - [14.1. Lado Cliente](#141-lado-cliente)
-      - [14.1.1. Regras de Senha](#1411-regras-de-senha)
-      - [14.1.2. Autenticação de Dois Fatores](#1412-autenticação-de-dois-fatores)
-      - [14.1.3. Recuperação de Senha](#1413-recuperação-de-senha)
-      - [14.1.4. Captcha](#1414-captcha)
-      - [14.1.5. Proteção contra Malware](#1415-proteção-contra-malware)
-      - [14.1.6. Política de Segurança](#1416-política-de-segurança)
-      - [14.1.7. Comunicação Segura](#1417-comunicação-segura)
-      - [14.1.8. Validação de Navegador](#1418-validação-de-navegador)
-      - [14.1.9. Validações de Páginas e Conteúdo](#1419-validações-de-páginas-e-conteúdo)
   - [14.2. Lado Servidor](#142-lado-servidor)
-      - [14.2.1 Política de Backup](#1421-política-de-backup)
-      - [14.2.2. Acesso a Dados](#1422-acesso-a-dados)
-      - [14.2.3. Segurança do Servidor](#1423-segurança-do-servidor)
-      - [14.2.4. Atualizações Regulares](#1424-atualizações-regulares)
-      - [14.2.5. Monitoramento e Auditoria](#1425-monitoramento-e-auditoria)
-      - [14.2.6. Configuração de Pastas](#1426-configuração-de-pastas)
-      - [14.2.7. Verificação de Dados de Entrada](#1427-verificação-de-dados-de-entrada)
-      - [14.2.8. Hospedagem Segura](#1428-hospedagem-segura)
-      - [14.2.9. Uso de Certificado no Servidor](#1429-uso-de-certificado-no-servidor)
-      - [14.2.10. Serviços Gerando Logs](#14210-serviços-gerando-logs)
 - [15. Manutenção, Instalação e Novas Funcionalidades](#15-manutenção-instalação-e-novas-funcionalidades)
   - [15.1. Manutenção](#151-manutenção)
       - [15.1.1. Objetivo](#1511-objetivo)
-      - [15.1.2. Ações](#1512-ações)
-      - [15.1.3. Tipos de Manutenção](#1513-tipos-de-manutenção)
   - [15.2. Instalação](#152-instalação)
-      - [15.2.1. Objetivo](#1521-objetivo)
-      - [15.2.2. Ações](#1522-ações)
   - [15.3. Novas Funcionalidades](#153-novas-funcionalidades)
-      - [15.3.1. Objetivo](#1531-objetivo)
-      - [15.3.2. Processo](#1532-processo)
 - [16. Treinamento](#16-treinamento)
   - [16.1. Usuário](#161-usuário)
-      - [16.1.1. Formato do Treinamento](#1611-formato-do-treinamento)
-      - [16.1.2. Conteúdo do Treinamento](#1612-conteúdo-do-treinamento)
   - [16.2. Administrador do Sistema](#162-administrador-do-sistema)
-      - [16.2.1. Formato do Treinamento](#1621-formato-do-treinamento)
-      - [16.2.2. Conteúdo do Treinamento](#1622-conteúdo-do-treinamento)
 - [17. Script SQL](#17-script-sql)
   - [17.1. Comandos CREATE table](#171-comandos-create-table)
   - [17.2. Comandos INSERT gerando dados fictícios](#172-comandos-insert-gerando-dados-fictícios)
@@ -1255,7 +1210,7 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para que o cliente tenha acesso à aplicação e consiga utilizá-la de maneira adequada, ele precisará atender aos seguintes requisitos:
 
-#### 13.1.1. Sistema Operacional
+> **Sistema Operacional**
 
 - A aplicação é compatível com os seguintes sistemas operacionais, é de preferência que o cliente utilize um deles:
   - Para PC:
@@ -1266,7 +1221,7 @@ graph LR;
       - Android
       - iOS
 
-#### 13.1.2. Navegadores Compatíveis
+> **Navegadores Compatíveis**
 
 - A aplicação pode ser acessada através de navegadores modernos, como:
   - Google Chrome
@@ -1274,12 +1229,12 @@ graph LR;
   - Safari
   - Microsoft Edge
 
-#### 13.1.3. Acesso à Internet
+> **Acesso à Internet**
 
 - Como o acesso a aplicação é por meio de navegadores é recomendado uma conexão à internet estável, com largura de banda mínima recomendada de 800 Mbps para um desempenho adequado.
 - Se o cliente preferir pode ter dois pontos de internet de diferentes provedores, para garantir uma redundância da conexão de internet.
 
-#### 13.1.4. Recursos de Hardware
+> **Recursos de Hardware**
 
 - Dispositivos compatíveis devem ter as seguintes especificações mínimas:
   - **PC:**
@@ -1291,13 +1246,13 @@ graph LR;
     - Memória RAM: 4 GB ou mais
     - Resolução de tela: Mínimo de 720x1280 pixels
 
-#### 13.1.5. Permissões e Configurações de Segurança
+> **Permissões e Configurações de Segurança**
 
 - Configurações de segurança no dispositivo devem permitir:
   - Execução de scripts (JavaScript)
   - Aceitação de cookies
 
-#### 13.1.6. Forma de Autenticação
+> **Forma de Autenticação**
 
 - Um sistema de login seguro que pode incluir:
   - Nome de usuário e senha
@@ -1309,52 +1264,52 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir o funcionamento adequado da aplicação, os seguintes requisitos do servidor devem ser atendidos:
 
-#### 13.2.1. Tipo de Sistema Operacional
+> **Tipo de Sistema Operacional**
 
 - O servidor pode operar em ambientes Windows ou Linux, sendo ambos adequados para hospedar servidores web como Apache ou Nginx.
 
-#### 13.2.2. Processador
+> **Processador**
 
 - Processador com pelo menos 4 núcleos e velocidade mínima de 4 GHz, garantindo capacidade de processamento para múltiplas conexões simultâneas.
 
-#### 13.2.3. Memória RAM
+> **Memória RAM**
 
 - Mínimo de 8 GB de RAM para suportar a execução da aplicação e o gerenciamento de várias conexões simultâneas.
 
-#### 13.2.4. Armazenamento
+> **Armazenamento**
 
 - Armazenamento mínimo de 100 GB, dividido entre:
   - Códigos da aplicação
   - Banco de dados MySQL
 - Preferencialmente utilizar SSDs para melhor desempenho.
 
-#### 13.2.5. Rede
+> **Rede**
 
 - Conexão à internet com largura de banda mínima de 100 Gb para garantir um desempenho adequado durante picos de acesso.
 - Registro de um nome de domínio para acesso à aplicação.
 
-#### 13.2.6. Segurança
+> **Segurança**
 
 - Implementação de certificados SSL para garantir a segurança nas interações entre a aplicação e os usuários.
 - Utilização de firewalls para proteger o servidor contra acessos não autorizados e ataques cibernéticos.
 
-#### 13.2.7. Capacidade de Escalabilidade
+> **Capacidade de Escalabilidade**
 
 - A arquitetura do sistema deve permitir:
   - Escalabilidade vertical: upgrades de hardware (aumento de CPU, RAM e armazenamento).
   - Escalabilidade horizontal: adição de mais servidores conforme a demanda de usuários e conexões simultâneas.
 
-#### 13.2.8. Ambiente de Desenvolvimento e Produção
+> **Ambiente de Desenvolvimento e Produção**
 
 - Configuração de ambientes separados para desenvolvimento, teste e produção, garantindo que alterações não afetem a operação do sistema em produção.
 - Uso de ferramentas de versionamento, como Git, para controle das versões do código.
 
-#### 13.2.9. Monitoramento e Backup
+> **Monitoramento e Backup**
 
 - Implementação de soluções para monitorar o desempenho do servidor e da aplicação, utilizando ferramentas como Nagios ou Zabbix.
 - Estabelecimento de rotinas regulares de backup do banco de dados e dos arquivos da aplicação, utilizando serviços de backup em nuvem ou locais.
 
-#### 13.2.10. Integração com Serviços Externos
+**Integração com Serviços Externos**
 
 - A aplicação deve se integrar com APIs de serviços de pagamento, sistemas de pet shop e outros serviços relevantes, proporcionando uma experiência completa e conveniente para os usuários.
 
@@ -1367,42 +1322,42 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
 
-#### 14.1.1. Regras de Senha
+> **Regras de Senha**
 
 - Senhas devem ter um mínimo de 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.
 - Senhas não devem ser facilmente adivinháveis, como sequências numéricas ou combinações comuns (ex.: "123456" ou "senha").
 
-#### 14.1.2. Autenticação de Dois Fatores
+> **Autenticação de Dois Fatores**
 
 - Implementar a autenticação de dois fatores (2FA) para aumentar a segurança no acesso, solicitando um código adicional enviado ao celular ou e-mail do usuário durante o login.
 
-#### 14.1.3. Recuperação de Senha
+> **Recuperação de Senha**
 
 - Oferecer um processo de recuperação de senha seguro, que envolve o envio de um código de verificação para o e-mail do usuário.
 - O usuário deve inserir esse código para redefinir sua senha, garantindo que apenas o proprietário da conta tenha acesso.
 
-#### 14.1.4. Captcha
+> **Captcha**
 
 - Implementar a verificação de captcha em formulários sensíveis (como login e cadastro) para prevenir ataques automatizados, como tentativas de força bruta.
 
-#### 14.1.5. Proteção contra Malware
+> **Proteção contra Malware**
 
 - Recomendar aos usuários que mantenham um software antivírus atualizado em seus dispositivos para proteção contra malware e outras ameaças.
 
-#### 14.1.6. Política de Segurança
+> **Política de Segurança**
 
 - Criar uma mini política de segurança que informe os usuários sobre as melhores práticas, como a importância de não compartilhar senhas, desconectar de contas após o uso, e o uso de redes seguras.
 
-#### 14.1.7. Comunicação Segura
+> **Comunicação Segura**
 
 - Garantir que todas as comunicações entre o cliente e o servidor sejam feitas por meio de conexões seguras (HTTPS), protegendo os dados contra interceptações.
 - Utilizar HTTPS para todas as páginas do site, garantindo que os dados transmitidos entre o cliente e o servidor sejam criptografados. Isso ajuda a proteger informações sensíveis, como credenciais de login e dados pessoais, contra ataques de interceptação.
 
-#### 14.1.8. Validação de Navegador
+> **Validação de Navegador**
 
 - Implementar validações para garantir que os usuários estejam acessando o sistema a partir de navegadores compatíveis e atualizados. Navegadores desatualizados podem conter vulnerabilidades que podem ser exploradas por atacantes.
 
-#### 14.1.9. Validações de Páginas e Conteúdo
+> **Validações de Páginas e Conteúdo**
 
 - Realizar validações rigorosas em todas as páginas e conteúdos gerados pelo usuário para prevenir a injeção de scripts maliciosos (XSS) e outras formas de ataque. Isso inclui a sanitização de entradas e a verificação de que o conteúdo exibido seja seguro para o usuário.
 
@@ -1412,51 +1367,51 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
 
-#### 14.2.1 Política de Backup
+> **Política de Backup**
 
 - Realizar backups completos da aplicação e do banco de dados uma vez por mês.
 - Executar backups incrementais semanalmente para garantir a recuperação de dados recentes em caso de falhas.
 - Armazenar os backups em locais seguros e separados do servidor principal, com acesso restrito.
 - Implementar um sistema automatizado para garantir que os backups sejam realizados de forma consistente e pontual, minimizando o risco de erro humano.
 
-#### 14.2.2. Acesso a Dados
+> **Acesso a Dados**
 
 - O administrador do sistema não deve ter acesso a dados pessoais dos usuários, exceto quando necessário para manutenção ou resolução de problemas. Todas as atividades devem ser registradas em logs para auditoria.
 - Implementar controles de acesso baseados em função (RBAC) para limitar o acesso a dados sensíveis apenas aos usuários autorizados.
 
-#### 14.2.3. Segurança do Servidor
+> **Segurança do Servidor**
 
 - Para servidores Linux, garantir que as práticas de segurança sejam seguidas, incluindo a configuração adequada de firewalls e a desativação de serviços desnecessários.
 - Para outros sistemas operacionais, utilizar software antivírus atualizado para proteger contra malware e ameaças cibernéticas.
 
-#### 14.2.4. Atualizações Regulares
+> **Atualizações Regulares**
 
 - Manter o sistema operacional, servidores web e quaisquer bibliotecas ou dependências atualizadas para proteger contra vulnerabilidades conhecidas.
 - Estabelecer um cronograma de atualizações e realizar testes para garantir que as atualizações não afetem a funcionalidade do sistema.
 
-#### 14.2.5. Monitoramento e Auditoria
+> **Monitoramento e Auditoria**
 
 - Implementar soluções de monitoramento para detectar atividades suspeitas ou não autorizadas.
 - Realizar auditorias de segurança regularmente para avaliar a conformidade com as políticas de segurança e identificar áreas de melhoria.
 - Integrar um sistema que emita alertas em tempo real sobre eventos críticos, como tentativas de acesso não autorizado ou falhas de segurança.
 
-#### 14.2.6. Configuração de Pastas
+> **Configuração de Pastas**
 
 - Configurar permissões de pastas de forma rigorosa, garantindo que apenas usuários e serviços autorizados tenham acesso a diretórios sensíveis. Pastas que contêm dados críticos ou configurações devem ser restritas para minimizar o risco de acesso indevido.
 
-#### 14.2.7. Verificação de Dados de Entrada
+> **Verificação de Dados de Entrada**
 
 - Implementar validações rigorosas nos dados de entrada para prevenir injeções de SQL e outras formas de ataque. Todos os dados recebidos devem ser sanitizados e validados antes de serem processados pelo sistema.
 
-#### 14.2.8. Hospedagem Segura
+> **Hospedagem Segura**
 
 - Escolher provedores de hospedagem que ofereçam infraestrutura segura, com medidas de segurança integradas, como proteção DDoS, criptografia de dados e ambientes isolados para diferentes clientes.
 
-#### 14.2.9. Uso de Certificado no Servidor
+> **Uso de Certificado no Servidor**
 
 - Utilizar certificados SSL/TLS para garantir que todas as comunicações entre o servidor e os clientes sejam criptografadas, protegendo dados sensíveis durante a transmissão.
 
-#### 14.2.10. Serviços Gerando Logs
+> **Serviços Gerando Logs**
 
 - Garantir que todos os serviços e componentes do sistema gerem logs detalhados de suas atividades, incluindo acessos, erros e eventos de segurança. Esses logs devem ser armazenados de forma segura e monitorados regularmente para detectar comportamentos anômalos.
 
@@ -1471,12 +1426,12 @@ graph LR;
 
 - Garantir que o software esteja sempre funcionando de forma eficiente e segura, além de corrigir problemas existentes. Isso implica em priorizar a estabilidade e a performance do sistema, evitando a introdução de novos recursos que possam impactar a operação atual.
 
-#### 15.1.2. Ações
+> **Ações**
 
 - Realizar atualizações periódicas, correções de bugs e melhorias de desempenho.
 - Testes regulares devem ser realizados para garantir que todas as funcionalidades estejam operacionais.
 
-#### 15.1.3. Tipos de Manutenção
+> **Tipos de Manutenção**
 
 - **Manutenção Corretiva**
     - Implementar processos para a correção de erros e falhas que possam surgir no sistema, garantindo que problemas identificados sejam resolvidos de forma rápida e eficaz.
@@ -1489,11 +1444,11 @@ graph LR;
 
 ## 15.2. Instalação
 
-#### 15.2.1. Objetivo
+> **Objetivo**
 
 - Instalar a aplicação em servidores de produção de forma segura e eficaz.
 
-#### 15.2.2. Ações
+> **Ações**
 
 - Seguir um checklist de segurança durante a instalação, incluindo a configuração de firewalls, permissões de acesso e a verificação de que todas as práticas de segurança estão sendo seguidas.
 - Testar o funcionamento da aplicação. 
@@ -1502,11 +1457,11 @@ graph LR;
 
 ## 15.3. Novas Funcionalidades
 
-#### 15.3.1. Objetivo
+> **Objetivo**
 
 - Adicionar funcionalidades à aplicação de maneira estruturada e segura.
   
-#### 15.3.2. Processo
+> **Processo**
 
 **1. Formalização do Pedido**:
 
@@ -1538,11 +1493,11 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para usuários deve incluir:
 
-#### 16.1.1. Formato do Treinamento
+> **Formato do Treinamento**
 
 - Oferecer opções de treinamento, como vídeos na web, tutoriais interativos ou sessões presenciais.
 
-#### 16.1.2. Conteúdo do Treinamento
+> **Conteúdo do Treinamento**
 
 - **Introdução ao Sistema:**
     - Apresentação geral do sistema, suas funcionalidades e objetivos.
@@ -1568,11 +1523,11 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para administradores do sistema deve abranger:
 
-#### 16.2.1. Formato do Treinamento
+> **Formato do Treinamento**
 
 - Sessões presenciais ou webinars para interação direta, além de materiais gravados para consulta posterior.
 
-#### 16.2.2. Conteúdo do Treinamento
+> **Conteúdo do Treinamento**
 
 - **Gerenciamento de Usuários:**
     - Como criar, editar e excluir contas de usuários e administrar permissões.
