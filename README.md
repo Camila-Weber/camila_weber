@@ -65,54 +65,54 @@ Docente: Emiliano Soares Monteiro
 - [11. Diagrama de navegação de telas](#11-diagrama-de-navegação-de-telas)
 - [12. Pilha tecnológica](#12-pilha-tecnológica)
   - [12.1. Descrição do Diagrama da Pilha Tecnológica](#121-descrição-do-diagrama-da-pilha-tecnológica)
-      - [11.1.1. Sistema da Clínica Veterinária](#1111-sistema-da-clínica-veterinária)
-      - [11.1.2. Frontend](#1112-frontend)
-      - [11.1.3. Backend](#1113-backend)
-      - [11.1.4. Banco de Dados](#1114-banco-de-dados)
-      - [11.1.5. Servidor Web](#1115-servidor-web)
-      - [11.1.6. Segurança](#1116-segurança)
-      - [11.1.7. Ambiente de Desenvolvimento](#1117-ambiente-de-desenvolvimento)
+      - [12.1.1. Sistema da Clínica Veterinária](#1211-sistema-da-clínica-veterinária)
+      - [12.1.2. Frontend](#1212-frontend)
+      - [12.1.3. Backend](#1213-backend)
+      - [12.1.4. Banco de Dados](#1214-banco-de-dados)
+      - [12.1.5. Servidor Web](#1215-servidor-web)
+      - [12.1.6. Segurança](#1216-segurança)
+      - [12.1.7. Ambiente de Desenvolvimento](#1217-ambiente-de-desenvolvimento)
 - [13. Requisitos de sistemas](#13-requisitos-de-sistemas)
   - [13.1. Requisitos do Cliente](#131-requisitos-do-cliente)
-      - [12.1.1. Sistema Operacional](#1211-sistema-operacional)
-      - [12.1.2. Navegadores Compatíveis](#1212-navegadores-compatíveis)
-      - [12.1.3. Acesso à Internet](#1213-acesso-à-internet)
-      - [12.1.4. Recursos de Hardware](#1214-recursos-de-hardware)
-      - [12.1.5. Permissões e Configurações de Segurança](#1215-permissões-e-configurações-de-segurança)
-      - [12.1.6. Forma de Autenticação](#1216-forma-de-autenticação)
+      - [13.1.1. Sistema Operacional](#1311-sistema-operacional)
+      - [13.1.2. Navegadores Compatíveis](#1312-navegadores-compatíveis)
+      - [13.1.3. Acesso à Internet](#1313-acesso-à-internet)
+      - [13.1.4. Recursos de Hardware](#1314-recursos-de-hardware)
+      - [13.1.5. Permissões e Configurações de Segurança](#1315-permissões-e-configurações-de-segurança)
+      - [13.1.6. Forma de Autenticação](#1316-forma-de-autenticação)
   - [13.2. Requisitos do Servidor](#132-requisitos-do-servidor)
-      - [12.2.1. Tipo de Sistema Operacional](#1221-tipo-de-sistema-operacional)
-      - [12.2.2. Processador](#1222-processador)
-      - [12.2.3. Memória RAM](#1223-memória-ram)
-      - [12.2.4. Armazenamento](#1224-armazenamento)
-      - [12.2.5. Rede](#1225-rede)
-      - [12.2.6. Segurança](#1226-segurança)
-      - [12.2.7. Capacidade de Escalabilidade](#1227-capacidade-de-escalabilidade)
-      - [12.2.8. Ambiente de Desenvolvimento e Produção](#1228-ambiente-de-desenvolvimento-e-produção)
-      - [12.2.9. Monitoramento e Backup](#1229-monitoramento-e-backup)
-      - [12.2.10. Integração com Serviços Externos](#12210-integração-com-serviços-externos)
+      - [13.2.1. Tipo de Sistema Operacional](#1321-tipo-de-sistema-operacional)
+      - [13.2.2. Processador](#1322-processador)
+      - [13.2.3. Memória RAM](#1323-memória-ram)
+      - [13.2.4. Armazenamento](#1324-armazenamento)
+      - [13.2.5. Rede](#1325-rede)
+      - [13.2.6. Segurança](#1326-segurança)
+      - [13.2.7. Capacidade de Escalabilidade](#1327-capacidade-de-escalabilidade)
+      - [13.2.8. Ambiente de Desenvolvimento e Produção](#1328-ambiente-de-desenvolvimento-e-produção)
+      - [13.2.9. Monitoramento e Backup](#1329-monitoramento-e-backup)
+      - [13.2.10. Integração com Serviços Externos](#13210-integração-com-serviços-externos)
 - [14. Considerações sobre Segurança](#14-considerações-sobre-segurança)
   - [14.1. Lado Cliente](#141-lado-cliente)
-      - [13.1.1. Regras de Senha](#1311-regras-de-senha)
-      - [13.1.2. Autenticação de Dois Fatores](#1312-autenticação-de-dois-fatores)
-      - [13.1.3. Recuperação de Senha](#1313-recuperação-de-senha)
-      - [13.1.4. Captcha](#1314-captcha)
-      - [13.1.5. Proteção contra Malware](#1315-proteção-contra-malware)
-      - [13.1.6. Política de Segurança](#1316-política-de-segurança)
-      - [13.1.7. Comunicação Segura](#1317-comunicação-segura)
-      - [13.1.8. Validação de Navegador](#1318-validação-de-navegador)
-      - [13.1.9. Validações de Páginas e Conteúdo](#1319-validações-de-páginas-e-conteúdo)
+      - [14.1.1. Regras de Senha](#1411-regras-de-senha)
+      - [14.1.2. Autenticação de Dois Fatores](#1412-autenticação-de-dois-fatores)
+      - [14.1.3. Recuperação de Senha](#1413-recuperação-de-senha)
+      - [14.1.4. Captcha](#1414-captcha)
+      - [14.1.5. Proteção contra Malware](#1415-proteção-contra-malware)
+      - [14.1.6. Política de Segurança](#1416-política-de-segurança)
+      - [14.1.7. Comunicação Segura](#1417-comunicação-segura)
+      - [14.1.8. Validação de Navegador](#1418-validação-de-navegador)
+      - [14.1.9. Validações de Páginas e Conteúdo](#1419-validações-de-páginas-e-conteúdo)
   - [14.2. Lado Servidor](#142-lado-servidor)
-      - [13.2.1 Política de Backup](#1321-política-de-backup)
-      - [13.2.2. Acesso a Dados](#1322-acesso-a-dados)
-      - [13.2.3. Segurança do Servidor](#1323-segurança-do-servidor)
-      - [13.2.4. Atualizações Regulares](#1324-atualizações-regulares)
-      - [13.2.5. Monitoramento e Auditoria](#1325-monitoramento-e-auditoria)
-      - [13.2.6. Configuração de Pastas](#1326-configuração-de-pastas)
-      - [13.2.7. Verificação de Dados de Entrada](#1327-verificação-de-dados-de-entrada)
-      - [13.2.8. Hospedagem Segura](#1328-hospedagem-segura)
-      - [13.2.9. Uso de Certificado no Servidor](#1329-uso-de-certificado-no-servidor)
-      - [13.2.10. Serviços Gerando Logs](#13210-serviços-gerando-logs)
+      - [14.2.1 Política de Backup](#1421-política-de-backup)
+      - [14.2.2. Acesso a Dados](#1422-acesso-a-dados)
+      - [14.2.3. Segurança do Servidor](#1423-segurança-do-servidor)
+      - [14.2.4. Atualizações Regulares](#1424-atualizações-regulares)
+      - [14.2.5. Monitoramento e Auditoria](#1425-monitoramento-e-auditoria)
+      - [14.2.6. Configuração de Pastas](#1426-configuração-de-pastas)
+      - [14.2.7. Verificação de Dados de Entrada](#1427-verificação-de-dados-de-entrada)
+      - [14.2.8. Hospedagem Segura](#1428-hospedagem-segura)
+      - [14.2.9. Uso de Certificado no Servidor](#1429-uso-de-certificado-no-servidor)
+      - [14.2.10. Serviços Gerando Logs](#14210-serviços-gerando-logs)
 - [15. Manutenção, Instalação e Novas Funcionalidades](#15-manutenção-instalação-e-novas-funcionalidades)
   - [15.1. Manutenção](#151-manutenção)
       - [15.1.1. Objetivo](#1511-objetivo)
@@ -125,15 +125,15 @@ Docente: Emiliano Soares Monteiro
       - [15.3.1. Objetivo](#1531-objetivo)
       - [15.3.2. Processo](#1532-processo)
 - [16. Treinamento](#16-treinamento)
-  - [15.1. Usuário](#151-usuário)
-      - [15.1.1. Formato do Treinamento](#1511-formato-do-treinamento)
-      - [15.1.2. Conteúdo do Treinamento](#1512-conteúdo-do-treinamento)
-  - [15.2. Administrador do Sistema](#152-administrador-do-sistema)
-      - [15.2.1. Formato do Treinamento](#1521-formato-do-treinamento)
-      - [15.2.2. Conteúdo do Treinamento](#1522-conteúdo-do-treinamento)
+  - [16.1. Usuário](#161-usuário)
+      - [16.1.1. Formato do Treinamento](#1611-formato-do-treinamento)
+      - [16.1.2. Conteúdo do Treinamento](#1612-conteúdo-do-treinamento)
+  - [16.2. Administrador do Sistema](#162-administrador-do-sistema)
+      - [16.2.1. Formato do Treinamento](#1621-formato-do-treinamento)
+      - [16.2.2. Conteúdo do Treinamento](#1622-conteúdo-do-treinamento)
 - [17. Script SQL](#17-script-sql)
-  - [16.1. Comandos CREATE table](#161-comandos-create-table)
-  - [16.2. Comandos INSERT gerando dados fictícios](#162-comandos-insert-gerando-dados-fictícios)
+  - [17.1. Comandos CREATE table](#171-comandos-create-table)
+  - [17.2. Comandos INSERT gerando dados fictícios](#172-comandos-insert-gerando-dados-fictícios)
 
 ---
 # 1. Introdução
@@ -219,40 +219,41 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 #### 2.1. Requisitos Funcionais e Não Funcionais
 
-| **Tipo**            | **Requisito**                                                                                       |
-|---------------------|-----------------------------------------------------------------------------------------------------|
-| **Requisito Funcional** | O sistema deve permitir o cadastro de clientes e seus animais, com informações pessoais e de contato. |
-|  | O sistema deve permitir marcar os animais com RFID a pedido do cliente.                              |
-|  | O sistema deve permitir aos clientes informar as condições de chegada dos animais (rotina ou emergência). |
-|  | O sistema deve permitir aos clientes informar o tipo de ração que o animal consome e condições médicas. |
-|  | O sistema deve permitir ao cliente informar hábitos dos animais.                                      |
-|  | O sistema deve permitir o agendamento de atendimentos com veterinários, permitindo escolha do veterinário e horário. |
-|  | O sistema deve permitir que mais de um veterinário atenda um animal, e que um veterinário atenda múltiplos animais. |
-|  | O sistema deve gerar uma ficha para cada animal atendido, contendo informações e prontuário médico.   |
-|  | O sistema deve gerar receitas para os animais quando necessário, com informações de medicamentos, dosagens e horários. |
-|  | O sistema deve permitir ao atendente cadastrar clientes e animais ao chegarem na clínica.            |
-|  | O sistema deve permitir ao atendente verificar disponibilidade de agenda e preencher horário de atendimento. |
-|  | O sistema deve permitir ao atendente colocar o cliente e o animal na fila de espera, quando necessário. |
-|  | O sistema deve permitir ao atendente levar o cliente e o animal até o veterinário.                    |
-|  | O sistema deve permitir que o veterinário realize entrevistas com o dono do animal e registre as observações em um formulário. |
-|  | O sistema deve permitir ao veterinário registrar exames e anotações no prontuário do animal.           |
-|  | O sistema deve permitir o agendamento de vacinas para os animais, exceto em casos de emergência.       |
-|  | O sistema deve permitir agendamentos de serviços como hospedagem, internação, banho e tosa, e creche para os animais. |
-|  | O sistema deve permitir a venda de produtos de petshop e oferecer descontos para clientes cadastrados. |
-|  | O sistema deve permitir o pagamento das contas dos clientes por dinheiro, Pix ou cartões.            |
-|  | O sistema deve permitir acesso ao sistema por meio de login com nome de usuário e senha.             |
-|  | O sistema deve fornecer uma opção de emergência para atendimentos médicos urgentes durante a madrugada. |
-|  | O sistema deve registrar e controlar o estoque de produtos de higiene, brinquedos e rações no petshop. |
-| **Requisito Não Funcional** | O sistema deve ser acessível de forma rápida e eficiente, com baixa latência para os usuários.         |
-|  | O sistema deve ser seguro, protegendo dados sensíveis dos clientes e animais, como informações de pagamento. |
-|  | O sistema deve ser escalável, permitindo expansão para suportar aumento no número de clientes e transações. |
-|  | O sistema deve ser altamente disponível, com mínimo tempo de inatividade, especialmente para o atendimento de emergências. |
-|  | O sistema deve ter uma interface amigável e de fácil navegação para os usuários (clientes, atendentes, veterinários). |
-|  | O sistema deve ser compatível com múltiplos dispositivos e navegadores, incluindo desktops e dispositivos móveis. |
-|  | O sistema deve fornecer backup regular de dados para evitar perda de informações importantes. |
-|  | O sistema deve garantir a integridade dos dados, sem duplicação ou inconsistência nas informações armazenadas. |
-|  | O sistema deve ser compatível com sistemas de pagamento via Pix, cartões e dinheiro, garantindo segurança nas transações. |
-|  | O sistema deve fornecer relatórios gerenciais sobre atendimentos, estoque de produtos e finanças.       |
+| **Tipo**                | **Requisito**                                         |
+|-------------------------|-------------------------------------------------------|
+| **Requisito Funcional** |Cadastro de clientes e animais, com informações pessoais e do animal.    |
+|      | Marcação de animais com RFID a pedido do cliente.                        |
+|      | Informações sobre as condições de chegada (rotina ou emergência).        |
+|      | Informar tipo de ração e condições médicas do animal.                    |
+|      | Informar hábitos do animal.                                              |
+|      | Agendamento de atendimentos, com escolha do veterinário e horário.       |
+|      | Vários veterinários podem atender o mesmo animal e vice-versa.           |
+|      | Geração de ficha e prontuário para cada animal atendido.                 |
+|      | Geração de receitas com medicamentos, dosagens e orientações.            |
+|      | Cadastro de clientes e animais ao chegar na clínica.                     |
+|      | Verificação de disponibilidade de agenda pelo atendente.                 |
+|      | Colocar clientes e animais na fila de espera, se necessário.             |
+|      | Levar cliente e animal até o veterinário.                                |
+|      | Veterinário realiza entrevista e registra no formulário.                 |
+|      | Veterinário registra exames e observações no prontuário.                 |
+|      | Agendamento de vacinas e atendimentos, exceto emergências.               |
+|      | Agendamento de serviços como hospedagem, internação e creche.            |
+|      | Venda de produtos do petshop com descontos para clientes cadastrados.    |
+|      | Processamento de pagamentos por dinheiro, Pix e cartões.                 |
+|      | Acesso ao sistema via login com usuário e senha.                         |
+|      | Atendimento emergencial disponível 24 horas.                             |
+|      | Controle de estoque de produtos petshop.                                 |
+|-----------------------------|---------------------------------------------------|
+| **Requisito Não Funcional** | Baixa latência e alta performance.                |
+|      | Segurança dos dados (informações de pagamento e pessoais).               |
+|      | Escalabilidade para suportar aumento de usuários e transações.           |
+|      | Alta disponibilidade e mínimo de inatividade, especialmente em emergências. |
+|      | Interface amigável e de fácil navegação.                                 |
+|      | Compatibilidade com diferentes dispositivos e navegadores.               |
+|      | Backup regular de dados.                                                 |
+|      | Integridade e consistência dos dados.                                    |
+|      | Compatibilidade com sistemas de pagamento e segurança nas transações.    |
+|      | Relatórios gerenciais sobre atendimentos, estoque e finanças.            |
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
@@ -1186,11 +1187,11 @@ graph LR;
 
 ## 12.1. Descrição do Diagrama da Pilha Tecnológica
 
-#### 11.1.1. Sistema da Clínica Veterinária
+#### 12.1.1. Sistema da Clínica Veterinária
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O sistema é projetado para gerenciar os diversos aspectos da operação de uma clínica veterinária, abrangendo desde o cadastro de clientes e animais até o agendamento de atendimentos e gestão de prontuários.
 
-#### 11.1.2. Frontend
+#### 12.1.2. Frontend
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O frontend é a interface do usuário, onde os clientes e funcionários interagem com o sistema. Os principais componentes incluem:
 
@@ -1200,7 +1201,7 @@ graph LR;
 - **Interface de Agendamento**: Funcionalidade para agendar consultas e serviços com veterinários.
 - **Dashboard para Veterinários**: Painel para que os veterinários visualizem suas agendas, atendimentos e prontuários dos animais.
   
-#### 11.1.3. Backend
+#### 12.1.3. Backend
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O backend é responsável pela lógica de negócio e pela manipulação de dados. Ele inclui:
 
@@ -1214,7 +1215,7 @@ graph LR;
 - **Controle de Prontuários**: Armazena e gerencia o histórico médico de cada animal.
 - **Geração de Receitas**: Módulo que cria receitas para tratamentos prescritos.
 
-#### 11.1.4. Banco de Dados
+#### 12.1.4. Banco de Dados
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O banco de dados é fundamental para armazenar informações essenciais:
 
@@ -1222,14 +1223,14 @@ graph LR;
 - **phpMyAdmin/MySQL Workbench**: Ferramentas para facilitar a gestão e a visualização dos dados.
 - **Tabelas**: Estruturas que organizam os dados, incluindo tabelas para Clientes, Animais, Atendimentos, Prontuários, Veterinários e Receitas.
 
-#### 11.1.5. Servidor Web
+#### 12.1.5. Servidor Web
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O servidor web hospeda a aplicação e a torna acessível aos usuários:
 
 - **Apache HTTP Server**: O servidor utilizado para servir a aplicação web.
 - **LARAGON/XAMPP/WAMP/MAMP**: Pacotes de software que incluem Apache, MySQL e PHP, facilitando a configuração do ambiente de desenvolvimento.
 
-#### 11.1.6. Segurança
+#### 12.1.6. Segurança
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Medidas de segurança são implementadas para proteger os dados e as comunicações:
 
@@ -1237,7 +1238,7 @@ graph LR;
 - **Let’s Encrypt**: Serviço para emissão de certificados SSL gratuitos, garantindo segurança na comunicação.
 - **Autenticação de Usuários**: Mecanismos para garantir que apenas usuários autorizados possam acessar o sistema.
 
-#### 11.1.7. Ambiente de Desenvolvimento
+#### 12.1.7. Ambiente de Desenvolvimento
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O ambiente de desenvolvimento é essencial para os programadores que trabalham no sistema:
 
@@ -1256,7 +1257,7 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para que o cliente tenha acesso à aplicação e consiga utilizá-la de maneira adequada, ele precisará atender aos seguintes requisitos:
 
-#### 12.1.1. Sistema Operacional
+#### 13.1.1. Sistema Operacional
 
 - A aplicação é compatível com os seguintes sistemas operacionais, é de preferência que o cliente utilize um deles:
   - Para PC:
@@ -1267,7 +1268,7 @@ graph LR;
       - Android
       - iOS
 
-#### 12.1.2. Navegadores Compatíveis
+#### 13.1.2. Navegadores Compatíveis
 
 - A aplicação pode ser acessada através de navegadores modernos, como:
   - Google Chrome
@@ -1275,12 +1276,12 @@ graph LR;
   - Safari
   - Microsoft Edge
 
-#### 12.1.3. Acesso à Internet
+#### 13.1.3. Acesso à Internet
 
 - Como o acesso a aplicação é por meio de navegadores é recomendado uma conexão à internet estável, com largura de banda mínima recomendada de 800 Mbps para um desempenho adequado.
 - Se o cliente preferir pode ter dois pontos de internet de diferentes provedores, para garantir uma redundância da conexão de internet.
 
-#### 12.1.4. Recursos de Hardware
+#### 13.1.4. Recursos de Hardware
 
 - Dispositivos compatíveis devem ter as seguintes especificações mínimas:
   - **PC:**
@@ -1292,13 +1293,13 @@ graph LR;
     - Memória RAM: 4 GB ou mais
     - Resolução de tela: Mínimo de 720x1280 pixels
 
-#### 12.1.5. Permissões e Configurações de Segurança
+#### 13.1.5. Permissões e Configurações de Segurança
 
 - Configurações de segurança no dispositivo devem permitir:
   - Execução de scripts (JavaScript)
   - Aceitação de cookies
 
-#### 12.1.6. Forma de Autenticação
+#### 13.1.6. Forma de Autenticação
 
 - Um sistema de login seguro que pode incluir:
   - Nome de usuário e senha
@@ -1310,52 +1311,52 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir o funcionamento adequado da aplicação, os seguintes requisitos do servidor devem ser atendidos:
 
-#### 12.2.1. Tipo de Sistema Operacional
+#### 13.2.1. Tipo de Sistema Operacional
 
 - O servidor pode operar em ambientes Windows ou Linux, sendo ambos adequados para hospedar servidores web como Apache ou Nginx.
 
-#### 12.2.2. Processador
+#### 13.2.2. Processador
 
 - Processador com pelo menos 4 núcleos e velocidade mínima de 4 GHz, garantindo capacidade de processamento para múltiplas conexões simultâneas.
 
-#### 12.2.3. Memória RAM
+#### 13.2.3. Memória RAM
 
 - Mínimo de 8 GB de RAM para suportar a execução da aplicação e o gerenciamento de várias conexões simultâneas.
 
-#### 12.2.4. Armazenamento
+#### 13.2.4. Armazenamento
 
 - Armazenamento mínimo de 100 GB, dividido entre:
   - Códigos da aplicação
   - Banco de dados MySQL
 - Preferencialmente utilizar SSDs para melhor desempenho.
 
-#### 12.2.5. Rede
+#### 13.2.5. Rede
 
 - Conexão à internet com largura de banda mínima de 100 Gb para garantir um desempenho adequado durante picos de acesso.
 - Registro de um nome de domínio para acesso à aplicação.
 
-#### 12.2.6. Segurança
+#### 13.2.6. Segurança
 
 - Implementação de certificados SSL para garantir a segurança nas interações entre a aplicação e os usuários.
 - Utilização de firewalls para proteger o servidor contra acessos não autorizados e ataques cibernéticos.
 
-#### 12.2.7. Capacidade de Escalabilidade
+#### 13.2.7. Capacidade de Escalabilidade
 
 - A arquitetura do sistema deve permitir:
   - Escalabilidade vertical: upgrades de hardware (aumento de CPU, RAM e armazenamento).
   - Escalabilidade horizontal: adição de mais servidores conforme a demanda de usuários e conexões simultâneas.
 
-#### 12.2.8. Ambiente de Desenvolvimento e Produção
+#### 13.2.8. Ambiente de Desenvolvimento e Produção
 
 - Configuração de ambientes separados para desenvolvimento, teste e produção, garantindo que alterações não afetem a operação do sistema em produção.
 - Uso de ferramentas de versionamento, como Git, para controle das versões do código.
 
-#### 12.2.9. Monitoramento e Backup
+#### 13.2.9. Monitoramento e Backup
 
 - Implementação de soluções para monitorar o desempenho do servidor e da aplicação, utilizando ferramentas como Nagios ou Zabbix.
 - Estabelecimento de rotinas regulares de backup do banco de dados e dos arquivos da aplicação, utilizando serviços de backup em nuvem ou locais.
 
-#### 12.2.10. Integração com Serviços Externos
+#### 13.2.10. Integração com Serviços Externos
 
 - A aplicação deve se integrar com APIs de serviços de pagamento, sistemas de pet shop e outros serviços relevantes, proporcionando uma experiência completa e conveniente para os usuários.
 
@@ -1368,42 +1369,42 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para garantir a segurança dos dados dos clientes e do sistema como um todo, as seguintes medidas devem ser implementadas no lado do cliente:
 
-#### 13.1.1. Regras de Senha
+#### 14.1.1. Regras de Senha
 
 - Senhas devem ter um mínimo de 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial.
 - Senhas não devem ser facilmente adivinháveis, como sequências numéricas ou combinações comuns (ex.: "123456" ou "senha").
 
-#### 13.1.2. Autenticação de Dois Fatores
+#### 14.1.2. Autenticação de Dois Fatores
 
 - Implementar a autenticação de dois fatores (2FA) para aumentar a segurança no acesso, solicitando um código adicional enviado ao celular ou e-mail do usuário durante o login.
 
-#### 13.1.3. Recuperação de Senha
+#### 14.1.3. Recuperação de Senha
 
 - Oferecer um processo de recuperação de senha seguro, que envolve o envio de um código de verificação para o e-mail do usuário.
 - O usuário deve inserir esse código para redefinir sua senha, garantindo que apenas o proprietário da conta tenha acesso.
 
-#### 13.1.4. Captcha
+#### 14.1.4. Captcha
 
 - Implementar a verificação de captcha em formulários sensíveis (como login e cadastro) para prevenir ataques automatizados, como tentativas de força bruta.
 
-#### 13.1.5. Proteção contra Malware
+#### 14.1.5. Proteção contra Malware
 
 - Recomendar aos usuários que mantenham um software antivírus atualizado em seus dispositivos para proteção contra malware e outras ameaças.
 
-#### 13.1.6. Política de Segurança
+#### 14.1.6. Política de Segurança
 
 - Criar uma mini política de segurança que informe os usuários sobre as melhores práticas, como a importância de não compartilhar senhas, desconectar de contas após o uso, e o uso de redes seguras.
 
-#### 13.1.7. Comunicação Segura
+#### 14.1.7. Comunicação Segura
 
 - Garantir que todas as comunicações entre o cliente e o servidor sejam feitas por meio de conexões seguras (HTTPS), protegendo os dados contra interceptações.
 - Utilizar HTTPS para todas as páginas do site, garantindo que os dados transmitidos entre o cliente e o servidor sejam criptografados. Isso ajuda a proteger informações sensíveis, como credenciais de login e dados pessoais, contra ataques de interceptação.
 
-#### 13.1.8. Validação de Navegador
+#### 14.1.8. Validação de Navegador
 
 - Implementar validações para garantir que os usuários estejam acessando o sistema a partir de navegadores compatíveis e atualizados. Navegadores desatualizados podem conter vulnerabilidades que podem ser exploradas por atacantes.
 
-#### 13.1.9. Validações de Páginas e Conteúdo
+#### 14.1.9. Validações de Páginas e Conteúdo
 
 - Realizar validações rigorosas em todas as páginas e conteúdos gerados pelo usuário para prevenir a injeção de scripts maliciosos (XSS) e outras formas de ataque. Isso inclui a sanitização de entradas e a verificação de que o conteúdo exibido seja seguro para o usuário.
 
@@ -1413,51 +1414,51 @@ graph LR;
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para assegurar a integridade e a segurança dos dados e do funcionamento do sistema no lado do servidor, as seguintes medidas devem ser implementadas:
 
-#### 13.2.1 Política de Backup
+#### 14.2.1 Política de Backup
 
 - Realizar backups completos da aplicação e do banco de dados uma vez por mês.
 - Executar backups incrementais semanalmente para garantir a recuperação de dados recentes em caso de falhas.
 - Armazenar os backups em locais seguros e separados do servidor principal, com acesso restrito.
 - Implementar um sistema automatizado para garantir que os backups sejam realizados de forma consistente e pontual, minimizando o risco de erro humano.
 
-#### 13.2.2. Acesso a Dados
+#### 14.2.2. Acesso a Dados
 
 - O administrador do sistema não deve ter acesso a dados pessoais dos usuários, exceto quando necessário para manutenção ou resolução de problemas. Todas as atividades devem ser registradas em logs para auditoria.
 - Implementar controles de acesso baseados em função (RBAC) para limitar o acesso a dados sensíveis apenas aos usuários autorizados.
 
-#### 13.2.3. Segurança do Servidor
+#### 14.2.3. Segurança do Servidor
 
 - Para servidores Linux, garantir que as práticas de segurança sejam seguidas, incluindo a configuração adequada de firewalls e a desativação de serviços desnecessários.
 - Para outros sistemas operacionais, utilizar software antivírus atualizado para proteger contra malware e ameaças cibernéticas.
 
-#### 13.2.4. Atualizações Regulares
+#### 14.2.4. Atualizações Regulares
 
 - Manter o sistema operacional, servidores web e quaisquer bibliotecas ou dependências atualizadas para proteger contra vulnerabilidades conhecidas.
 - Estabelecer um cronograma de atualizações e realizar testes para garantir que as atualizações não afetem a funcionalidade do sistema.
 
-#### 13.2.5. Monitoramento e Auditoria
+#### 14.2.5. Monitoramento e Auditoria
 
 - Implementar soluções de monitoramento para detectar atividades suspeitas ou não autorizadas.
 - Realizar auditorias de segurança regularmente para avaliar a conformidade com as políticas de segurança e identificar áreas de melhoria.
 - Integrar um sistema que emita alertas em tempo real sobre eventos críticos, como tentativas de acesso não autorizado ou falhas de segurança.
 
-#### 13.2.6. Configuração de Pastas
+#### 14.2.6. Configuração de Pastas
 
 - Configurar permissões de pastas de forma rigorosa, garantindo que apenas usuários e serviços autorizados tenham acesso a diretórios sensíveis. Pastas que contêm dados críticos ou configurações devem ser restritas para minimizar o risco de acesso indevido.
 
-#### 13.2.7. Verificação de Dados de Entrada
+#### 14.2.7. Verificação de Dados de Entrada
 
 - Implementar validações rigorosas nos dados de entrada para prevenir injeções de SQL e outras formas de ataque. Todos os dados recebidos devem ser sanitizados e validados antes de serem processados pelo sistema.
 
-#### 13.2.8. Hospedagem Segura
+#### 14.2.8. Hospedagem Segura
 
 - Escolher provedores de hospedagem que ofereçam infraestrutura segura, com medidas de segurança integradas, como proteção DDoS, criptografia de dados e ambientes isolados para diferentes clientes.
 
-#### 13.2.9. Uso de Certificado no Servidor
+#### 14.2.9. Uso de Certificado no Servidor
 
 - Utilizar certificados SSL/TLS para garantir que todas as comunicações entre o servidor e os clientes sejam criptografadas, protegendo dados sensíveis durante a transmissão.
 
-#### 13.2.10. Serviços Gerando Logs
+#### 14.2.10. Serviços Gerando Logs
 
 - Garantir que todos os serviços e componentes do sistema gerem logs detalhados de suas atividades, incluindo acessos, erros e eventos de segurança. Esses logs devem ser armazenados de forma segura e monitorados regularmente para detectar comportamentos anômalos.
 
@@ -1535,15 +1536,15 @@ graph LR;
 ---
 # 16. Treinamento
 
-## 15.1. Usuário
+## 16.1. Usuário
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para usuários deve incluir:
 
-#### 15.1.1. Formato do Treinamento
+#### 16.1.1. Formato do Treinamento
 
 - Oferecer opções de treinamento, como vídeos na web, tutoriais interativos ou sessões presenciais.
 
-#### 15.1.2. Conteúdo do Treinamento
+#### 16.1.2. Conteúdo do Treinamento
 
 - **Introdução ao Sistema:**
     - Apresentação geral do sistema, suas funcionalidades e objetivos.
@@ -1565,15 +1566,15 @@ graph LR;
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 15.2. Administrador do Sistema
+## 16.2. Administrador do Sistema
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O treinamento para administradores do sistema deve abranger:
 
-#### 15.2.1. Formato do Treinamento
+#### 16.2.1. Formato do Treinamento
 
 - Sessões presenciais ou webinars para interação direta, além de materiais gravados para consulta posterior.
 
-#### 15.2.2. Conteúdo do Treinamento
+#### 16.2.2. Conteúdo do Treinamento
 
 - **Gerenciamento de Usuários:**
     - Como criar, editar e excluir contas de usuários e administrar permissões.
@@ -1598,7 +1599,7 @@ graph LR;
 ---
 # 17. Script SQL
 
-## 16.1. Comandos CREATE table
+## 17.1. Comandos CREATE table
 
 ```SQL
 -- Tabela de Clientes
@@ -1704,7 +1705,7 @@ CREATE TABLE Pagamento (
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
-## 16.2. Comandos INSERT gerando dados fictícios
+## 17.2. Comandos INSERT gerando dados fictícios
 
 ```SQL
 -- Inserindo clientes
