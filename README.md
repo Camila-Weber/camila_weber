@@ -11,7 +11,6 @@ Docente: Emiliano Soares Monteiro
 - [1. Introdução](#1-introdução)
 - [2. Descrição do negócio](#2-descrição-do-negócio)
   - [2.1. Requisitos](#21-requisitos)
-      - [2.1. Requisitos Funcionais e Não Funcionais](#21-requisitos-funcionais-e-não-funcionais)
 - [3. Visão geral do sistema](#3-visão-geral-do-sistema)
   - [3.1. Principais Módulos do Sistema](#31-principais-módulos-do-sistema)
   - [3.2. O que o Sistema Entrega do Ponto de Vista do Usuário Final](#32-o-que-o-sistema-entrega-do-ponto-de-vista-do-usuário-final)
@@ -217,7 +216,7 @@ Descrição do cenário onde o sistema deverá funcionar:
 
 ## 2.1. Requisitos
 
-#### 2.1. Requisitos Funcionais e Não Funcionais
+**Requisitos Funcionais e Não Funcionais**
 
 | **Tipo**                | **Requisito**                                         |
 |-------------------------|-------------------------------------------------------|
