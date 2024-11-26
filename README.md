@@ -36,7 +36,10 @@ Docente: Emiliano Soares Monteiro
     - [6.2.10. HU\_10: Compras no Petshop](#6210-hu_10-compras-no-petshop)
     - [6.2.11. HU\_11: Pagamento das Contas](#6211-hu_11-pagamento-das-contas)
 - [7. Diagrama de componentes](#7-diagrama-de-componentes)
+  - [7.1. Descrição do Diagrama](#71-descrição-do-diagrama)
+  - [7.2. Descrição das Interações do Diagrama](#72-descrição-das-interações-do-diagrama)
 - [8. Diagrama de Implantação](#8-diagrama-de-implantação)
+  - [8.1. Descrição do Diagrama](#81-descrição-do-diagrama)
 - [9. Diagrama C4](#9-diagrama-c4)
   - [9.1. Diagrama de Contexto](#91-diagrama-de-contexto)
       - [9.1.1. Descrição do Diagrama de Contexto](#911-descrição-do-diagrama-de-contexto)
@@ -62,6 +65,7 @@ Docente: Emiliano Soares Monteiro
     - [10.12.1. Gráfico Preço dos Produtos](#10121-gráfico-preço-dos-produtos)
   - [10.13. Tela de Dashboard](#1013-tela-de-dashboard)
 - [11. Diagrama de navegação de telas](#11-diagrama-de-navegação-de-telas)
+  - [11.1. Hierarquia do Diagrama](#111-hierarquia-do-diagrama)
 - [12. Pilha tecnológica](#12-pilha-tecnológica)
   - [12.1. Descrição do Diagrama da Pilha Tecnológica](#121-descrição-do-diagrama-da-pilha-tecnológica)
 - [13. Requisitos de sistemas](#13-requisitos-de-sistemas)
@@ -754,10 +758,146 @@ classDiagram
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
+## 7.1. Descrição do Diagrama
+
+**Sistema de Cadastro:**
+
+- Este componente é responsável pelo registro de informações pessoais dos clientes e dos seus animais. Ele interage com o cliente para cadastrar dados essenciais e com o banco de dados para armazená-los.
+
+**Agendamento:**
+
+- Componente responsável pela marcação e gestão de consultas. Ele permite que o atendente verifique a disponibilidade na agenda e registre os atendimentos a serem realizados na clínica.
+
+**Atendimento Veterinário:**
+
+- Componente usado pelo veterinário para realizar a entrevista e o exame do animal. Ele coleta dados durante o atendimento para posteriormente gerar o prontuário e outras informações necessárias.
+
+**Prontuário:**
+
+- Armazena informações sobre o histórico médico e os procedimentos realizados no animal, incluindo dados de consultas passadas e tratamentos administrados. O veterinário interage com esse componente para atualizar as informações sobre o estado de saúde do animal.
+
+**Receita Médica:**
+
+- Componente que gera receitas médicas com os medicamentos necessários após uma consulta. O veterinário utiliza esse componente para fornecer as prescrições ao cliente.
+
+**Hospedagem:**
+
+- Componente responsável por agendar e controlar as hospedagens dos animais na clínica, permitindo que o atendente registre quando um animal ficará sob cuidados na clínica.
+
+**Internação:**
+
+- Componente utilizado para registrar e gerenciar a internação de animais para tratamentos e procedimentos mais complexos. O veterinário utiliza este componente para internar o animal quando necessário.
+
+**Creche:**
+
+- Componente dedicado à gestão dos animais que ficam na creche da clínica durante o dia. Ele permite que os funcionários da clínica monitorem e supervisionem os animais enquanto estão na creche.
+
+**Petshop:**
+
+- Componente que gerencia a venda de produtos relacionados ao bem-estar animal, como alimentos e medicamentos. O cliente interage com esse componente para comprar itens e obter descontos.
+
+**Pagamento:**
+
+- Componente responsável por processar os pagamentos dos serviços prestados pela clínica, como consultas, hospedagens e compras no petshop. Ele permite que o cliente pague por meio de diferentes métodos de pagamento.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 7.2. Descrição das Interações do Diagrama
+
+**Sistema de Cadastro → Cliente:**
+
+- O cliente interage diretamente com o Sistema de Cadastro para fornecer informações pessoais e sobre os animais. Este componente armazena esses dados para uso futuro.
+
+**Atendimento Veterinário → Veterinário:**
+
+- O veterinário utiliza o Atendimento Veterinário para realizar a entrevista e o exame físico do animal, registrando informações essenciais sobre a saúde do animal.
+
+**Agendamento → Atendente:**
+
+- O atendente interage com o Agendamento para verificar a disponibilidade na agenda e marcar consultas, garantindo que o tempo do veterinário e os recursos da clínica sejam bem alocados.
+
+**Prontuário → Veterinário:**
+
+- O veterinário acessa e atualiza o Prontuário para registrar as informações sobre as consultas e os procedimentos realizados no animal.
+
+**Receita Médica → Veterinário:**
+
+- Após o atendimento, o veterinário usa o Receita Médica para prescrever medicamentos, que são entregues ao cliente.
+
+**Hospedagem → Atendente:**
+
+- O atendente utiliza o Hospedagem para agendar o período em que o animal ficará hospedado na clínica, cuidando da administração desse serviço.
+
+**Internação → Veterinário:**
+
+- O veterinário usa o Internação para registrar e gerenciar animais que necessitam de internação para tratamentos ou procedimentos médicos.
+
+**Creche → Funcionários:**
+
+- Funcionários da clínica interagem com o componente Creche para monitorar os animais que ficam sob cuidado durante o dia.
+
+**Petshop → Cliente:**
+
+- O Petshop oferece produtos para o cliente e pode gerar descontos, sendo uma via de interação direta entre a clínica e o cliente para compras de produtos para os animais.
+
+**Pagamento → Cliente:**
+
+- O Pagamento permite que o cliente efetue o pagamento pelos serviços prestados pela clínica, como consultas, hospedagens, internações, e produtos comprados no petshop.
+
+**Cliente → Atendente:**
+
+- Quando o cliente chega à clínica, ele interage com o atendente, que organiza o fluxo de atendimento, levando o cliente ao veterinário.
+
+**Atendente → Veterinário:**
+
+- O atendente leva o cliente até o veterinário para iniciar o processo de consulta, após o qual o veterinário prossegue com o atendimento.
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
 ---
 # 8. Diagrama de Implantação
 
-![Figura 20 - Protótipo da Tela de Login](https://github.com/Camila-Weber/camila_weber/blob/main/telas/diagrama_de_implantacao.png)
+![Figura 20 - Diagrama de Implantação](https://github.com/Camila-Weber/camila_weber/blob/main/telas/diagrama_de_implantacao.png)
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 8.1. Descrição do Diagrama
+
+**Clínica Veterinária (Nó Principal)**
+
+- O nó principal agrupa todos os servidores e sistemas envolvidos no funcionamento da clínica veterinária. Ele representa o contexto onde os processos de negócios ocorrem, como o atendimento a clientes e a gestão interna dos dados da clínica.
+
+**Servidor de Aplicação**
+
+- Servidor que hospeda as lógicas de processamento e execução das aplicações da clínica. Ele serve como intermediário entre o banco de dados e as interfaces de cliente. Processa as interações com o Aplicativo de Cadastro e o Sistema de Pagamento.
+
+**Banco de Dados**
+
+- Repositório central para armazenar dados essenciais, como informações de clientes, animais, agendamentos, prontuários, receitas e estoque de petshop. Serve a todos os servidores, garantindo que os dados sejam persistidos de forma segura e acessível.
+
+**Servidor de Agendamento**
+
+- Responsável por gerenciar o sistema de marcação de consultas. Ele processa as requisições do Sistema de Agendamento e interage com o banco de dados para armazenar e consultar informações sobre horários e disponibilidade.
+
+**Servidor de Prontuário**
+
+- Responsável pela geração, consulta e manutenção dos prontuários dos animais. Ele é acessado pelo Sistema de Atendimento para criar e atualizar os prontuários e receitas dos pacientes.
+
+**Servidor de Petshop**
+
+- Gerencia as operações do setor de petshop da clínica, como o controle de estoque e as vendas de produtos. Este servidor interage diretamente com o Banco de Dados para manter o controle sobre os itens disponíveis e as transações de venda.
+
+**Interface do Cliente (Nó Secundário)**
+
+- Um grupo de aplicativos que interagem diretamente com os clientes da clínica. A interface fornece acesso aos serviços como cadastro de clientes e animais, agendamento de consultas, atendimentos veterinários e processamento de pagamentos.
+
+- **Aplicativo de Cadastro**: Usado para registrar novos clientes e seus animais.
+
+- **Sistema de Agendamento**: Permite que o cliente agende e gerencie suas consultas.
+
+- **Sistema de Atendimento**: Usado pelos atendentes e veterinários para acessar prontuários e gerar receitas.
+
+- **Sistema de Pagamento**: Processa os pagamentos das consultas e outros serviços prestados pela clínica.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
@@ -1052,6 +1192,7 @@ graph LR
     B --> L[Creche]
     B --> M[Petshop]
     B --> N[Pagamento]
+    B --> a[Dashboards]
     
     C --> O[Formulário de Cadastro do Cliente]
     D --> P[Formulário de Cadastro de Animal]
@@ -1074,6 +1215,51 @@ graph LR
     M --> Z[Consultar Estoque]
     N --> AA[Realizar Pagamento]
 ```
+
+[Topo - ⇧](#camila-weber---engenharia-de-software)
+
+## 11.1. Hierarquia do Diagrama
+
+**Ponto de Entrada: Login**
+
+- O fluxo de navegação começa no ponto de Login, que é a etapa inicial para garantir a segurança do sistema e a autenticação do usuário. O login permite que apenas usuários autorizados (como atendentes, veterinários ou clientes) acessem as funcionalidades do sistema.
+
+**Menu Principal: Ponto de Navegação Central**
+
+- Após o Login, o usuário é levado ao Menu principal, que serve como o ponto de acesso para as diversas funcionalidades e serviços do sistema. O Menu organiza as opções de maneira hierárquica e clara, permitindo que o usuário escolha a opção desejada para continuar o processo.
+
+**Nível 1: Funcionalidades Principais**
+
+- O menu principal oferece várias opções de serviços da clínica veterinária:
+    - **Cadastrar Cliente**: Permite ao atendente registrar novos clientes.
+    - **Cadastrar Animal**: Permite o registro de animais (geralmente vinculado a um cliente).
+    - **Agendar Atendimento**: Para marcar consultas e exames com o veterinário.
+    - **Atendimento Veterinário**: Relacionado aos processos de atendimento clínico do animal, como exames e diagnósticos.
+    - **Hospedagem, Internação, Banho e Tosa, Creche, Petshop**: Esses são serviços adicionais da clínica, voltados para o cuidado e bem-estar dos animais.
+    - **Pagamento**: Refere-se ao processamento de pagamentos pelos serviços utilizados.
+    - **Dashboards**: Indicadores visuais para gestão da clínica (relatórios de desempenho, financeiro, etc.).
+
+**Nível 2: Funcionalidades Específicas**
+
+- Cada item do menu leva o usuário para um fluxo específico e detalhado.
+    - Cadastrar Cliente leva ao Formulário de Cadastro do Cliente, onde os dados são inseridos e salvos (Salvar Cliente).
+    - Cadastrar Animal segue um processo similar, com o Formulário de Cadastro de Animal e Salvar Animal.
+    - Agendar Atendimento permite escolher o Veterinário e depois selecionar Data e Hora para o atendimento.
+    - Atendimento Veterinário tem um fluxo de várias etapas (como Entrevista, Exame do Animal, Registro do Atendimento, Prontuário, e Receitas Médicas), refletindo o processo completo de diagnóstico e tratamento.
+
+**Subprocessos e Detalhamento**
+
+- Alguns processos no sistema são mais detalhados e divididos em subprocessos.
+    - Atendimento Veterinário é dividido em várias etapas: a Entrevista, seguida pelo Exame do Animal, e depois o Registro do Atendimento que gera Prontuários e Receitas Médicas. Isso mostra um fluxo linear de ações interdependentes, onde cada etapa gera dados relevantes que são registrados e processados.
+    - Hospedagem, Internação, Banho/Tosa, Creche, e Petshop também têm seus próprios fluxos independentes, como agendar hospedagem, registrar internação ou consultar estoque.
+
+**Dashboards**
+
+- A inclusão de Dashboards no menu sugere que o sistema fornece uma visão geral dos dados operacionais da clínica, como desempenho, financeiro e outros relatórios importantes. Isso pode ser útil para gerentes e administradores da clínica, fornecendo uma visão analítica de como a clínica está funcionando.
+
+**Nível 3: Etapas Detalhadas**
+
+- Alguns fluxos, como o Atendimento Veterinário, envolvem um nível maior de detalhamento com múltiplas interações. Além de registrar informações clínicas no Prontuário e nas Receitas Médicas, outras funcionalidades de gestão de serviços também são detalhadas, como Agendar Hospedagem ou Registrar Internação, indicando que o sistema possui uma organização lógica e detalhada de etapas.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
