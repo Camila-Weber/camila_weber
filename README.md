@@ -804,53 +804,29 @@ classDiagram
 
 ## 7.2. Descrição das Interações do Diagrama
 
-**Sistema de Cadastro → Cliente:**
-
-- O cliente interage diretamente com o Sistema de Cadastro para fornecer informações pessoais e sobre os animais. Este componente armazena esses dados para uso futuro.
-
-**Atendimento Veterinário → Veterinário:**
-
-- O veterinário utiliza o Atendimento Veterinário para realizar a entrevista e o exame físico do animal, registrando informações essenciais sobre a saúde do animal.
-
-**Agendamento → Atendente:**
-
-- O atendente interage com o Agendamento para verificar a disponibilidade na agenda e marcar consultas, garantindo que o tempo do veterinário e os recursos da clínica sejam bem alocados.
-
-**Prontuário → Veterinário:**
-
-- O veterinário acessa e atualiza o Prontuário para registrar as informações sobre as consultas e os procedimentos realizados no animal.
-
-**Receita Médica → Veterinário:**
-
-- Após o atendimento, o veterinário usa o Receita Médica para prescrever medicamentos, que são entregues ao cliente.
-
-**Hospedagem → Atendente:**
-
-- O atendente utiliza o Hospedagem para agendar o período em que o animal ficará hospedado na clínica, cuidando da administração desse serviço.
-
-**Internação → Veterinário:**
-
-- O veterinário usa o Internação para registrar e gerenciar animais que necessitam de internação para tratamentos ou procedimentos médicos.
-
-**Creche → Funcionários:**
-
-- Funcionários da clínica interagem com o componente Creche para monitorar os animais que ficam sob cuidado durante o dia.
-
-**Petshop → Cliente:**
-
-- O Petshop oferece produtos para o cliente e pode gerar descontos, sendo uma via de interação direta entre a clínica e o cliente para compras de produtos para os animais.
-
-**Pagamento → Cliente:**
-
-- O Pagamento permite que o cliente efetue o pagamento pelos serviços prestados pela clínica, como consultas, hospedagens, internações, e produtos comprados no petshop.
-
-**Cliente → Atendente:**
-
-- Quando o cliente chega à clínica, ele interage com o atendente, que organiza o fluxo de atendimento, levando o cliente ao veterinário.
-
-**Atendente → Veterinário:**
-
-- O atendente leva o cliente até o veterinário para iniciar o processo de consulta, após o qual o veterinário prossegue com o atendimento.
+> **Sistema de Cadastro → Cliente:** O cliente interage diretamente com o Sistema de Cadastro para fornecer informações pessoais e sobre os animais. Este componente armazena esses dados para uso futuro.
+>
+> **Atendimento Veterinário → Veterinário:** O veterinário utiliza o Atendimento Veterinário para realizar a entrevista e o exame físico do animal, registrando informações essenciais sobre a saúde do animal.
+>
+> **Agendamento → Atendente:** O atendente interage com o Agendamento para verificar a disponibilidade na agenda e marcar consultas, garantindo que o tempo do veterinário e os recursos da clínica sejam bem alocados.
+>
+> **Prontuário → Veterinário:** O veterinário acessa e atualiza o Prontuário para registrar as informações sobre as consultas e os procedimentos realizados no animal.
+>
+> **Receita Médica → Veterinário:** Após o atendimento, o veterinário usa o Receita Médica para prescrever medicamentos, que são entregues ao cliente.
+>
+> **Hospedagem → Atendente:** O atendente utiliza o Hospedagem para agendar o período em que o animal ficará hospedado na clínica, cuidando da administração desse serviço.
+>
+> **Internação → Veterinário:** O veterinário usa o Internação para registrar e gerenciar animais que necessitam de internação para tratamentos ou procedimentos médicos.
+>
+> **Creche → Funcionários:** Funcionários da clínica interagem com o componente Creche para monitorar os animais que ficam sob cuidado durante o dia.
+>
+> **Petshop → Cliente:** O Petshop oferece produtos para o cliente e pode gerar descontos, sendo uma via de interação direta entre a clínica e o cliente para compras de produtos para os animais.
+>
+> **Pagamento → Cliente:** O Pagamento permite que o cliente efetue o pagamento pelos serviços prestados pela clínica, como consultas, hospedagens, internações, e produtos comprados no petshop.
+>
+> **Cliente → Atendente:** Quando o cliente chega à clínica, ele interage com o atendente, que organiza o fluxo de atendimento, levando o cliente ao veterinário.
+>
+> **Atendente → Veterinário:** O atendente leva o cliente até o veterinário para iniciar o processo de consulta, após o qual o veterinário prossegue com o atendimento.
 
 [Topo - ⇧](#camila-weber---engenharia-de-software)
 
